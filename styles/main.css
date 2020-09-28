@@ -60,6 +60,7 @@ html,
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  font-weight: 400;
   color: #333;
   background-color: #fcfffd;
 }
@@ -79,4 +80,49 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 106px;
+}
+.header__link {
+  color: #f2f2f2;
+  font-size: 14px;
+  text-decoration: none;
+}
+.header__link_white {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 26px;
+  margin-right: 60px;
+  position: relative;
+}
+.header__link_white::after {
+  position: absolute;
+  bottom: -30px;
+  right: -35px;
+  content: url("../img/icons/lifeline.svg");
+}
+.header__link_arrow {
+  position: relative;
+  margin-right: 20px;
+}
+.header__link_arrow::after {
+  position: absolute;
+  top: -2px;
+  right: -20px;
+  content: url("../img/icons/arrow-down.svg");
+}
+.header__link_red {
+  color: #dd5050;
+}
+.header__link_phone {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+.header__link_blue {
+  font-size: 1rem;
+  color: #06beb6;
+  padding-bottom: 5px;
+  font-weight: 600;
+  border-bottom: 2px solid #06beb6;
 }
