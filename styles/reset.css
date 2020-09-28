@@ -3,11 +3,11 @@
     box-sizing: border-box;
 }
 
-ol[class], ul[class] {
+ol, ul {
     padding: 0
 }
 
-blockquote, body, dd, dl, figcaption, figure, h1, h2, h3, h4, li, ol[class], p, ul[class] {
+blockquote, body, dd, dl, figcaption, figure, h1, h2, h3, h4, li, ol, p, ul {
     margin: 0
 }
 
@@ -18,7 +18,7 @@ body {
     line-height: 1.5
 }
 
-ol[class], ul[class] {
+ol, ul {
     list-style: none
 }
 

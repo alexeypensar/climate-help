@@ -1,1 +1,23 @@
 /* цвета, градиенты */
+
+$black-color = #333333;
+$blue-color = #06BEB6;
+$red-color = #DD5050;
+$gray-color = #F2F2F2;
+$darkgray-color = #BDBDBD;
+$darkergray-color = #828282;
+$blue-gradient = linear-gradient(to right, #06BEB6 0%, #48B1BF 100%);
+$dark-gradient = linear-gradient(to right, #257571 0%, #145E68 100%);
+
+$border-gradient = {
+	background-color: transparent,
+	border: 2px solid,
+	border-image: $blue-gradient 2 2
+};
+
+$text-gradient = {
+	background: $blue-gradient,
+	-webkit-background-clip: text,
+	-webkit-text-fill-color: transparent
+};
+

@@ -1,13 +1,16 @@
-@import url('reset.css');
-@import url('__fonts.styl');
-@import url('__variables.styl');
-@import url('__helpers.styl');
-@import url('__animations.styl');
-@import url('__adaptive.styl');
+@import 'reset.css';
+@import '__fonts.styl';
+@import '__variables.styl';
+@import '__helpers.styl';
+@import '__animations.styl';
+@import '__adaptive.styl';
 
 
 html, body {
-
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: $black-color;
+	background-color: #FCFFFD;
 }
 
 .container {
@@ -16,4 +19,16 @@ html, body {
 	width: 100%;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+.header__nav {
+	background: $dark-gradient;
+}
+
+.header__ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 106px;
 }
