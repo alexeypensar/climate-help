@@ -14,6 +14,10 @@ html, body {
 	background-color: #FCFFFD;
 }
 
+//*, ::after, ::before {
+//	transition: 0.3s ease;
+//}
+
 button:hover {
 	cursor: pointer;
 }
@@ -22,8 +26,8 @@ button:hover {
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 100%;
-	padding-left: 15px;
-	padding-right: 15px;
+	//padding-left: 15px;
+	//padding-right: 15px;
 }
 
 .header__nav {
@@ -61,11 +65,11 @@ button:hover {
 
 	&_arrow {
 		position: relative;
-		margin-right: 20px;
+		padding-right: 20px;
 		&::after {
 			position: absolute;
 			top: -2px;
-			right: -20px;
+			right: 0;
 			content: url('../img/icons/arrow-down.svg');
 		}
 	}
@@ -99,7 +103,7 @@ button:hover {
 
 .header__info {
 	padding-top: 70px;
-	padding-bottom: 140px;
+	padding-bottom: 70px;
 }
 
 .header__row {
@@ -107,6 +111,7 @@ button:hover {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
+	position: relative;
 }
 
 .header__h1 {
@@ -130,19 +135,30 @@ button:hover {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	padding: 30px 20px 15px 20px;
+	padding: 20px 30px 20px 30px;
 
 
 	&_second {
 		width: 431px;
 		height: 390px;
 		margin-top: -20px;
+		//padding-bottom: 38px;
+
+		& .header__card_bottom {
+			width: 100%;
+			justify-content: space-between;
+
+		}
 	}
 
 	&_third {
 		width: 300px;
 		height: 234px;
-		margin-top: 60px;
+		margin-top: 135px;
+		& h3 {
+			white-space: nowrap;
+		}
+
 	}
 
 	& h3 {
@@ -176,6 +192,70 @@ button:hover {
 	align-items: center;
 	height: 48px;
 	width: 48px;
+
+	&:hover, &:focus {
+		outline: none;
+		background: $blue-gradient;
+		box-shadow: 0 3px 10px 4px $blue-color-rgba;
+		& svg {
+			stroke: $gray-color;
+		}
+	}
 }
 
 //todo подумать, как реализовать border-gradient, если нужно закругление
+
+
+
+.header__text {
+	margin-top: 55px;
+	margin-left: 55px;
+	margin-right: 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	//position: absolute;
+	//top: 0;
+	//left: 486px;
+
+	& h3 {
+		font-size: 20px;
+		line-height: 150%;
+		font-weight: 400;
+		margin-bottom: 25px;
+		display: inline-block;
+		width: 360px;
+
+		& strong {
+			font-weight: 700;
+		}
+	}
+
+}
+
+.button__main {
+	background: $blue-gradient;
+	height: 60px;
+	width: 360px;
+	margin-right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $gray-color;
+	border-radius: 4px;
+	font-weight: 500;
+	border: none;
+	outline: none;
+	box-shadow: 0 15px 35px 4px $blue-color-rgba;
+
+	&:hover, &:focus {
+		font-weight: 600;
+
+	}
+}
+
+.advantages {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
