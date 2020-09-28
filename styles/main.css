@@ -1,0 +1,13 @@
+@import url("reset.css");
+@import url("__fonts.styl");
+@import url("__variables.styl");
+@import url("__helpers.styl");
+@import url("__animations.styl");
+@import url("__adaptive.styl");
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
