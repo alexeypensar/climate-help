@@ -272,9 +272,56 @@ button:hover {
 }
 .button__main:hover,
 .button__main:focus {
-  font-weight: 600;
+  color: #fff;
+  transform: translateY(-3px);
+  transition: all 0.3s ease-in-out;
+}
+.section__heading {
+  position: relative;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 140%;
+  display: inline;
+}
+.section__heading::after {
+  position: absolute;
+  bottom: -30px;
+  right: -35px;
+  content: url("../img/icons/lifeline.svg");
 }
 .advantages {
   padding-top: 70px;
   padding-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.left-side,
+.right-side {
+  width: 50%;
+}
+.advantages__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 45%;
+  margin-bottom: 40px;
+}
+.advantages__heading {
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 22px;
+}
+.advantages__text {
+  font-weight: 400;
+  font-size: 16px;
 }
