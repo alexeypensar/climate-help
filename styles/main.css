@@ -313,7 +313,7 @@ button:hover {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 45%;
+  width: 48%;
   margin-bottom: 40px;
 }
 .advantages__heading {
@@ -324,4 +324,6 @@ button:hover {
 .advantages__text {
   font-weight: 400;
   font-size: 16px;
+  display: inline-block;
+  width: 95%;
 }
