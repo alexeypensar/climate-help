@@ -48,6 +48,38 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   overflow: hidden;
 }
+@-moz-keyframes roundArrow {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+@-webkit-keyframes roundArrow {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+@-o-keyframes roundArrow {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+@keyframes roundArrow {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
 @media screen and (max-width: 1199.98px) {
   .container {
     max-width: 992px;
@@ -224,16 +256,22 @@ button:hover {
   align-items: center;
   height: 48px;
   width: 48px;
+  background: transparent;
 }
 .button__arrow:hover,
 .button__arrow:focus {
   outline: none;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   box-shadow: 0 3px 10px 4px rgba(6,190,182,0.4);
+  transition: background 0.3s ease;
 }
 .button__arrow:hover svg,
 .button__arrow:focus svg {
   stroke: #f2f2f2;
+  animation-name: roundArrow;
+  animation-duration: 0.5s;
+  animation-delay: 0.15s;
+  animation-timing-function: ease-in-out;
 }
 .header__text {
   margin-top: 55px;
@@ -372,6 +410,7 @@ button:hover {
   position: relative;
   padding: 50px 30px;
   border: 1px solid #f2f2f2;
+  background-color: #fcfffd;
 }
 .goods__item img {
   margin: auto;
@@ -406,7 +445,6 @@ button:hover {
 .goods__heading {
   font-weight: 500;
   font-size: 20px;
-  white-space: nowrap;
 }
 .goods__price {
   font-weight: 600;
@@ -415,4 +453,20 @@ button:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-right: 50px;
+}
+.goods__cold {
+  padding-bottom: 0;
+  margin-bottom: 70px;
+}
+.goods__wrapper_cold {
+  position: relative;
+}
+.goods__wrapper_cold::before {
+  position: absolute;
+  content: '';
+  top: 430px;
+  left: 0;
+  height: 360px;
+  width: 100%;
+  background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
 }
