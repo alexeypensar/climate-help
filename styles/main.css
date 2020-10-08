@@ -52,32 +52,44 @@ input[type="radio"].visually-hidden {
   0%, 100% {
     transform: translateX(0);
   }
-  50% {
+  25% {
     transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-2px);
   }
 }
 @-webkit-keyframes roundArrow {
   0%, 100% {
     transform: translateX(0);
   }
-  50% {
+  25% {
     transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-2px);
   }
 }
 @-o-keyframes roundArrow {
   0%, 100% {
     transform: translateX(0);
   }
-  50% {
+  25% {
     transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-2px);
   }
 }
 @keyframes roundArrow {
   0%, 100% {
     transform: translateX(0);
   }
-  50% {
+  25% {
     transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-2px);
   }
 }
 @media screen and (max-width: 1199.98px) {
@@ -269,7 +281,7 @@ button:hover {
 .button__arrow:focus svg {
   stroke: #f2f2f2;
   animation-name: roundArrow;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-delay: 0.15s;
   animation-timing-function: ease-in-out;
 }
@@ -490,6 +502,19 @@ button:hover {
   justify-content: flex-start;
   align-items: flex-start;
 }
+.goods__wrapper_services {
+  position: relative;
+}
+.goods__wrapper_services::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 530px;
+  margin-top: 70px;
+  width: 100%;
+  background: linear-gradient(to right, transparent 0%, transparent 50%, #06beb6 50.1%, #48b1bf 100%);
+}
 .services__item {
   width: 300px;
   height: 360px;
@@ -500,6 +525,7 @@ button:hover {
   border: 1px solid #f2f2f2;
   padding: 40px 30px 30px 40px;
   position: relative;
+  background-color: #fcfffd;
 }
 .services__item img {
   position: absolute;
@@ -537,4 +563,12 @@ button:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 1px solid #06beb6;
+}
+.services__text {
+  font-weight: 500;
+  font-size: 20px;
+  color: #f2f2f2;
+  position: relative;
+  z-index: 1;
+  padding: 40px;
 }
