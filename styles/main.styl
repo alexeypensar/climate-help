@@ -374,7 +374,7 @@ button:hover {
 	width: 50%;
 	height: 360px;
 	position: relative;
-	padding: 50px 30px;
+	padding: 0 30px 50px 30px;
 	border: 1px solid $gray-color;
 	background-color: #FCFFFD;
 
@@ -405,6 +405,13 @@ button:hover {
 		right: 30px;
 		bottom: 30px;
 	}
+}
+
+.goods__image {
+	height: 75%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .goods__text {
@@ -443,7 +450,7 @@ button:hover {
 		left: 0;
 		height: 360px;
 		width: 100%;
-		background: linear-gradient(to right, #06BEB6 0%, #48B1BF 100%);
+		{$blue-gradient};
 	}
-
 }
+

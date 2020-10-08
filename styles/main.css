@@ -408,7 +408,7 @@ button:hover {
   width: 50%;
   height: 360px;
   position: relative;
-  padding: 50px 30px;
+  padding: 0 30px 50px 30px;
   border: 1px solid #f2f2f2;
   background-color: #fcfffd;
 }
@@ -434,6 +434,12 @@ button:hover {
   background-color: transparent;
   right: 30px;
   bottom: 30px;
+}
+.goods__image {
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .goods__text {
   display: flex;
@@ -468,5 +474,4 @@ button:hover {
   left: 0;
   height: 360px;
   width: 100%;
-  background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
 }
