@@ -554,3 +554,48 @@ button:hover {
 	z-index: 1;
 	padding: 40px;
 }
+
+
+
+.master {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-top: 70px;
+	margin-bottom: 70px;
+	height: 402px;
+}
+
+.master__text {
+	width: 50%;
+	height: 360px;
+	background-color: #F9FBFA;
+	padding: 70px 70px 50px 100px;
+	position: relative;
+	&::before {
+		content: url('../img/icons/arrow-red.svg');
+		position: absolute;
+		left: -30px;
+		bottom: 76px;
+	}
+}
+
+.master__heading {
+	font-weight: 600;
+	font-size: 21px;
+	margin-bottom: 20px;
+}
+
+.master__subheading {
+	font-weight: 800;
+	font-size: 52px;
+	margin-bottom: 10px;
+	{$text-gradient};
+	padding-left: 73px;
+}
+
+.master {
+	& .main-button {
+		margin-left: 73px;
+	}
+}
