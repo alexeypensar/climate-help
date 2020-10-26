@@ -618,12 +618,69 @@
 
     <section class="brands container">
         <h2 class="section__heading">Бренды, с которыми мы работаем</h2>
+
+
+        <article class="brands__list embla" id="embla">
+                <div class="embla__container">
+                    <div class="embla__slide">
+                        <img src="img/brands/1.png" alt="">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="img/brands/2.png" alt="">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="img/brands/3.png" alt="">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="img/brands/4.png" alt="">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="img/brands/5.png" alt="">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="img/brands/6.png" alt="">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="img/brands/7.png" alt="">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="img/brands/8.png" alt="">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="img/brands/9.png" alt="">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="img/brands/10.png" alt="">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="img/brands/11.png" alt="">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="img/brands/12.png" alt="">
+                    </div>
+                    <div class="embla__slide">
+                        <img src="img/brands/13.png" alt="">
+                    </div>
+
+
+
+                </div>
+        </article>
+
+
     </section>
 
 
 </main>
 
-
+<script src="https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js"></script>
 <script src="js/script.js"></script>
+<script>
+    const emblaNode = document.getElementById("embla");
+    const options = {
+        loop: true
+    }
+    const embla = EmblaCarousel(emblaNode);
+</script>
 </body>
 </html>

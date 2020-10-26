@@ -53,6 +53,24 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   overflow: hidden;
 }
+.embla {
+  overflow: hidden;
+  margin-top: 36px;
+  margin-bottom: 125px;
+}
+.embla__container {
+  display: flex;
+  min-width: 100%;
+}
+.embla__slide {
+  position: relative;
+  width: 200px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+}
 @-moz-keyframes roundArrow {
   0%, 100% {
     transform: translateX(0);
