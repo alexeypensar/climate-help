@@ -669,3 +669,169 @@ button:hover {
 
 }
 
+
+
+
+.quiz__wrapper {
+	background: $blue-gradient;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.quiz {
+	& .section__heading {
+		color: $gray-color;
+	}
+}
+
+.quiz__subheading {
+	color: $gray-color;
+	margin-top: 16px;
+	margin-bottom: 50px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.quiz__list {
+	background-color: #FFFFFF;
+	padding: 65px 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	height: 530px;
+	position: relative;
+}
+
+.quiz__heading {
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 150%;
+	{$text-gradient};
+	margin-bottom: 40px;
+}
+
+.quiz__options {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.quiz__radio {
+	width: 220px;
+	display: flex;
+	flex-direction: column-reverse;
+
+
+	& label {
+		padding-right: 25px;
+	}
+}
+
+.quiz__image {
+	width: 220px;
+	height: 143px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid $gray-color;
+	margin-bottom: 22px;
+
+	& img {
+		transform: scale(1);
+		transition: all 0.3s ease;
+	}
+
+
+}
+
+.quiz__radio:nth-of-type(2n) {
+	& .quiz__image {
+		background-color: $gray-color;
+	}
+}
+
+input[type="radio"]:checked ~ .quiz__image {
+
+	border: 1px solid $blue-color;
+	& img {
+		transform: scale(1.15);
+		transition: all 0.4s ease;
+	}
+}
+
+.quiz__progress {
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+	width: 140px;
+	height: calc(530px - 75%);
+	border: 1px solid $gray-color;
+	background: $blue-gradient;
+
+
+}
+
+.quiz__percents {
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 12px;
+	text-align: center;
+	//margin: 12px auto auto auto;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 140%;
+	color: #FFFFFF;
+}
+
+.quiz__button_next {
+	border: 1px solid $blue-color;
+	background-color: transparent;
+	height: 60px;
+	width: 246px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	outline: none;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+
+	& span {
+		{$text-gradient};
+	}
+	& svg {
+		margin-left: 10px;
+	}
+
+	&:hover, &:focus {
+		background: $blue-gradient;
+
+		& span {
+			background: $gray-color;
+			-webkit-background-clip: text;
+			//-webkit-text-fill-color: transparent;
+			transition: all 0.4s ease;
+			//color: $gray-color;
+		}
+
+
+		& svg {
+
+			animation: roundArrow;
+			animation-duration: 0.8s;
+			animation-delay: 0.4s;
+			animation-timing-function: ease;
+			& path {
+				fill: $gray-color;
+			}
+
+		}
+
+	}
+}
