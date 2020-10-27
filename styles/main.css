@@ -971,3 +971,38 @@ input[type="radio"]:checked ~ .quiz__image img {
 .quiz__button_next:focus svg path {
   fill: #f2f2f2;
 }
+.quiz__options_top {
+  margin-bottom: auto;
+}
+.quiz__options_top .quiz__label:first-child {
+  margin-right: 75px;
+}
+.quiz__input_text {
+  padding: 14px;
+  border-bottom: 1px solid #06beb6;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 187px;
+}
+.quiz__input_text:focus {
+  outline: none;
+}
+.quiz__input_text:focus + span {
+  top: -5px;
+  left: 0;
+  transition: all 0.4s ease;
+  font-size: 12px;
+}
+.quiz__label {
+  position: relative;
+}
+.quiz__label_absolute {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #828282;
+}

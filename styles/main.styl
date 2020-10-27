@@ -868,3 +868,51 @@ input[type="radio"]:checked ~ .quiz__image {
 
 	}
 }
+
+
+.quiz__options_top {
+	margin-bottom: auto;
+
+	& .quiz__label:first-child {
+		margin-right: 75px;
+	}
+}
+
+.quiz__input_text {
+	padding: 14px;
+	border-bottom: 1px solid $blue-color;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	width: 187px;
+
+	&:focus {
+		outline: none;
+
+		& + span {
+			top: -5px;
+			left: 0;
+			transition: all 0.4s ease;
+			font-size: 12px;
+		}
+	}
+}
+
+.quiz__label {
+	position: relative;
+
+	&_absolute {
+		position: absolute;
+		top: 14px;
+		left: 14px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		color: $darkergray-color;
+	}
+
+
+
+
+}
+
