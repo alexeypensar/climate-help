@@ -752,6 +752,7 @@ button:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-left: 73px;
+  text-transform: uppercase;
 }
 .master .main-button {
   margin-left: 73px;
@@ -864,6 +865,7 @@ button:hover {
   margin-bottom: 22px;
 }
 .quiz__image img {
+  transform: scale(1);
   transition: all 0.3s ease;
 }
 .quiz__radio:nth-of-type(2n) .quiz__image {
@@ -873,6 +875,7 @@ input[type="radio"]:checked ~ .quiz__image {
   border: 1px solid #06beb6;
 }
 input[type="radio"]:checked ~ .quiz__image img {
+  transform: scale(1.15);
   transition: all 0.4s ease;
 }
 .quiz__progress {
