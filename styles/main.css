@@ -883,9 +883,20 @@ input[type="radio"]:checked ~ .quiz__image img {
   bottom: 0;
   right: 15px;
   width: 140px;
-  height: calc(530px - 75%);
   border: 1px solid #f2f2f2;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
+}
+.quiz__progress_25 {
+  height: calc(530px - 75%);
+}
+.quiz__progress_50 {
+  height: calc(530px - 50%);
+}
+.quiz__progress_75 {
+  height: calc(530px - 25%);
+}
+.quiz__progress_100 {
+  height: 100%;
 }
 .quiz__percents {
   display: inline-block;

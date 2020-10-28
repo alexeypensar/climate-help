@@ -772,10 +772,21 @@ input[type="radio"]:checked ~ .quiz__image {
 	bottom: 0;
 	right: 15px;
 	width: 140px;
-	height: calc(530px - 75%);
 	border: 1px solid $gray-color;
 	background: $blue-gradient;
 
+	&_25 {
+		height: calc(530px - 75%);
+	}
+	&_50 {
+		height: calc(530px - 50%);
+	}
+	&_75 {
+		height: calc(530px - 25%);
+	}
+	&_100 {
+		height: 100%;
+	}
 
 }
 
