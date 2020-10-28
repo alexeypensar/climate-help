@@ -36,34 +36,18 @@ embla.on("init", autoplayer.play);
 
 // quiz labels styles changing
 
-
 let quizTextInputs = document.getElementsByClassName('quiz__input_text');
 quizTextInputs = Array.prototype.slice.call(quizTextInputs);
 
 quizTextInputs.forEach(function(el) {
-
     el.addEventListener('change', function () {
-
-
         if (el.value !== '') {
             el.nextElementSibling.classList.add('quiz__placeholder_active');
-
         }
-
-
         else {
-
             el.nextElementSibling.classList.remove('quiz__placeholder_active');
-
         }
-
     });
-
-
-
-
-
-
 
 });
 
