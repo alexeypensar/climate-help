@@ -32,23 +32,43 @@ embla.on("pointerDown", autoplayer.stop);
 embla.on("init", autoplayer.play);
 
 
+
+
 // quiz labels styles changing
 
 
 let quizTextInputs = document.getElementsByClassName('quiz__input_text');
+quizTextInputs = Array.prototype.slice.call(quizTextInputs);
 
-console.log(quizTextInputs);
+quizTextInputs.forEach(function(el) {
 
-for (let i = 0; i < quizTextInputs.length; i++) {
+    el.addEventListener('change', function () {
 
-    quizTextInputs[i].addEventListener('change', function () {
-        if (quizTextInputs[i].value !== '') {
-            quizTextInputs[i].closest('.quiz__label_absolute').style.top = '-5px';
-            quizTextInputs[i].closest('.quiz__label_absolute').style.left = '0';
-            quizTextInputs[i].closest('.quiz__label_absolute').style.fontSize = '12px';
+
+        if (el.value !== '') {
+            el.nextElementSibling.classList.add('quiz__placeholder_active');
+
         }
+
+
+        else {
+
+            el.nextElementSibling.classList.remove('quiz__placeholder_active');
+
+        }
+
     });
-}
+
+
+
+
+
+
+
+});
+
+
+
 
 
 

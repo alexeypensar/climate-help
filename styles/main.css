@@ -1011,12 +1011,22 @@ input[type="radio"]:checked ~ .quiz__image img {
 .quiz__label {
   position: relative;
 }
-.quiz__label_absolute {
+.quiz__placeholder {
   position: absolute;
   top: 14px;
   left: 14px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 150%;
+  line-height: 1;
   color: #828282;
+  transition: all 0.4s ease;
+}
+.quiz__placeholder sup {
+  position: absolute;
+  top: -2px;
+}
+.quiz__placeholder_active {
+  top: -5px;
+  left: 0;
+  font-size: 12px;
 }

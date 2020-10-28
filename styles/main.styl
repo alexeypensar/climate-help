@@ -912,23 +912,40 @@ input[type="radio"]:checked ~ .quiz__image {
 			font-size: 12px;
 		}
 	}
+
 }
 
 .quiz__label {
 	position: relative;
 
-	&_absolute {
+	//&_absolute {
+	//
+	//}
+
+
+
+
+}
+
+.quiz__placeholder {
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1;
+	color: $darkergray-color;
+	transition: all 0.4s ease;
+
+	& sup {
 		position: absolute;
-		top: 14px;
-		left: 14px;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 150%;
-		color: $darkergray-color;
+		top: -2px;
 	}
 
-
-
-
+	&_active {
+		top: -5px;
+		left: 0;
+		font-size: 12px;
+	}
 }
 
