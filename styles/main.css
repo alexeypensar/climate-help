@@ -863,6 +863,7 @@ button:hover {
   align-items: center;
   border: 1px solid #f2f2f2;
   margin-bottom: 22px;
+  overflow: hidden;
 }
 .quiz__image img {
   transform: scale(1);
