@@ -810,7 +810,7 @@ input[type="radio"]:checked ~ .quiz__image {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: flex-end;
+	align-items: center;
 }
 
 .quiz__button_prev {
@@ -945,3 +945,29 @@ input[type="radio"]:checked ~ .quiz__image {
 	}
 }
 
+.quiz__conditioner_3 {
+	& .quiz__options_top {
+		margin-bottom: 0;
+	}
+
+	& .quiz__input_text {
+		width: 300px;
+	}
+
+	& .quiz__options_bottom .quiz__input_text {
+		width: 676px;
+	}
+
+	& .main-button {
+		width: 300px;
+		margin-right: 38px;
+	}
+
+}
+
+.quiz__checkbox {
+	color: $darkergray-color;
+	& a {
+		color: $darkergray-color;
+	}
+}
