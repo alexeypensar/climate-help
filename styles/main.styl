@@ -1023,6 +1023,7 @@ input[type="radio"]:checked ~ .quiz__image {
 
 .sale {
 	margin-top: -158px;
+	margin-bottom: -140px;
 	height: 305px;
 	padding: 60px 130px 25px 130px;
 	background: $blue-gradient;
@@ -1030,7 +1031,6 @@ input[type="radio"]:checked ~ .quiz__image {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
-
 	position: relative;
 }
 
@@ -1094,4 +1094,33 @@ input[type="radio"]:checked ~ .quiz__image {
 	position: absolute;
 	top: -65px;
 	right: -55px;
+}
+
+.about-us__wrapper {
+	background-color: $gray-color;
+	padding-top: 270px;
+	padding-bottom: 70px;
+}
+
+.about-us {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.about-us__info {
+	width: 50%;
+}
+
+.about-us__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	&:not(:last-child) {
+		margin-bottom: 35px;
+	}
+	& strong {
+		font-weight: 600;
+	}
 }
