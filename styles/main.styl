@@ -1066,11 +1066,18 @@ input[type="radio"]:checked ~ .quiz__image {
 	background-color: #FFFFFF;
 	color: $blue-color;
 	outline: none;
-	border: none;
+	border: 1px solid transparent;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 150%;
 	border-radius: 4px;
+
+	&:hover, &:focus {
+		border: 1px solid #FFFFFF;
+		background: $blue-gradient;
+		color: #FFFFFF;
+		transition: background 0.4s ease;
+	}
 }
 
 	

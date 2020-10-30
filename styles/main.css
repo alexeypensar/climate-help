@@ -1120,11 +1120,18 @@ input[type="radio"]:checked ~ .quiz__image img {
   background-color: #fff;
   color: #06beb6;
   outline: none;
-  border: none;
+  border: 1px solid transparent;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   border-radius: 4px;
+}
+.sale__button:hover,
+.sale__button:focus {
+  border: 1px solid #fff;
+  background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
+  color: #fff;
+  transition: background 0.4s ease;
 }
 .sale__text {
   font-weight: 400;
