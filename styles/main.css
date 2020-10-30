@@ -1055,3 +1055,29 @@ input[type="radio"]:checked ~ .quiz__image img {
 .quiz__cold_1 .quiz__options_top {
   margin-bottom: auto;
 }
+.delivery {
+  margin-top: 140px;
+  margin-bottom: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.delivery__list {
+  width: 50%;
+}
+.delivery__city {
+  margin-bottom: 40px;
+}
+.delivery__heading {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
+}
+.delivery__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  width: 80%;
+}
