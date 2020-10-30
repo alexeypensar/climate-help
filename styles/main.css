@@ -1057,7 +1057,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .delivery {
   margin-top: 140px;
-  margin-bottom: 140px;
+  margin-bottom: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1080,4 +1080,61 @@ input[type="radio"]:checked ~ .quiz__image img {
   font-size: 16px;
   line-height: 150%;
   width: 80%;
+}
+.sale {
+  margin-top: -158px;
+  height: 305px;
+  padding: 60px 130px 25px 130px;
+  background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.sale__period {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #bdbdbd;
+  text-transform: uppercase;
+}
+.sale__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sale__heading {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 150%;
+  color: #f2f2f2;
+}
+.sale__button {
+  min-width: 278px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #06beb6;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  border-radius: 4px;
+}
+.sale__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #f2f2f2;
+  margin-top: 20px;
+}
+.sale__image {
+  position: absolute;
+  top: -65px;
+  right: -55px;
 }
