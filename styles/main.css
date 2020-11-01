@@ -1198,3 +1198,88 @@ input[type="radio"]:checked ~ .quiz__image img {
   width: 300px;
   margin-bottom: 10px;
 }
+.contacts__wrapper {
+  padding-top: 55px;
+  padding-bottom: 65px;
+  background-color: #023938;
+  position: relative;
+}
+.contacts__wrapper::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 90vw;
+  background-color: #828282;
+  bottom: 0;
+  left: calc(100% - 95vw);
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
+}
+.contacts h2,
+.contacts a,
+.contacts p,
+.contacts address {
+  color: #f2f2f2;
+}
+.contacts_left {
+  width: 50%;
+}
+.contacts__column {
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contacts__column:last-child {
+  align-items: flex-end;
+  text-align: right;
+}
+.contacts__link_phone {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 150%;
+  text-decoration: none;
+}
+.contacts__link_phone:last-of-type {
+  margin-bottom: 60px;
+}
+.contacts__time {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.contacts__link_insta {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+}
+.contacts__link_insta img {
+  margin-right: 7px;
+}
+.contacts__link_email {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+}
+.contacts__address {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  align-self: flex-end;
+}
+.footer__wrapper {
+  background-color: #023938;
+}
