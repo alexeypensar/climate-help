@@ -1212,6 +1212,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   background-color: #828282;
   bottom: 0;
   left: calc(100% - 95vw);
+  overflow: hidden;
 }
 .contacts {
   display: flex;
@@ -1294,6 +1295,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   font-weight: 700;
   font-size: 28px;
   color: #bdbdbd;
+  text-transform: uppercase;
 }
 .footer__headings,
 .footer__info {
