@@ -1196,7 +1196,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .questions .main-button {
   width: 300px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .contacts__wrapper {
   padding-top: 55px;
@@ -1282,4 +1282,80 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .footer__wrapper {
   background-color: #023938;
+}
+.footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  color: #828282;
+}
+.footer .section__heading {
+  font-weight: 700;
+  font-size: 28px;
+  color: #bdbdbd;
+}
+.footer__headings,
+.footer__info {
+  width: 50%;
+}
+.footer__subheading {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #828282;
+  margin-top: 24px;
+  width: 75%;
+}
+.footer__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+.footer_left,
+.footer_right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footer_info {
+  align-items: flex-end;
+  text-align: right;
+}
+.footer__name,
+.footer__inn,
+.footer__copyright,
+.footer__address {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-decoration: none;
+  font-style: normal;
+}
+.footer__inn {
+  margin-bottom: 20px;
+}
+.footer__address {
+  margin-bottom: 20px;
+}
+.footer__link_policy {
+  margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-decoration: underline;
+  color: #828282;
+}
+.pensar__link {
+  font-size: 12px;
+}
+.pensar {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 150%;
+  color: #828282;
+  text-decoration: none;
 }
