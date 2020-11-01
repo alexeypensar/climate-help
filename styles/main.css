@@ -93,7 +93,7 @@ input[type="radio"]:not(:checked) + label:before {
   width: 18px;
   height: 18px;
   border: 1px solid #06beb6;
-  background-color: #fff;
+  background-color: transparent;
 }
 input[type="checkbox"]:checked + label:before,
 input[type="checkbox"]:not(:checked) + label:before {
@@ -1171,4 +1171,30 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .about-us__text strong {
   font-weight: 600;
+}
+.questions__wrapper {
+  background-color: #f2f2f2;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.questions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.questions__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+.questions .quiz__input_text {
+  width: 300px;
+  background-color: transparent;
+  margin-bottom: 30px;
+}
+.questions .main-button {
+  width: 300px;
+  margin-bottom: 10px;
 }

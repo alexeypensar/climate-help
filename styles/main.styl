@@ -1124,3 +1124,37 @@ input[type="radio"]:checked ~ .quiz__image {
 		font-weight: 600;
 	}
 }
+
+
+.questions__wrapper {
+	background-color: $gray-color;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.questions {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.questions__form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 50%;
+}
+
+.questions {
+	& .quiz__input_text {
+		width: 300px;
+		background-color: transparent;
+		margin-bottom: 30px;
+	}
+
+	& .main-button {
+		width: 300px;
+		margin-bottom: 10px;
+	}
+}
