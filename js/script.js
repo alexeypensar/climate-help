@@ -9,7 +9,7 @@ headerSubmenuLink.addEventListener('click', function(el) {
 });
 
 
-
+// todo скрывать подменю при нажатии на ссылку, скрывать подменю при нажатии вне блока подменю.
 
 
 
