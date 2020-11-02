@@ -282,6 +282,12 @@ button:hover {
   color: #f2f2f2;
   font-size: 14px;
   text-decoration: none;
+  position: relative;
+}
+.header__link:not(.header__link_white):hover,
+.header__link:not(.header__link_white):focus {
+  color: #06beb6;
+  transition: color 0.4s ease;
 }
 .header__link_white {
   color: #fff;
@@ -310,12 +316,14 @@ button:hover {
 .header__link_red {
   color: #dd5050;
   font-weight: 600;
+  position: relative;
 }
 .header__link_phone {
   font-size: 20px;
   font-weight: 600;
   margin-left: 20px;
   margin-right: 15px;
+  position: relative;
 }
 .header__link_blue {
   font-size: 1rem;
@@ -334,6 +342,16 @@ button:hover {
   height: 1px;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   content: '';
+}
+.header__link_blue:hover,
+.header__link_blue:focus {
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header__link_blue:hover::after,
+.header__link_blue:focus::after {
+  background: #fff;
 }
 .header__info {
   padding-top: 70px;
@@ -680,6 +698,11 @@ button:hover {
 .services__item:nth-child(2n-1) {
   background-color: #f2f2f2;
 }
+.services__item:hover,
+.services__item:focus {
+  transform: translateY(-10px);
+  transition: transform 0.4s ease;
+}
 .services__heading {
   font-weight: 600;
   font-size: 21px;
@@ -708,6 +731,10 @@ button:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 1px solid #06beb6;
+}
+.services__order:hover,
+.services__order:focus {
+  font-weight: 800;
 }
 .services__text {
   font-weight: 500;
@@ -1146,6 +1173,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   position: absolute;
   top: -65px;
   right: -55px;
+  pointer-events: none;
 }
 .about-us__wrapper {
   background-color: #f2f2f2;
@@ -1238,6 +1266,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 .contacts__column:last-child {
   align-items: flex-end;
   text-align: right;
+  padding-top: 20px;
 }
 .contacts__link_phone {
   font-weight: 800;
@@ -1247,6 +1276,12 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .contacts__link_phone:last-of-type {
   margin-bottom: 60px;
+}
+.contacts__link_phone:hover,
+.contacts__link_phone:focus {
+  color: #fff;
+  transition: all 0.4s ease;
+  text-decoration: underline;
 }
 .contacts__time {
   font-weight: 400;
@@ -1267,12 +1302,24 @@ input[type="radio"]:checked ~ .quiz__image img {
 .contacts__link_insta img {
   margin-right: 7px;
 }
+.contacts__link_insta:hover,
+.contacts__link_insta:focus {
+  color: #fff;
+  transition: all 0.4s ease;
+  text-decoration: underline;
+}
 .contacts__link_email {
   margin-bottom: 40px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   text-decoration: none;
+}
+.contacts__link_email:hover,
+.contacts__link_email:focus {
+  color: #fff;
+  text-decoration: underline;
+  transition: all 0.4s ease;
 }
 .contacts__address {
   font-weight: 400;
@@ -1296,6 +1343,12 @@ input[type="radio"]:checked ~ .quiz__image img {
   font-size: 28px;
   color: #bdbdbd;
   text-transform: uppercase;
+  text-decoration: none;
+}
+.footer .section__heading:hover,
+.footer .section__heading:focus {
+  color: #fff;
+  transition: all 0.4s ease;
 }
 .footer__headings,
 .footer__info {
@@ -1351,6 +1404,11 @@ input[type="radio"]:checked ~ .quiz__image img {
   text-decoration: underline;
   color: #828282;
 }
+.footer__link_policy:hover,
+.footer__link_policy:focus {
+  color: #fff;
+  transition: all 0.4s ease;
+}
 .pensar__link {
   font-size: 12px;
 }
@@ -1360,4 +1418,10 @@ input[type="radio"]:checked ~ .quiz__image img {
   line-height: 150%;
   color: #828282;
   text-decoration: none;
+}
+.pensar:hover,
+.pensar:focus {
+  background: linear-gradient(to right, #ff416c 0%, #ff4b2b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

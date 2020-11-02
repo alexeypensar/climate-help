@@ -54,6 +54,13 @@ button:hover {
 	color: $gray-color;
 	font-size: 14px;
 	text-decoration: none;
+	position: relative;
+
+	&:not(.header__link_white):hover, &:not(.header__link_white):focus {
+		color: $blue-color;
+		transition: color 0.4s ease;
+	}
+
 
 	&_white {
 		color: #FFFFFF;
@@ -69,6 +76,8 @@ button:hover {
 			right: -35px;
 			content: url('../img/icons/lifeline.svg');
 		}
+
+
 	}
 
 	&_arrow {
@@ -84,12 +93,17 @@ button:hover {
 	&_red {
 		color: $red-color;
 		font-weight: 600;
+		position: relative;
+	
 	}
 	&_phone {
 		font-size: 20px;
 		font-weight: 600;
 		margin-left: 20px;
 		margin-right: 15px;
+		position: relative;
+
+
 	}
 	&_blue {
 		font-size: 1rem;
@@ -105,6 +119,15 @@ button:hover {
 			height: 1px;
 			background: $blue-gradient;
 			content: '';
+		}
+
+		&:hover, &:focus {
+			background: #FFFFFF;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			&::after {
+				background: #FFFFFF;
+			}
 		}
 	}
 }
@@ -519,6 +542,11 @@ button:hover {
 	&:nth-child(2n-1) {
 		background-color: $gray-color;
 	}
+
+	&:hover, &:focus {
+		transform: translateY(-10px);
+		transition: transform 0.4s ease;
+	}
 }
 
 .services__heading {
@@ -548,6 +576,10 @@ button:hover {
 	margin-top: 10px;
 	{$text-gradient};
 	border-bottom: 1px solid $blue-color;
+
+	&:hover, &:focus {
+		font-weight: 800;
+	}
 }
 
 .services__text {
@@ -1094,6 +1126,7 @@ input[type="radio"]:checked ~ .quiz__image {
 	position: absolute;
 	top: -65px;
 	right: -55px;
+	pointer-events: none;
 }
 
 .about-us__wrapper {
@@ -1207,6 +1240,7 @@ input[type="radio"]:checked ~ .quiz__image {
 	&:last-child {
 		align-items: flex-end;
 		text-align: right;
+		padding-top: 20px;
 	}
 }
 
@@ -1218,7 +1252,11 @@ input[type="radio"]:checked ~ .quiz__image {
 	text-decoration: none;
 	&:last-of-type {
 		margin-bottom: 60px;
-
+	}
+	&:hover, &:focus {
+		color: #FFFFFF;
+		transition: all 0.4s ease;
+		text-decoration: underline;
 	}
 }
 
@@ -1243,6 +1281,12 @@ input[type="radio"]:checked ~ .quiz__image {
 	& img {
 		margin-right: 7px;
 	}
+
+	&:hover, &:focus {
+		color: #FFFFFF;
+		transition: all 0.4s ease;
+		text-decoration: underline;
+	}
 }
 
 .contacts__link_email {
@@ -1251,6 +1295,12 @@ input[type="radio"]:checked ~ .quiz__image {
 	font-size: 16px;
 	line-height: 150%;
 	text-decoration: none;
+
+	&:hover, &:focus {
+		color: #FFFFFF;
+		text-decoration: underline;
+		transition: all 0.4s ease;
+	}
 }
 
 .contacts__address {
@@ -1279,6 +1329,12 @@ input[type="radio"]:checked ~ .quiz__image {
 		font-size: 28px;
 		color: $darkgray-color;
 		text-transform: uppercase;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			color: #FFFFFF;
+			transition: all 0.4s ease;
+		}
 
 	}
 }
@@ -1340,6 +1396,10 @@ input[type="radio"]:checked ~ .quiz__image {
 	line-height: 150%;
 	text-decoration: underline;
 	color: $darkergray-color;
+	&:hover, &:focus {
+		color: #FFFFFF;
+		transition: all 0.4s ease;
+	}
 }
 
 .pensar__link {
@@ -1352,5 +1412,9 @@ input[type="radio"]:checked ~ .quiz__image {
 	line-height: 150%;
 	color: $darkergray-color;
 	text-decoration: none;
+
+	&:hover, &:focus {
+		{$pensar-gradient};
+	}
 }
 
