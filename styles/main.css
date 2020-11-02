@@ -305,13 +305,19 @@ button:hover {
 }
 .header__link_arrow {
   position: relative;
-  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 15px;
 }
-.header__link_arrow::after {
+.header__link_arrow svg {
   position: absolute;
-  top: -2px;
-  right: 0;
-  content: url("../img/icons/arrow-down.svg");
+  top: 8px;
+  right: -5px;
+}
+.header__link_arrow:hover svg path,
+.header__link_arrow:focus svg path {
+  stroke: #06beb6;
+  transition: stroke 0.4s ease;
 }
 .header__link_red {
   color: #dd5050;
@@ -343,15 +349,44 @@ button:hover {
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   content: '';
 }
-.header__link_blue:hover,
-.header__link_blue:focus {
-  background: #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .header__link_blue:hover::after,
 .header__link_blue:focus::after {
-  background: #fff;
+  height: 3px;
+  transition: height 0.2s ease;
+}
+.header__li_arrow {
+  position: relative;
+}
+.header__submenu {
+  display: none;
+}
+.header__link_submenu {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333;
+  height: 100%;
+  display: inline-block;
+}
+.header__link_submenu:hover,
+.header__link_submenu:focus {
+  font-weight: 800;
+}
+.header__submenu_active {
+  display: flex;
+  position: absolute;
+  bottom: -170px;
+  left: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 257px;
+  height: 146px;
+  padding: 23px 0 23px 20px;
+  border: 1px solid #06beb6;
+  background-color: #fcfffd;
+  z-index: 3;
 }
 .header__info {
   padding-top: 70px;

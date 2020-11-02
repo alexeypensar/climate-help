@@ -1,3 +1,18 @@
+// header submenu
+
+const headerSubmenu = document.getElementById('headerSubmenu');
+const headerSubmenuLink = document.getElementById('headerSubmenuLink');
+
+headerSubmenuLink.addEventListener('click', function(el) {
+    el.preventDefault();
+    headerSubmenu.classList.toggle('header__submenu_active');
+});
+
+
+
+
+
+
 // embla slider configuration:
 
 const emblaNode = document.getElementById("embla");
