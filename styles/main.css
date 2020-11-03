@@ -351,7 +351,7 @@ button:hover {
 }
 .header__link_blue:hover::after,
 .header__link_blue:focus::after {
-  height: 3px;
+  height: 2px;
   transition: height 0.2s ease;
 }
 .header__li_arrow {
