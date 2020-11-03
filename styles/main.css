@@ -771,6 +771,8 @@ button:hover {
   padding: 40px 30px 30px 40px;
   position: relative;
   background-color: #fff;
+  transform: translateY(0);
+  transition: transform 0.4s ease;
 }
 .services__item img {
   position: absolute;
@@ -812,11 +814,24 @@ button:hover {
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border-bottom: 1px solid #06beb6;
+  position: relative;
+}
+.services__order::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
+  left: 0;
 }
 .services__order:hover,
 .services__order:focus {
   font-weight: 800;
+}
+.services__order:hover::after,
+.services__order:focus::after {
+  height: 3px;
 }
 .services__text {
   font-weight: 500;
