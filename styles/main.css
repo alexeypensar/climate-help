@@ -610,11 +610,13 @@ button:hover {
   flex-direction: row;
 }
 .goods__info {
-  margin-top: 45px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+}
+.goods__info .main-button {
+  margin-right: 40px;
 }
 .goods__category-price {
   font-weight: 600;
@@ -622,7 +624,31 @@ button:hover {
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-right: 33px;
+  line-height: 150%;
+  margin-top: 8px;
+  margin-bottom: 33px;
+}
+.goods__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.goods__link::after {
+  content: '';
+  position: absolute;
+  width: 110%;
+  bottom: -3px;
+  left: -5px;
+  height: 1px;
+  background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
+}
+.goods__link:hover::after,
+.goods__link:focus::after {
+  height: 2px;
 }
 .goods__list {
   display: flex;

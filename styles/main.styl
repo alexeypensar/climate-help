@@ -496,18 +496,50 @@ button:hover {
 }
 
 .goods__info {
-	margin-top: 45px;
+	//margin-top: 45px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
+
+	& .main-button {
+		margin-right: 40px;
+	}
 }
+
+
 
 .goods__category-price {
 	font-weight: 600;
 	font-size: 32px;
 	{$text-gradient};
-	margin-right: 33px;
+	//margin-right: 33px;
+	line-height: 150%;
+	margin-top: 8px;
+	margin-bottom: 33px;
+}
+
+.goods__link {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	{$text-gradient};
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 110%;
+		bottom: -3px;
+		left: -5px;
+		height: 1px;
+		background: $blue-gradient;
+	}
+
+	&:hover, &:focus {
+		&::after {
+			height: 2px;
+		}
+	}
 }
 
 .goods__list {
