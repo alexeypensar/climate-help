@@ -18,6 +18,8 @@ html, body {
 	background-color: #FCFFFD;
 }
 
+
+
 //*, ::after, ::before {
 //	transition: 0.3s ease;
 //}
@@ -148,12 +150,16 @@ button:hover {
 			&::after {
 				//background: #FFFFFF;
 				height: 2px;
-				transition: height 0.2s ease;
+				left: -5%;
+				width: 110%;
+				transition: all 0.2s ease;
 
 			}
 		}
 	}
 }
+
+
 
 .header__li_arrow {
 	position: relative;
@@ -215,9 +221,26 @@ button:hover {
 	color: $black-color;
 	height: 100%;
 	display: inline-block;
+	position: relative;
+
+	&::after {
+		content: '';
+		width: 0;
+		height: 2px;
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		background-color: $black-color;
+	}
 
 	&:hover, &:focus {
 		font-weight: 800;
+
+		&::after {
+			left: 0;
+			width: 100%;
+			transition: all 0.4s ease;
+		}
 	}
 }
 
@@ -525,6 +548,7 @@ button:hover {
 	line-height: 150%;
 	{$text-gradient};
 	position: relative;
+	//overflow-x: hidden;
 	&::after {
 		content: '';
 		position: absolute;
@@ -538,7 +562,12 @@ button:hover {
 	&:hover, &:focus {
 		&::after {
 			height: 2px;
+			width: 100%;
+			left: 0;
+			transition: all 0.4s ease;
+
 		}
+
 	}
 }
 
@@ -745,10 +774,19 @@ button:hover {
 
 
 	&:hover, &:focus {
-		font-weight: 800;
+		//font-weight: 800;
 		//border-bottom: 1px solid transparent;
+		//&::after {
+		//	height: 3px;
+		//}
 		&::after {
+			width: 110%;
+			left: -5%;
 			height: 3px;
+			//width: 100%;
+			//left: 0;
+			transition: all 0.4s ease;
+
 		}
 	}
 }
@@ -1172,6 +1210,11 @@ input[type="radio"]:checked ~ .quiz__image {
 	color: $darkergray-color;
 	& a {
 		color: $darkergray-color;
+
+		&:hover, &:focus {
+			color: $black-color;
+			transition: color 0.3s ease;
+		}
 	}
 }
 
@@ -1421,14 +1464,39 @@ input[type="radio"]:checked ~ .quiz__image {
 	font-size: 32px;
 	line-height: 150%;
 	text-decoration: none;
+	position: relative;
 	&:last-of-type {
 		margin-bottom: 60px;
 	}
-	&:hover, &:focus {
-		color: #FFFFFF;
-		transition: all 0.4s ease;
-		text-decoration: underline;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		bottom: 0;
+		left: 0;
+		height: 2px;
+		background-color: #f2f2f2;
+		//background: $blue-gradient;
 	}
+
+	&:hover, &:focus {
+		text-decoration: none;
+		&::after {
+			height: 2px;
+			width: 100%;
+			left: 0;
+			transition: all 0.4s ease;
+
+		}
+
+	}
+
+	//&:hover, &:focus {
+	//	color: #FFFFFF;
+	//	transition: all 0.4s ease;
+	//	text-decoration: underline;
+	//}
 }
 
 .contacts__time {
@@ -1449,15 +1517,42 @@ input[type="radio"]:checked ~ .quiz__image {
 	font-size: 16px;
 	line-height: 150%;
 
+
 	& img {
 		margin-right: 7px;
 	}
+	& span {
+		position: relative;
+	}
+
+	& span::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		left: 0;
+		bottom: -3px;
+		height: 2px;
+		background-color: #f2f2f2;
+		//background: $blue-gradient;
+	}
 
 	&:hover, &:focus {
-		color: #FFFFFF;
-		transition: all 0.4s ease;
-		text-decoration: underline;
+		text-decoration: none;
+		& span::after {
+			height: 2px;
+			width: 100%;
+			left: 0;
+			transition: all 0.4s ease;
+
+		}
+
 	}
+
+	//&:hover, &:focus {
+	//	color: #FFFFFF;
+	//	transition: all 0.4s ease;
+	//	text-decoration: underline;
+	//}
 }
 
 .contacts__link_email {
@@ -1467,10 +1562,31 @@ input[type="radio"]:checked ~ .quiz__image {
 	line-height: 150%;
 	text-decoration: none;
 
+	& span {
+		position: relative;
+	}
+
+	& span::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		left: 0;
+		bottom: -3px;
+		height: 2px;
+		background-color: #f2f2f2;
+		//background: $blue-gradient;
+	}
+
 	&:hover, &:focus {
-		color: #FFFFFF;
-		text-decoration: underline;
-		transition: all 0.4s ease;
+		text-decoration: none;
+		& span::after {
+			height: 2px;
+			width: 100%;
+			left: 0;
+			transition: all 0.4s ease;
+
+		}
+
 	}
 }
 
