@@ -683,7 +683,7 @@ button:hover {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-  margin-right: 4px;
+  margin-right: 5px;
 }
 .modal__price {
   font-weight: 500;
@@ -697,7 +697,7 @@ button:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  margin-left: 4px;
+  margin-left: 5px;
 }
 .modal__order {
   margin-left: 20px;

@@ -84,14 +84,61 @@ modalConditioner3Button.addEventListener('click', function() {
 
 const modalConditioner4Button = document.getElementById('modalConditioner4Button');
 const modalConditioner4 = document.getElementById('modalConditioner4');
-
-
 modalConditioner4Button.addEventListener('click', function() {
     modalConditioner4.style.display = 'flex';
-
     const modalConditioner4CloseButton = document.getElementById('modalConditioner4CloseButton');
     modalConditioner4CloseButton.addEventListener('click', function() {
         modalConditioner4.style.display = 'none';
+    });
+});
+
+const modalHot1Button = document.getElementById('modalHot1Button');
+const modalHot1 = document.getElementById('modalHot1');
+modalHot1Button.addEventListener('click', function() {
+    modalHot1.style.display = 'flex';
+    const modalHot1CloseButton = document.getElementById('modalHot1CloseButton');
+    modalHot1CloseButton.addEventListener('click', function() {
+        modalHot1.style.display = 'none';
+    });
+});
+
+const modalHot2Button = document.getElementById('modalHot2Button');
+const modalHot2 = document.getElementById('modalHot2');
+modalHot2Button.addEventListener('click', function() {
+    modalHot2.style.display = 'flex';
+    const modalHot2CloseButton = document.getElementById('modalHot2CloseButton');
+    modalHot2CloseButton.addEventListener('click', function() {
+        modalHot2.style.display = 'none';
+    });
+});
+
+const modalHot3Button = document.getElementById('modalHot3Button');
+const modalHot3 = document.getElementById('modalHot3');
+modalHot3Button.addEventListener('click', function() {
+    modalHot3.style.display = 'flex';
+    const modalHot3CloseButton = document.getElementById('modalHot3CloseButton');
+    modalHot3CloseButton.addEventListener('click', function() {
+        modalHot3.style.display = 'none';
+    });
+});
+
+const modalHot4Button = document.getElementById('modalHot4Button');
+const modalHot4 = document.getElementById('modalHot4');
+modalHot4Button.addEventListener('click', function() {
+    modalHot4.style.display = 'flex';
+    const modalHot4CloseButton = document.getElementById('modalHot4CloseButton');
+    modalHot4CloseButton.addEventListener('click', function() {
+        modalHot4.style.display = 'none';
+    });
+});
+
+const modalHot5Button = document.getElementById('modalHot5Button');
+const modalHot5 = document.getElementById('modalHot5');
+modalHot5Button.addEventListener('click', function() {
+    modalHot5.style.display = 'flex';
+    const modalHot5CloseButton = document.getElementById('modalHot5CloseButton');
+    modalHot5CloseButton.addEventListener('click', function() {
+        modalHot5.style.display = 'none';
     });
 });
 
