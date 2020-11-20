@@ -445,6 +445,116 @@ button:hover {
 	}
 }
 
+
+
+// 'modals'
+
+.modal__card {
+	width: 560px;
+	height: auto;
+	padding: 40px 50px;
+	border: 1px solid $gray-color;
+	position: relative;
+
+}
+
+.modal__heading {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 150%;
+	color: #DD5050;
+	margin-bottom: 30px;
+}
+
+.modal__close {
+	border: none;
+	outline: none;
+	position: absolute;
+	top: 40px;
+	right: 50px;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	& span {
+		position: absolute;
+		left: 9px;
+		top: 45%;
+		display: flex;
+		width: 12px;
+		height: 2px;
+		border-radius: 2px;
+		background-color: $darkergray-color;
+
+		&:first-child {
+			transform: rotate(45deg);
+		}
+		&:last-child {
+			transform: rotate(-45deg);
+		}
+	}
+
+	&:hover, &:focus {
+		animation-name: close;
+		animation-duration: 0.4s;
+		animation-timing-function: ease-out;
+		//animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+
+		& span {
+			background-color: $black-color;
+		}
+	}
+}
+
+.modal__content {
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+
+.modal__subheading {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.modal__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.modal__name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	margin-right: 4px;
+}
+
+.modal__price {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	{$text-gradient};
+
+}
+
+.modal__subname {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	margin-left: 4px;
+}
+
+.modal__order {
+	margin-left: 20px;
+}
+
+
 .section__heading {
 	position: relative;
 	font-weight: 800;

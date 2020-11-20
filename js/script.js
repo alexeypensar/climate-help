@@ -1,3 +1,10 @@
+// 'modal' windows with goods prices:
+
+
+
+
+
+
 // embla slider configuration:
 
 const emblaNode = document.getElementById("embla");
