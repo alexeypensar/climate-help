@@ -598,7 +598,8 @@ button:hover {
   transition: all 0.3s ease-in-out;
 }
 .modal__card {
-  width: 560px;
+  min-width: 600px;
+  width: auto;
   height: auto;
   background-color: #fff;
   padding: 40px 50px;

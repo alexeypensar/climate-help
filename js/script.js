@@ -21,6 +21,33 @@ modalCold2Button.addEventListener('click', function() {
 });
 
 
+const modalConditioner1Button = document.getElementById('modalConditioner1Button');
+const modalConditioner1 = document.getElementById('modalConditioner1');
+
+
+modalConditioner1Button.addEventListener('click', function() {
+    modalConditioner1.style.display = 'flex';
+
+    const modalConditioner1CloseButton = document.getElementById('modalConditioner1CloseButton');
+    modalConditioner1CloseButton.addEventListener('click', function() {
+        modalConditioner1.style.display = 'none';
+    });
+});
+
+const modalConditioner2Button = document.getElementById('modalConditioner2Button');
+const modalConditioner2 = document.getElementById('modalConditioner2');
+
+
+modalConditioner2Button.addEventListener('click', function() {
+    modalConditioner2.style.display = 'flex';
+
+    const modalConditioner2CloseButton = document.getElementById('modalConditioner2CloseButton');
+    modalConditioner2CloseButton.addEventListener('click', function() {
+        modalConditioner2.style.display = 'none';
+    });
+});
+
+
 
 
 
