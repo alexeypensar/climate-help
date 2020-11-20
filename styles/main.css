@@ -600,9 +600,18 @@ button:hover {
 .modal__card {
   width: 560px;
   height: auto;
+  background-color: #fff;
   padding: 40px 50px;
   border: 1px solid #f2f2f2;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 4;
+  box-shadow: 0 0 25px -10px #333;
+  display: none;
 }
 .modal__heading {
   font-weight: 500;

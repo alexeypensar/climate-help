@@ -1,5 +1,25 @@
 // 'modal' windows with goods prices:
 
+// const modals = new Array.from(document.getElementsByClassName('modal__card'));
+//
+// modals.forEach(function(el) {
+//
+// });
+
+
+const modalCold2Button = document.getElementById('modalCold2Button');
+const modalCold2 = document.getElementById('modalCold2');
+
+
+modalCold2Button.addEventListener('click', function() {
+    modalCold2.style.display = 'flex';
+
+    const modalCold2CloseButton = document.getElementById('modalCold2CloseButton');
+    modalCold2CloseButton.addEventListener('click', function() {
+        modalCold2.style.display = 'none';
+    });
+});
+
 
 
 
