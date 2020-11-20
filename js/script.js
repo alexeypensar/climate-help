@@ -49,6 +49,34 @@ modalConditioner2Button.addEventListener('click', function() {
 
 
 
+const modalConditioner3Button = document.getElementById('modalConditioner3Button');
+const modalConditioner3 = document.getElementById('modalConditioner3');
+
+
+modalConditioner3Button.addEventListener('click', function() {
+    modalConditioner3.style.display = 'flex';
+
+    const modalConditioner3CloseButton = document.getElementById('modalConditioner3CloseButton');
+    modalConditioner3CloseButton.addEventListener('click', function() {
+        modalConditioner3.style.display = 'none';
+    });
+});
+
+const modalConditioner4Button = document.getElementById('modalConditioner4Button');
+const modalConditioner4 = document.getElementById('modalConditioner4');
+
+
+modalConditioner4Button.addEventListener('click', function() {
+    modalConditioner4.style.display = 'flex';
+
+    const modalConditioner4CloseButton = document.getElementById('modalConditioner4CloseButton');
+    modalConditioner4CloseButton.addEventListener('click', function() {
+        modalConditioner4.style.display = 'none';
+    });
+});
+
+
+
 
 
 
