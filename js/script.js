@@ -7,16 +7,36 @@
 // });
 
 
+
+
+
+const modalCold1Button = document.getElementById('modalCold1Button');
+const modalCold1 = document.getElementById('modalCold1');
+modalCold1Button.addEventListener('click', function() {
+    modalCold1.style.display = 'flex';
+    const modalCold1CloseButton = document.getElementById('modalCold1CloseButton');
+    modalCold1CloseButton.addEventListener('click', function() {
+        modalCold1.style.display = 'none';
+    });
+});
+
 const modalCold2Button = document.getElementById('modalCold2Button');
 const modalCold2 = document.getElementById('modalCold2');
-
-
 modalCold2Button.addEventListener('click', function() {
     modalCold2.style.display = 'flex';
-
     const modalCold2CloseButton = document.getElementById('modalCold2CloseButton');
     modalCold2CloseButton.addEventListener('click', function() {
         modalCold2.style.display = 'none';
+    });
+});
+
+const modalCold3Button = document.getElementById('modalCold3Button');
+const modalCold3 = document.getElementById('modalCold3');
+modalCold3Button.addEventListener('click', function() {
+    modalCold3.style.display = 'flex';
+    const modalCold3CloseButton = document.getElementById('modalCold3CloseButton');
+    modalCold3CloseButton.addEventListener('click', function() {
+        modalCold3.style.display = 'none';
     });
 });
 

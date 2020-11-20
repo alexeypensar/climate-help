@@ -670,6 +670,8 @@ button:hover {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  white-space: nowrap;
+  margin-bottom: 5px;
 }
 .modal__info {
   display: flex;
