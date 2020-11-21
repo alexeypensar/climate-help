@@ -128,32 +128,50 @@ button:hover {
 	}
 	&_blue {
 		font-size: 1rem;
-		{$text-gradient};
-		padding-bottom: 5px;
+		color: $blue-color;
+		//{$text-gradient};
+		//padding-bottom: 5px;
 		font-weight: 600;
 		position: relative;
+		//&::after {
+		//	position: absolute;
+		//	bottom: -2px;
+		//	left: 0;
+		//	width: 100%;
+		//	height: 1px;
+		//	background: $blue-gradient;
+		//	content: '';
+		//}
+		//
+		//&:hover, &:focus {
+		//	//font-weight: 800;
+		//	//background: #FFFFFF;
+		//	//-webkit-background-clip: text;
+		//	//-webkit-text-fill-color: transparent;
+		//	&::after {
+		//		//background: #FFFFFF;
+		//		height: 2px;
+		//		left: -5%;
+		//		width: 110%;
+		//		transition: all 0.2s ease;
+		//
+		//	}
+		//}
+
 		&::after {
-			position: absolute;
-			bottom: -2px;
-			left: 0;
-			width: 100%;
-			height: 1px;
-			background: $blue-gradient;
 			content: '';
+			width: 0;
+			height: 2px;
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			background-color: $blue-color;
 		}
 
 		&:hover, &:focus {
-			//font-weight: 800;
-			//background: #FFFFFF;
-			//-webkit-background-clip: text;
-			//-webkit-text-fill-color: transparent;
 			&::after {
-				//background: #FFFFFF;
-				height: 2px;
-				left: -5%;
-				width: 110%;
-				transition: all 0.2s ease;
-
+				width: 100%;
+				transition: all 0.4s ease;
 			}
 		}
 	}
@@ -672,25 +690,42 @@ button:hover {
 	{$text-gradient};
 	position: relative;
 	//overflow-x: hidden;
+	//&::after {
+	//	content: '';
+	//	position: absolute;
+	//	width: 110%;
+	//	bottom: -3px;
+	//	left: -5px;
+	//	height: 1px;
+	//	background: $blue-gradient;
+	//}
+	//
+	//&:hover, &:focus {
+	//	&::after {
+	//		height: 2px;
+	//		width: 100%;
+	//		left: 0;
+	//		transition: all 0.4s ease;
+	//
+	//	}
+	//
+	//}
+
 	&::after {
 		content: '';
+		width: 0;
+		height: 2px;
 		position: absolute;
-		width: 110%;
-		bottom: -3px;
-		left: -5px;
-		height: 1px;
-		background: $blue-gradient;
+		bottom: -5px;
+		left: 0;
+		background-color: $blue-color;
 	}
 
 	&:hover, &:focus {
 		&::after {
-			height: 2px;
 			width: 100%;
-			left: 0;
 			transition: all 0.4s ease;
-
 		}
-
 	}
 }
 
@@ -884,32 +919,49 @@ button:hover {
 	margin-top: 10px;
 	{$text-gradient};
 	position: relative;
-	&::after {
-		content: ''
-		position: absolute;
-		bottom: -3px;
-		width: 100%;
-		height: 1px;
-		background: $blue-gradient;
-		left: 0;
-	}
-	//border-bottom: 1px solid $blue-color;
+	//&::after {
+	//	content: ''
+	//	position: absolute;
+	//	bottom: -3px;
+	//	width: 100%;
+	//	height: 1px;
+	//	background: $blue-gradient;
+	//	left: 0;
+	//}
+	////border-bottom: 1px solid $blue-color;
+	//
+	//
+	//&:hover, &:focus {
+	//	//font-weight: 800;
+	//	//border-bottom: 1px solid transparent;
+	//	//&::after {
+	//	//	height: 3px;
+	//	//}
+	//	&::after {
+	//		width: 110%;
+	//		left: -5%;
+	//		height: 3px;
+	//		//width: 100%;
+	//		//left: 0;
+	//		transition: all 0.4s ease;
+	//
+	//	}
+	//}
 
+	&::after {
+		content: '';
+		width: 0;
+		height: 2px;
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		background-color: $blue-color;
+	}
 
 	&:hover, &:focus {
-		//font-weight: 800;
-		//border-bottom: 1px solid transparent;
-		//&::after {
-		//	height: 3px;
-		//}
 		&::after {
-			width: 110%;
-			left: -5%;
-			height: 3px;
-			//width: 100%;
-			//left: 0;
+			width: 100%;
 			transition: all 0.4s ease;
-
 		}
 	}
 }
