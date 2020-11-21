@@ -1725,3 +1725,60 @@ input[type="radio"]:checked ~ .quiz__image img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.hystmodal__window {
+  width: 558px !important;
+  height: auto;
+}
+.hystmodal__close {
+  z-index: 10;
+  right: 20px;
+  top: 20px;
+}
+.hystmodal__close span {
+  background-color: #06beb6;
+}
+.hystmodal__close:hover span,
+.hystmodal__close:focus span {
+  background-color: #06beb6;
+}
+.modal__callback {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 120px;
+}
+.modal__callback .modal__heading {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 140%;
+  background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.modal__callback .quiz__options {
+  flex-direction: column;
+  width: 100%;
+}
+.modal__callback .quiz__label,
+.modal__callback .quiz__input_text {
+  width: 100% !important;
+}
+.modal__callback .quiz__input_text {
+  margin-bottom: 10px;
+}
+.modal__callback .quiz__buttons {
+  flex-direction: column;
+}
+.modal__callback .main-button {
+  margin-right: 0;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.modal__callback .quiz__checkbox {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}

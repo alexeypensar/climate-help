@@ -174,10 +174,12 @@
 <div class="hystmodal" id="modalCallback" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose class="hystmodal__close">Close</button>
+<!--            <button data-hystclose class="hystmodal__close">Close</button>-->
+
+            <button data-hystclose class="modal__close hystmodal__close" id="modalCallbackClose"><span></span><span></span></button>
 
 
-            <form action="callback.php" method="post" class="quiz__page quiz__conditioner_3" id="modalCallbackForm">
+            <form action="callback.php" method="post" class="modal__callback quiz__page quiz__conditioner_3" id="modalCallbackForm">
                 <h2 class="modal__heading">Оставьте свой телефон,<br> и мы Вам перезвоним!</h2>
 
 
@@ -2180,6 +2182,7 @@
 <script>
     const callbackModal = new HystModal({
         linkAttributeName: "data-hystmodal",
+        catchFocus: false
 
     });
 

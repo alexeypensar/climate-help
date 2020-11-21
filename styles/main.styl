@@ -1883,3 +1883,75 @@ input[type="radio"]:checked ~ .quiz__image {
 	}
 }
 
+.hystmodal__window {
+	width: 558px !important;
+	height: auto;
+}
+
+.hystmodal__close {
+	//right: 40px !important;
+	//top: 40px !important;
+	//background-color: $darkergray-color;
+	z-index: 10;
+	right: 20px;
+	top: 20px;
+	& span {
+		background-color: $blue-color;
+		//width: 14px;
+
+	}
+
+	&:hover, &:focus {
+		& span {
+			background-color: $blue-color;
+		}
+	}
+}
+
+.modal__callback {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 60px 120px;
+
+	& .modal__heading {
+		//margin-bottom: 0;
+		font-weight: 800;
+		font-size: 24px;
+		line-height: 140%;
+		{$text-gradient};
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	& .quiz__options {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	& .quiz__label, & .quiz__input_text {
+		width: 100% !important;
+	}
+
+	& .quiz__input_text {
+		margin-bottom: 10px;
+	}
+
+	& .quiz__buttons {
+		flex-direction: column;
+	}
+
+	& .main-button {
+		margin-right: 0;
+		margin-bottom: 15px;
+		width: 100%;
+
+	}
+
+	& .quiz__checkbox {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 150%;
+	}
+}
