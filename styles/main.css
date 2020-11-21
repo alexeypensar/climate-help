@@ -1535,17 +1535,14 @@ input[type="radio"]:checked ~ .quiz__image img {
 .contacts__column:last-child {
   align-items: flex-end;
   text-align: right;
-  padding-top: 20px;
 }
 .contacts__link_phone {
   font-weight: 800;
   font-size: 32px;
-  line-height: 150%;
+  line-height: 100%;
   text-decoration: none;
   position: relative;
-}
-.contacts__link_phone:last-of-type {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .contacts__link_phone::after {
   content: '';
@@ -1577,7 +1574,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-decoration: none;
   font-weight: 800;
   font-size: 16px;
@@ -1610,7 +1607,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   transition: all 0.4s ease;
 }
 .contacts__link_email {
-  margin-bottom: 40px;
+  margin-top: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
