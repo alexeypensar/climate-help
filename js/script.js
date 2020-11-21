@@ -145,6 +145,26 @@ modalHot5Button.addEventListener('click', function() {
 
 
 
+// quiz
+
+const quizStart = document.getElementById('#quizStart');
+
+const quizConditioner1 = document.getElementById('#quizConditioner1');
+const quizConditioner2 = document.getElementById('#quizConditioner2');
+
+const quizCold1 = document.getElementById('#quizCold1');
+const quizCold2 = document.getElementById('#quizCold2');
+
+const quizHot = document.getElementById('#quizHot');
+
+const quizFinish = document.getElementById('#quizFinish');
+
+
+
+// quiz logic
+
+
+
 
 
 // embla slider configuration:
