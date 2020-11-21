@@ -583,7 +583,7 @@ button:hover {
   font-weight: 500;
   border: none;
   outline: none;
-  box-shadow: 0 15px 35px 4px rgba(6,190,182,0.4);
+  box-shadow: 0 15px 35px -10px rgba(6,190,182,0.4);
   white-space: nowrap;
   text-decoration: none;
 }
@@ -592,6 +592,7 @@ button:hover {
   color: #fff;
   transform: translateY(-3px);
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 15px 35px 0 rgba(6,190,182,0.4);
 }
 .modal__card {
   min-width: 600px;
@@ -607,7 +608,7 @@ button:hover {
   justify-content: flex-start;
   align-items: flex-start;
   z-index: 4;
-  box-shadow: 0 0 25px -10px #333;
+  box-shadow: 0 0 25px -10px rgba(130,130,130,0.6);
   display: none;
 }
 .modal__heading {

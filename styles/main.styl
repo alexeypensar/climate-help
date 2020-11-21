@@ -405,9 +405,6 @@ button:hover {
 
 
 
-//todo подумать, как реализовать border-gradient, если нужно закругление
-
-
 
 .header__text {
 	margin-top: 55px;
@@ -451,7 +448,7 @@ button:hover {
 	font-weight: 500;
 	border: none;
 	outline: none;
-	box-shadow: 0 15px 35px 4px $blue-color-rgba;
+	box-shadow: 0 15px 35px -10px $blue-color-rgba;
 	white-space: nowrap;
 	text-decoration: none;
 
@@ -460,6 +457,7 @@ button:hover {
 		//font-weight: 600;
 		transform: translateY(-3px);
 		transition: all 0.3s ease-in-out;
+		box-shadow: 0 15px 35px 0 $blue-color-rgba;
 
 	}
 }
@@ -484,7 +482,7 @@ button:hover {
 	justify-content: flex-start;
 	align-items: flex-start;
 	z-index: 4;
-	box-shadow: 0 0 25px -10px $black-color;
+	box-shadow: 0 0 25px -10px $boxshadow-color;
 	display: none;
 
 }
