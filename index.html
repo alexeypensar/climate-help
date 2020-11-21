@@ -1578,8 +1578,8 @@
 
                     <div class="quiz__options">
                         <div class="quiz__radio">
-                            <input type="radio" id="quiz01" name="quiz01" checked>
-                            <label for="quiz01">Кондиционер</label>
+                            <input type="radio" id="quizStartConditioner" name="quizStartRadioButtons" checked>
+                            <label for="quizStartConditioner">Кондиционер</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/conditioner.png" alt="Кондиционер">
                             </div>
@@ -1587,8 +1587,8 @@
                         </div>
 
                         <div class="quiz__radio">
-                            <input type="radio" id="quiz02" name="quiz01">
-                            <label for="quiz02">Холодильная установка для камеры</label>
+                            <input type="radio" id="quizStartCold" name="quizStartRadioButtons">
+                            <label for="quizStartCold">Холодильная установка для камеры</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/mono.png" alt="Холодильная установка">
                             </div>
@@ -1596,8 +1596,8 @@
                         </div>
 
                         <div class="quiz__radio">
-                            <input type="radio" id="quiz03" name="quiz01">
-                            <label for="quiz03">Отопительное оборудование</label>
+                            <input type="radio" id="quizStartHot" name="quizStartRadioButtons">
+                            <label for="quizStartHot">Отопительное оборудование</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/convector.png" alt="Отопительное оборудование">
                             </div>
@@ -1607,7 +1607,7 @@
 
 
                     <div class="quiz__buttons">
-                        <button class="quiz__button_next"><span>Следующий вопрос</span>
+                        <button type="button" class="quiz__button_next" id="quizStartNextButton"><span>Следующий вопрос</span>
                             <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
@@ -1636,8 +1636,8 @@
 
                     <div class="quiz__options">
                         <div class="quiz__radio">
-                            <input type="radio" id="quizConditioner-1-1" name="quizConditioner-1" checked>
-                            <label for="quizConditioner-1-1">Для дома</label>
+                            <input type="radio" id="quizConditioner1Home" name="quizConditionerRadioButtons" checked>
+                            <label for="quizConditioner1Home">Для дома</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/conditioner-home.jpg" alt="Кондиционер для дома">
                             </div>
@@ -1645,8 +1645,8 @@
                         </div>
 
                         <div class="quiz__radio">
-                            <input type="radio" id="quizConditioner-1-2" name="quizConditioner-1">
-                            <label for="quizConditioner-1-2">Для бизнеса</label>
+                            <input type="radio" id="quizConditioner1Business" name="quizConditionerRadioButtons">
+                            <label for="quizConditioner1Business">Для бизнеса</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/conditioner-business.jpg" alt="Кондиционер для бизнеса">
                             </div>
@@ -1658,14 +1658,14 @@
 
                     <div class="quiz__buttons">
 
-                        <button class="quiz__button_prev">
+                        <button type="button" class="quiz__button_prev" id="quizConditioner1PrevButton">
                             <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM18 4.5H1V3.5H18V4.5Z" fill="#828282"/>
                             </svg>
 
                         </button>
 
-                        <button class="quiz__button_next"><span>Следующий вопрос</span>
+                        <button type="button" class="quiz__button_next" id="quizConditioner1NextButton"><span>Следующий вопрос</span>
                             <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
@@ -1695,14 +1695,14 @@
                     <div class="quiz__options quiz__options_top">
 
 
-                        <label class="quiz__label" for="quizConditioner-2-1">
-                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizConditioner-2-1">
+                        <label class="quiz__label" for="quizConditioner2Area">
+                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizConditioner2Area">
                             <span class="quiz__placeholder">Площадь, м<sup>2</sup></span>
                         </label>
                         
 
-                        <label class="quiz__label" for="quizConditioner-2-2">
-                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizConditioner-2-2">
+                        <label class="quiz__label" for="quizConditioner2Height">
+                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizConditioner2Height">
                             <span class="quiz__placeholder">Высота потолков, м</span>
                         </label>
 
@@ -1711,14 +1711,14 @@
 
                     <div class="quiz__buttons">
 
-                        <button class="quiz__button_prev">
+                        <button type="button" class="quiz__button_prev" id="quizConditioner2PrevButton">
                             <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM18 4.5H1V3.5H18V4.5Z" fill="#828282"/>
                             </svg>
 
                         </button>
 
-                        <button class="quiz__button_next"><span>Следующий вопрос</span>
+                        <button type="button" class="quiz__button_next" id="quizConditioner2NextButton"><span>Следующий вопрос</span>
                             <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
@@ -1748,8 +1748,8 @@
 
 
                     <div class="quiz__options quiz__options_top">
-                        <label class="quiz__label" for="quizCold-1-1">
-                            <input class="quiz__input_text" type="text" id="quizCold-1-1">
+                        <label class="quiz__label" for="quizCold1WhatFreeze">
+                            <input class="quiz__input_text" type="text" id="quizCold1WhatFreeze">
                             <span class="quiz__placeholder">Например, мясо, напитки, фрукты</span>
                         </label>
                     </div>
@@ -1758,14 +1758,14 @@
 
                     <div class="quiz__buttons">
 
-                        <button class="quiz__button_prev">
+                        <button type="button" class="quiz__button_prev" id="quizCold1PrevButton">
                             <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM18 4.5H1V3.5H18V4.5Z" fill="#828282"/>
                             </svg>
 
                         </button>
 
-                        <button class="quiz__button_next"><span>Следующий вопрос</span>
+                        <button type="button" class="quiz__button_next" id="quizCold1NextButton"><span>Следующий вопрос</span>
                             <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
@@ -1796,14 +1796,14 @@
                     <div class="quiz__options quiz__options_top">
 
 
-                        <label class="quiz__label" for="quizCold-2-1">
-                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizCold-2-1">
+                        <label class="quiz__label" for="quizCold2Area">
+                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizCold2Area">
                             <span class="quiz__placeholder">Площадь, м<sup>2</sup></span>
                         </label>
 
 
-                        <label class="quiz__label" for="quizCold-2-2">
-                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizCold-2-2">
+                        <label class="quiz__label" for="quizCold2Height">
+                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizCold2Height">
                             <span class="quiz__placeholder">Высота потолков, м</span>
                         </label>
 
@@ -1812,14 +1812,14 @@
 
                     <div class="quiz__buttons">
 
-                        <button class="quiz__button_prev">
+                        <button type="button" class="quiz__button_prev" id="quizCold2PrevButton">
                             <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM18 4.5H1V3.5H18V4.5Z" fill="#828282"/>
                             </svg>
 
                         </button>
 
-                        <button class="quiz__button_next"><span>Следующий вопрос</span>
+                        <button type="button" class="quiz__button_next" id="quizCold2NextButton"><span>Следующий вопрос</span>
                             <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
@@ -1849,8 +1849,8 @@
 
                     <div class="quiz__options">
                         <div class="quiz__radio">
-                            <input type="radio" id="quizHot-1-1" name="quizHot" checked>
-                            <label for="quizHot-1-1">Конвектор</label>
+                            <input type="radio" id="quizHotConvector" name="quizHot" checked>
+                            <label for="quizHotConvector">Конвектор</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/hot-convector.png" alt="Конвектор">
                             </div>
@@ -1858,8 +1858,8 @@
                         </div>
 
                         <div class="quiz__radio">
-                            <input type="radio" id="quizCold-1-2" name="quizHot">
-                            <label for="quizCold-1-2">Тепловая пушка</label>
+                            <input type="radio" id="quizColdGun" name="quizHot">
+                            <label for="quizColdGun">Тепловая пушка</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/hot-gun.png" alt="Тепловая пушка">
                             </div>
@@ -1867,8 +1867,8 @@
                         </div>
 
                         <div class="quiz__radio">
-                            <input type="radio" id="quizCold-1-3" name="quizHot">
-                            <label for="quizCold-1-3">Тепловая завеса</label>
+                            <input type="radio" id="quizColdWall" name="quizHot">
+                            <label for="quizColdWall">Тепловая завеса</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/hot-wall.png" alt="Тепловая завеса">
                             </div>
@@ -1876,8 +1876,8 @@
                         </div>
 
                         <div class="quiz__radio">
-                            <input type="radio" id="quizCold-1-4" name="quizHot">
-                            <label for="quizCold-1-4">Инфракрасный обогреватель</label>
+                            <input type="radio" id="quizColdInfra" name="quizHot">
+                            <label for="quizColdInfra">Инфракрасный обогреватель</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/hot-infra.png" alt="Инфракрасный обогреватель">
                             </div>
@@ -1888,13 +1888,13 @@
 
 
                     <div class="quiz__buttons">
-                        <button class="quiz__button_prev">
+                        <button type="button" class="quiz__button_prev" id="quizHotPrevButton">
                             <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM18 4.5H1V3.5H18V4.5Z" fill="#828282"/>
                             </svg>
 
                         </button>
-                        <button class="quiz__button_next"><span>Следующий вопрос</span>
+                        <button type="button" class="quiz__button_next" id="quizHotNextButton"><span>Следующий вопрос</span>
                             <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
@@ -1925,22 +1925,22 @@
                     <div class="quiz__options quiz__options_top">
 
 
-                        <label class="quiz__label" for="quizConditioner-3-1">
-                            <input class="quiz__input_text" type="text" id="quizConditioner-3-1">
+                        <label class="quiz__label" for="quizFinishName">
+                            <input class="quiz__input_text" type="text" id="quizFinishName" required>
                             <span class="quiz__placeholder">Ваше имя</span>
                         </label>
 
 
-                        <label class="quiz__label" for="quizConditioner-3-2">
-                            <input class="quiz__input_text" type="tel" id="quizConditioner-3-2">
+                        <label class="quiz__label" for="quizFinishPhone">
+                            <input class="quiz__input_text" type="tel" id="quizFinishPhone" required>
                             <span class="quiz__placeholder">Ваш телефон</span>
                         </label>
 
                     </div>
 
                     <div class="quiz__options quiz__options_bottom">
-                        <label class="quiz__label" for="quizConditioner-3-3">
-                            <input class="quiz__input_text" type="text" id="quizConditioner-3-3">
+                        <label class="quiz__label" for="quizFinishComment">
+                            <input class="quiz__input_text" type="text" id="quizFinishComment">
                             <span class="quiz__placeholder">Ваш комментарий (необязательно)</span>
                         </label>
                     </div>
@@ -1954,7 +1954,7 @@
 
                         </button>
 
-                        <input type="checkbox" id="quizPolicyCheckbox" checked>
+                        <input type="checkbox" id="quizPolicyCheckbox" checked required>
                         <label for="quizPolicyCheckbox" class="quiz__checkbox">Согласен с <a href="policy.html">обработкой персональных данных</a></label>
 
                     </div>
