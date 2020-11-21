@@ -870,6 +870,23 @@ button:hover {
   -webkit-text-fill-color: transparent;
   margin-right: 50px;
 }
+a.goods__price {
+  position: relative;
+}
+a.goods__price::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: #06beb6;
+}
+a.goods__price:hover::after,
+a.goods__price:focus::after {
+  width: 100%;
+  transition: all 0.4s ease;
+}
 .goods__cold {
   padding-bottom: 0;
   margin-bottom: 70px;

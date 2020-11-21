@@ -809,6 +809,26 @@ button:hover {
 	margin-right: 50px;
 }
 
+a.goods__price {
+	position: relative;
+	&::after {
+		content: '';
+		width: 0;
+		height: 2px;
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		background-color: $blue-color;
+	}
+
+	&:hover, &:focus {
+		&::after {
+			width: 100%;
+			transition: all 0.4s ease;
+		}
+	}
+}
+
 .goods__cold {
 	padding-bottom: 0;
 	margin-bottom: 70px;
