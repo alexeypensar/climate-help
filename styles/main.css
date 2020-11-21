@@ -585,6 +585,7 @@ button:hover {
   outline: none;
   box-shadow: 0 15px 35px 4px rgba(6,190,182,0.4);
   white-space: nowrap;
+  text-decoration: none;
 }
 .main-button:hover,
 .main-button:focus {

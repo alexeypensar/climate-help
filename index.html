@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Климат Хэлп - Ваша скорая климатическая помощь</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/hystmodal.min.css">
+
 
     <!--favicons-->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -31,6 +33,7 @@
 
 </head>
 <body>
+
 
 <header class="header">
     <nav class="header__nav">
@@ -71,7 +74,7 @@
                 <a href="tel:+79538880891" class="header__link header__link_phone">8-953-888-08-91</a>
             </li>
             <li class="header__li">
-                <a href="#" class="header__link header__link_blue">Заказать звонок</a>
+                <a href="#" class="header__link header__link_blue" data-hystmodal="#modalCallback">Заказать звонок</a>
             </li>
         </ul>
     </nav>
@@ -135,7 +138,7 @@
                     и отопительного</strong> оборудования.
                 </h3>
 
-                <button class="main-button">Получить бесплатную консультацию</button>
+                <a href="#questions" class="main-button">Получить бесплатную консультацию</a>
             </article>
 
             <article class="header__card header__card_third">
@@ -165,6 +168,62 @@
     </section>
 
 </header>
+
+
+
+<div class="hystmodal" id="modalCallback" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <button data-hystclose class="hystmodal__close">Close</button>
+
+
+            <form action="callback.php" method="post" class="quiz__page quiz__conditioner_3" id="modalCallbackForm">
+                <h2 class="modal__heading">Оставьте свой телефон,<br> и мы Вам перезвоним!</h2>
+
+
+                <div class="quiz__options quiz__options_top">
+
+
+                    <label class="quiz__label" for="modalCallbackName">
+                        <input class="quiz__input_text" type="text" id="modalCallbackName" required>
+                        <span class="quiz__placeholder">Ваше имя</span>
+                    </label>
+
+
+                    <label class="quiz__label" for="modalCallbackPhone">
+                        <input class="quiz__input_text" type="tel" id="modalCallbackPhone" required>
+                        <span class="quiz__placeholder">Ваш телефон</span>
+                    </label>
+
+                </div>
+
+                <div class="quiz__options quiz__options_bottom">
+                    <label class="quiz__label" for="modalCallbackComment">
+                        <input class="quiz__input_text" type="text" id="modalCallbackComment">
+                        <span class="quiz__placeholder">Ваш комментарий (необязательно)</span>
+                    </label>
+                </div>
+
+
+                <div class="quiz__buttons">
+
+
+
+                    <button class="main-button" type="submit"><span>Отправить</span>
+
+                    </button>
+
+                    <input type="checkbox" id="modalCallbackCheckbox" checked required>
+                    <label for="modalCallbackCheckbox" class="quiz__checkbox">Согласен с <a href="policy.html">обработкой персональных данных</a></label>
+
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+</div>
 
 
 
@@ -2017,7 +2076,7 @@
 
         </section>
     </section>
-    <section class="questions__wrapper">
+    <section class="questions__wrapper" id="questions">
         <section class="questions container">
             <h2 class="section__heading">Есть вопросы?<br>Свяжитесь с нами!</h2>
             <form action="questions.php" class="questions__form">
@@ -2116,8 +2175,13 @@
 
 <script src="https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js"></script>
 <script src="js/script.js"></script>
-<script>
 
+<script src="js/hystmodal.min.js"></script>
+<script>
+    const callbackModal = new HystModal({
+        linkAttributeName: "data-hystmodal",
+
+    });
 
 </script>
 </body>

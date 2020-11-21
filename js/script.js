@@ -279,11 +279,6 @@ quizHotPrevButton.addEventListener('click', function() {
 
 
 
-
-
-
-
-
 // embla slider configuration:
 
 const emblaNode = document.getElementById("embla");
