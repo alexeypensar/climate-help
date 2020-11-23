@@ -47,9 +47,82 @@ button:hover {
 .header__ul {
 	display: flex;
 	flex-direction: row;
+	//justify-content: space-between;
+	align-items: center;
+	height: 106px;
+
+
+}
+
+.header__mobile {
+
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	height: 106px;
+	width: 100%;
+
+	&_active {
+		display: flex;
+	}
+}
+
+.header__li_mobile {
+	width: 100%;
+}
+
+.header__hamburger {
+	display: none;
+}
+
+.hamburger {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 22px;
+	right: 15px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	& span {
+		width: 18px;
+		height: 2px;
+		background-color: #FFFFFF;
+		vertical-align: middle;
+		position: relative;
+		border-radius: 5px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: -6px;
+			left: 0;
+			width: 18px;
+			height: 2px;
+			background-color: #FFFFFF;
+			border-radius: 5px;
+			transform: rotate(0);
+			transition: transform 0.3s ease;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 6px;
+			left: 0;
+			width: 18px;
+			height: 2px;
+			background-color: #FFFFFF;
+			border-radius: 5px;
+			transform: rotate(0);
+			transition: transform 0.3s ease;
+		}
+	}
+
 }
 
 //.header__li, .header__link {
@@ -78,6 +151,8 @@ button:hover {
 		font-size: 1.625rem;
 		margin-right: 60px;
 		position: relative;
+		width: 100%;
+		white-space: nowrap;
 
 		&::after {
 			position: absolute;
@@ -94,6 +169,7 @@ button:hover {
 		display: flex;
 		flex-direction: row;
 		padding-right: 15px;
+
 		& svg {
 			position: absolute;
 			top: 8px;

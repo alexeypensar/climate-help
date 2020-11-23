@@ -1,3 +1,19 @@
+
+// mobile menu - hamburger
+
+
+const hamburger = document.getElementById('hamburger');
+
+const mobileMenu = document.getElementById('mobileMenu');
+
+
+hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('hamburger_active');
+    mobileMenu.classList.toggle('header__mobile_active');
+});
+
+
+
 // 'modal' windows with goods prices:
 
 // const modals = new Array.from(document.getElementsByClassName('modal__card'));
@@ -5,9 +21,6 @@
 // modals.forEach(function(el) {
 //
 // });
-
-
-
 
 
 const modalCold1Button = document.getElementById('modalCold1Button');
