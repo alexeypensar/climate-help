@@ -2074,6 +2074,9 @@ input[type="radio"]:checked ~ .quiz__image img {
   .header__mobile {
     width: 100vw;
   }
+  .modal__callback {
+    padding: 30px;
+  }
 }
 @media screen and (max-width: 339.98px) {
   .header .main-button {
