@@ -266,21 +266,6 @@ input[type="radio"]:checked + label:after {
     transform: rotate(180deg);
   }
 }
-@media screen and (max-width: 1199.98px) {
-  .container {
-    max-width: 992px;
-  }
-}
-@media screen and (max-width: 991.98px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .container {
-    max-width: 576px;
-  }
-}
 html {
   scroll-behavior: smooth;
 }
@@ -325,7 +310,7 @@ button:hover {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 1.625rem;
   margin-right: 60px;
   position: relative;
 }
@@ -357,7 +342,7 @@ button:hover {
   position: relative;
 }
 .header__link_phone {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   margin-left: 20px;
   margin-right: 15px;
@@ -428,7 +413,7 @@ button:hover {
 .header__link_submenu {
   text-decoration: none;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 150%;
   color: #333;
   height: 100%;
@@ -466,7 +451,7 @@ button:hover {
   position: relative;
 }
 .header__h1 {
-  font-size: 44px;
+  font-size: 2.75rem;
   line-height: 140%;
   font-weight: 800;
 }
@@ -505,7 +490,7 @@ button:hover {
 }
 .header__card h3 {
   line-height: 1;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   margin-right: 8px;
 }
@@ -559,7 +544,7 @@ button:hover {
   align-items: flex-start;
 }
 .header__text h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 150%;
   font-weight: 400;
   margin-bottom: 25px;
@@ -613,7 +598,7 @@ button:hover {
 }
 .modal__heading {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 150%;
   color: #dd5050;
   margin-bottom: 30px;
@@ -678,13 +663,13 @@ button:hover {
 }
 .modal__name {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   margin-right: 5px;
 }
 .modal__price {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
@@ -692,7 +677,7 @@ button:hover {
 }
 .modal__subname {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   margin-left: 5px;
 }
@@ -702,7 +687,7 @@ button:hover {
 .section__heading {
   position: relative;
   font-weight: 800;
-  font-size: 44px;
+  font-size: 2.75rem;
   line-height: 140%;
   display: inline;
 }
@@ -746,12 +731,12 @@ button:hover {
 }
 .advantages__heading {
   font-weight: 600;
-  font-size: 21px;
+  font-size: 1.3125rem;
   margin-bottom: 22px;
 }
 .advantages__text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   display: inline-block;
   width: 95%;
 }
@@ -772,7 +757,7 @@ button:hover {
 }
 .goods__category-price {
   font-weight: 600;
-  font-size: 32px;
+  font-size: 2rem;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -782,7 +767,7 @@ button:hover {
 }
 .goods__link {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
@@ -860,11 +845,11 @@ button:hover {
 }
 .goods__heading {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .goods__price {
   font-weight: 600;
-  font-size: 21px;
+  font-size: 1.3125rem;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -959,16 +944,16 @@ a.goods__price:focus::after {
 }
 .services__heading {
   font-weight: 600;
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 .services__subheading {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 15px;
 }
 .services__price {
   font-weight: 600;
-  font-size: 21px;
+  font-size: 1.3125rem;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -978,7 +963,7 @@ a.goods__price:focus::after {
   border: none;
   outline: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 0 0 3px 0;
   margin-top: 10px;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
@@ -1002,7 +987,7 @@ a.goods__price:focus::after {
 }
 .services__text {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #f2f2f2;
   position: relative;
   z-index: 1;
@@ -1031,12 +1016,12 @@ a.goods__price:focus::after {
 }
 .master__heading {
   font-weight: 600;
-  font-size: 21px;
+  font-size: 1.3125rem;
   margin-bottom: 20px;
 }
 .master__subheading {
   font-weight: 800;
-  font-size: 52px;
+  font-size: 3.25rem;
   margin-bottom: 10px;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
@@ -1109,7 +1094,7 @@ a.goods__price:focus::after {
   margin-top: 16px;
   margin-bottom: 50px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
 }
 .quiz__page {
@@ -1124,7 +1109,7 @@ a.goods__price:focus::after {
 }
 .quiz__heading {
   font-weight: 600;
-  font-size: 21px;
+  font-size: 1.3125rem;
   line-height: 150%;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
@@ -1196,7 +1181,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   padding-top: 12px;
   text-align: center;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 140%;
   color: #fff;
 }
@@ -1245,7 +1230,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   border-radius: 4px;
   outline: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
 }
 .quiz__button_next span {
@@ -1297,7 +1282,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   top: -5px;
   left: 0;
   transition: all 0.4s ease;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .quiz__label {
   position: relative;
@@ -1307,7 +1292,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   top: 14px;
   left: 14px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1;
   color: #828282;
   transition: all 0.4s ease;
@@ -1319,7 +1304,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 .quiz__placeholder_active {
   top: -5px;
   left: 0;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .quiz__conditioner_3 .quiz__options_top {
   margin-bottom: 0;
@@ -1368,12 +1353,12 @@ input[type="radio"]:checked ~ .quiz__image img {
 .delivery__heading {
   margin-bottom: 20px;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 1.3125rem;
   line-height: 150%;
 }
 .delivery__text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   width: 80%;
 }
@@ -1391,7 +1376,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .sale__period {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 150%;
   color: #d3d3d3;
   text-transform: uppercase;
@@ -1404,7 +1389,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .sale__heading {
   font-weight: 800;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 150%;
   color: #f2f2f2;
 }
@@ -1419,7 +1404,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   outline: none;
   border: 1px solid transparent;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   border-radius: 4px;
   margin-bottom: 15px;
@@ -1433,7 +1418,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .sale__text {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 150%;
   color: #f2f2f2;
   margin-top: 20px;
@@ -1460,7 +1445,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .about-us__text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
 }
 .about-us__text:not(:last-child) {
@@ -1538,7 +1523,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .contacts__link_phone {
   font-weight: 800;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 100%;
   text-decoration: none;
   position: relative;
@@ -1566,7 +1551,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .contacts__time {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
 }
 .contacts__link_insta {
@@ -1577,7 +1562,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   margin-bottom: 20px;
   text-decoration: none;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
 }
 .contacts__link_insta img {
@@ -1609,7 +1594,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 .contacts__link_email {
   margin-top: 30px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   text-decoration: none;
 }
@@ -1639,7 +1624,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 .contacts__address {
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   align-self: flex-end;
 }
@@ -1655,7 +1640,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .footer .section__heading {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #bdbdbd;
   text-transform: uppercase;
   text-decoration: none;
@@ -1671,7 +1656,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .footer__subheading {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 150%;
   color: #828282;
   margin-top: 24px;
@@ -1700,7 +1685,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 .footer__copyright,
 .footer__address {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 150%;
   text-decoration: none;
   font-style: normal;
@@ -1714,7 +1699,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 .footer__link_policy {
   margin-bottom: 22px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 150%;
   text-decoration: underline;
   color: #828282;
@@ -1725,11 +1710,11 @@ input[type="radio"]:checked ~ .quiz__image img {
   transition: all 0.4s ease;
 }
 .pensar__link {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .pensar {
   font-weight: 900;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 150%;
   color: #828282;
   text-decoration: none;
@@ -1765,7 +1750,7 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .modal__callback .modal__heading {
   font-weight: 800;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 140%;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
@@ -1794,6 +1779,52 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .modal__callback .quiz__checkbox {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 150%;
+}
+@media screen and (max-width: 1199.98px) {
+  .container {
+    max-width: 992px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  html,
+  body {
+    font-size: 14px;
+  }
+  .header__link_white {
+    margin-right: 30px;
+  }
+  .header__link_phone {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .header__info {
+    padding-top: 40px;
+  }
+  .header__text {
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  .header__card_bottom {
+    flex-direction: column;
+  }
+  .header__card_bottom h3 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .container {
+    max-width: 768px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .container {
+    max-width: 576px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
