@@ -1903,6 +1903,9 @@ input[type="radio"]:checked ~ .quiz__image img {
     margin-right: 0;
     margin-left: 40px;
   }
+  .contacts__link_phone {
+    white-space: nowrap;
+  }
 }
 @media screen and (max-width: 991.98px) {
   .container {
@@ -2222,6 +2225,27 @@ input[type="radio"]:checked ~ .quiz__image img {
     flex-direction: column;
   }
   .questions .section__heading {
+    margin-bottom: 15px;
+  }
+  .contacts__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .contacts {
+    flex-direction: column;
+  }
+  .contacts_left {
+    margin-bottom: 30px;
+  }
+  .contacts__column {
+    width: 100%;
+  }
+  .contacts__column:last-child {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .contacts__link_email {
+    margin-top: 15px;
     margin-bottom: 15px;
   }
 }
