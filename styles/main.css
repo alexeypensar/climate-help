@@ -1886,6 +1886,23 @@ input[type="radio"]:checked ~ .quiz__image img {
     margin-right: 0;
     margin-bottom: 10px;
   }
+  .master__text {
+    padding: 70px 70px 50px 50px;
+  }
+  .master__text::before {
+    bottom: 115px;
+    left: -65px;
+  }
+  .master__heading {
+    margin-bottom: 0;
+  }
+  .master__subheading {
+    padding-left: 0;
+  }
+  .master .main-button {
+    margin-right: 0;
+    margin-left: 40px;
+  }
 }
 @media screen and (max-width: 991.98px) {
   .container {
@@ -2099,6 +2116,14 @@ input[type="radio"]:checked ~ .quiz__image img {
   .services__text {
     padding: 20px 0 20px 0;
   }
+  .master__text {
+    padding: 30px;
+    height: 300px;
+  }
+  .master__text::before {
+    left: -80px;
+    bottom: 95px;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .container {
@@ -2150,6 +2175,34 @@ input[type="radio"]:checked ~ .quiz__image img {
   .services__item img {
     top: 90px;
     right: 20px;
+  }
+  .master {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+  .master__text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 260px;
+  }
+  .master__subheading {
+    font-size: 2.5rem;
+  }
+  .master__image {
+    width: 40%;
+    display: flex;
+  }
+  .master__image img {
+    object-fit: cover;
+  }
+  .master__text::before {
+    bottom: 46px;
+    left: -90px;
   }
 }
 @media screen and (max-width: 575.98px) {
@@ -2290,6 +2343,34 @@ input[type="radio"]:checked ~ .quiz__image img {
   }
   .services__container .right-side .services__item:nth-of-type(odd) {
     background-color: #fff;
+  }
+  .master {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+  .master__text {
+    padding: 80px 0 50px 25px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.4);
+  }
+  .master__text::before {
+    bottom: 67px;
+  }
+  .master__image {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 417px) {
+  .master__text {
+    padding: 45px 0 20px 20px;
+    background-color: rgba(255,255,255,0.4);
+  }
+  .master__text::before {
+    bottom: 40px;
   }
 }
 @media screen and (max-width: 390px) {
