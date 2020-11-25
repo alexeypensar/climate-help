@@ -471,6 +471,11 @@
 		}
 	}
 
+	.delivery {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
 
 
 
@@ -634,6 +639,28 @@
 		&_100 {
 			width: 100%;
 		}
+	}
+
+	.delivery {
+		flex-direction: column;
+	}
+
+	.delivery__list {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.delivery__city, .delivery__others {
+		width: 50%;
+		margin-bottom: 0;
+	}
+
+	.delivery__text {
+		margin-right: 0;
+		width: 100%;
 	}
 
 
@@ -949,6 +976,24 @@
 		padding: 10px;
 	}
 
+	.delivery__list {
+		flex-direction: column;
+	}
+
+	.delivery__heading {
+		margin-bottom: 10px;
+	}
+
+	.delivery__city {
+		margin-bottom: 30px;
+	}
+
+	.delivery__city, .delivery__others {
+		width: 100%;
+	}
+
+
+
 
 
 
@@ -984,7 +1029,7 @@
 		width: 100%;
 	}
 
-
+	//todo размер шрифта для labels поправить, выглядит слишком мелко
 }
 
 
