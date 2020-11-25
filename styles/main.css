@@ -2167,6 +2167,8 @@ input[type="radio"]:checked ~ .quiz__image img {
   .goods__item img {
     margin-top: 0;
     margin-bottom: 10px;
+    width: 80%;
+    height: auto;
   }
   .goods__item {
     width: 100%;
@@ -2179,6 +2181,9 @@ input[type="radio"]:checked ~ .quiz__image img {
     margin-right: 0;
     font-size: 1.125rem;
     margin-bottom: 34px;
+  }
+  .goods__heading {
+    width: 80%;
   }
   .goods__item:not(.goods__item_large):nth-of-type(even) {
     background-color: #f2f2f2 !important;
