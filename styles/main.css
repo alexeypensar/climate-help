@@ -2116,6 +2116,10 @@ input[type="radio"]:checked ~ .quiz__image img {
   .services__text {
     padding: 20px 0 20px 0;
   }
+  .master {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
   .master__text {
     padding: 30px;
     height: 300px;
@@ -2123,6 +2127,15 @@ input[type="radio"]:checked ~ .quiz__image img {
   .master__text::before {
     left: -80px;
     bottom: 95px;
+  }
+  .brands {
+    padding-top: 40px;
+  }
+  .brands__buttons {
+    top: 15px;
+  }
+  .embla {
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -2179,8 +2192,6 @@ input[type="radio"]:checked ~ .quiz__image img {
   .master {
     height: auto;
     width: 100%;
-    padding-top: 40px;
-    margin-bottom: 40px;
   }
   .master__text {
     width: 60%;

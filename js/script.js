@@ -160,33 +160,33 @@ modalHot5Button.addEventListener('click', function() {
 
 // quiz
 
-const quizStart = document.getElementById('quizStart');
-
-const quizConditioner1 = document.getElementById('quizConditioner1');
-const quizConditioner2 = document.getElementById('quizConditioner2');
-
-
-const quizStartConditioner = document.getElementById('quizStartConditioner');
-const quizStartHot = document.getElementById('quizStartHot');
-const quizStartCold = document.getElementById('quizStartCold');
-
-const quizCold1 = document.getElementById('quizCold1');
-const quizCold2 = document.getElementById('quizCold2');
-
-const quizHot = document.getElementById('quizHot');
-
-const quizFinish = document.getElementById('quizFinish');
+// const quizStart = document.getElementById('quizStart');
+//
+// const quizConditioner1 = document.getElementById('quizConditioner1');
+// const quizConditioner2 = document.getElementById('quizConditioner2');
+//
+//
+// const quizStartConditioner = document.getElementById('quizStartConditioner');
+// const quizStartHot = document.getElementById('quizStartHot');
+// const quizStartCold = document.getElementById('quizStartCold');
+//
+// const quizCold1 = document.getElementById('quizCold1');
+// const quizCold2 = document.getElementById('quizCold2');
+//
+// const quizHot = document.getElementById('quizHot');
+//
+// const quizFinish = document.getElementById('quizFinish');
 
 
 
 // quiz logic
 
-quizConditioner1.style.display = 'none';
-quizConditioner2.style.display = 'none';
-quizCold1.style.display = 'none';
-quizCold2.style.display = 'none';
-quizHot.style.display = 'none';
-quizFinish.style.display = 'none';
+// quizConditioner1.style.display = 'none';
+// quizConditioner2.style.display = 'none';
+// quizCold1.style.display = 'none';
+// quizCold2.style.display = 'none';
+// quizHot.style.display = 'none';
+// quizFinish.style.display = 'none';
 
 
 
@@ -202,94 +202,94 @@ quizFinish.style.display = 'none';
 
 // стартовая логика
 
-let quizStartNextButton = document.getElementById('quizStartNextButton');
-
-quizStartNextButton.addEventListener('click', function() {
-    if (quizStartConditioner.checked) {
-        quizStart.style.display = 'none';
-        quizConditioner1.style.display = 'flex';
-    }
-
-    else if (quizStartCold.checked) {
-        quizStart.style.display = 'none';
-        quizCold1.style.display = 'flex';
-    }
-
-    else if (quizStartHot.checked) {
-        quizStart.style.display = 'none';
-        quizHot.style.display = 'flex';
-    }
-});
-
-// логика при выборе кондиционеров
-
-let quizConditioner1NextButton = document.getElementById('quizConditioner1NextButton');
-quizConditioner1NextButton.addEventListener('click', function() {
-    quizConditioner1.style.display = 'none';
-    quizConditioner2.style.display = 'flex';
-});
-
-let quizConditioner1PrevButton = document.getElementById('quizConditioner1PrevButton');
-quizConditioner1PrevButton.addEventListener('click', function() {
-    quizConditioner1.style.display = 'none';
-    quizStart.style.display = 'flex';
-});
-
-let quizConditioner2NextButton = document.getElementById('quizConditioner2NextButton');
-quizConditioner2NextButton.addEventListener('click', function() {
-    quizConditioner2.style.display = 'none';
-    quizFinish.style.display = 'flex';
-});
-
-let quizConditioner2PrevButton = document.getElementById('quizConditioner2PrevButton');
-quizConditioner2PrevButton.addEventListener('click', function() {
-    quizConditioner2.style.display = 'none';
-    quizConditioner1.style.display = 'flex';
-});
-
-
-// логика при выборе холодильного оборудования
-
-let quizCold1NextButton = document.getElementById('quizCold1NextButton');
-quizCold1NextButton.addEventListener('click', function() {
-    quizCold1.style.display = 'none';
-    quizCold2.style.display = 'flex';
-});
-
-let quizCold1PrevButton = document.getElementById('quizCold1PrevButton');
-quizCold1PrevButton.addEventListener('click', function() {
-    quizCold1.style.display = 'none';
-    quizStart.style.display = 'flex';
-});
-
-let quizCold2NextButton = document.getElementById('quizCold2NextButton');
-quizCold2NextButton.addEventListener('click', function() {
-    quizCold2.style.display = 'none';
-    quizFinish.style.display = 'flex';
-});
-
-let quizCold2PrevButton = document.getElementById('quizCold2PrevButton');
-quizCold2PrevButton.addEventListener('click', function() {
-    quizCold2.style.display = 'none';
-    quizCold1.style.display = 'flex';
-});
-
-// логика при выборе отопительного оборудования
-
-let quizHotNextButton = document.getElementById('quizHotNextButton');
-quizHotNextButton.addEventListener('click', function() {
-    quizHot.style.display = 'none';
-    quizFinish.style.display = 'flex';
-});
-
-let quizHotPrevButton = document.getElementById('quizHotPrevButton');
-quizHotPrevButton.addEventListener('click', function() {
-    quizHot.style.display = 'none';
-    quizStart.style.display = 'flex';
-});
-
-
-
+// let quizStartNextButton = document.getElementById('quizStartNextButton');
+//
+// quizStartNextButton.addEventListener('click', function() {
+//     if (quizStartConditioner.checked) {
+//         quizStart.style.display = 'none';
+//         quizConditioner1.style.display = 'flex';
+//     }
+//
+//     else if (quizStartCold.checked) {
+//         quizStart.style.display = 'none';
+//         quizCold1.style.display = 'flex';
+//     }
+//
+//     else if (quizStartHot.checked) {
+//         quizStart.style.display = 'none';
+//         quizHot.style.display = 'flex';
+//     }
+// });
+//
+// // логика при выборе кондиционеров
+//
+// let quizConditioner1NextButton = document.getElementById('quizConditioner1NextButton');
+// quizConditioner1NextButton.addEventListener('click', function() {
+//     quizConditioner1.style.display = 'none';
+//     quizConditioner2.style.display = 'flex';
+// });
+//
+// let quizConditioner1PrevButton = document.getElementById('quizConditioner1PrevButton');
+// quizConditioner1PrevButton.addEventListener('click', function() {
+//     quizConditioner1.style.display = 'none';
+//     quizStart.style.display = 'flex';
+// });
+//
+// let quizConditioner2NextButton = document.getElementById('quizConditioner2NextButton');
+// quizConditioner2NextButton.addEventListener('click', function() {
+//     quizConditioner2.style.display = 'none';
+//     quizFinish.style.display = 'flex';
+// });
+//
+// let quizConditioner2PrevButton = document.getElementById('quizConditioner2PrevButton');
+// quizConditioner2PrevButton.addEventListener('click', function() {
+//     quizConditioner2.style.display = 'none';
+//     quizConditioner1.style.display = 'flex';
+// });
+//
+//
+// // логика при выборе холодильного оборудования
+//
+// let quizCold1NextButton = document.getElementById('quizCold1NextButton');
+// quizCold1NextButton.addEventListener('click', function() {
+//     quizCold1.style.display = 'none';
+//     quizCold2.style.display = 'flex';
+// });
+//
+// let quizCold1PrevButton = document.getElementById('quizCold1PrevButton');
+// quizCold1PrevButton.addEventListener('click', function() {
+//     quizCold1.style.display = 'none';
+//     quizStart.style.display = 'flex';
+// });
+//
+// let quizCold2NextButton = document.getElementById('quizCold2NextButton');
+// quizCold2NextButton.addEventListener('click', function() {
+//     quizCold2.style.display = 'none';
+//     quizFinish.style.display = 'flex';
+// });
+//
+// let quizCold2PrevButton = document.getElementById('quizCold2PrevButton');
+// quizCold2PrevButton.addEventListener('click', function() {
+//     quizCold2.style.display = 'none';
+//     quizCold1.style.display = 'flex';
+// });
+//
+// // логика при выборе отопительного оборудования
+//
+// let quizHotNextButton = document.getElementById('quizHotNextButton');
+// quizHotNextButton.addEventListener('click', function() {
+//     quizHot.style.display = 'none';
+//     quizFinish.style.display = 'flex';
+// });
+//
+// let quizHotPrevButton = document.getElementById('quizHotPrevButton');
+// quizHotPrevButton.addEventListener('click', function() {
+//     quizHot.style.display = 'none';
+//     quizStart.style.display = 'flex';
+// });
+//
+//
+//
 
 
 // embla slider configuration:
