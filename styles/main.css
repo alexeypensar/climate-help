@@ -2042,6 +2042,9 @@ input[type="radio"]:checked ~ .quiz__image img {
   .goods .goods__category-price {
     margin-bottom: 15px;
   }
+  .goods__wrapper_cold::before {
+    top: 655px;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .container {
@@ -2082,6 +2085,9 @@ input[type="radio"]:checked ~ .quiz__image img {
   }
   .header__mobile {
     width: 55vw;
+  }
+  .goods__cold {
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 575.98px) {
@@ -2162,16 +2168,29 @@ input[type="radio"]:checked ~ .quiz__image img {
     margin-top: 0;
     margin-bottom: 10px;
   }
+  .goods__item {
+    width: 100%;
+  }
   .goods__item .button__arrow {
-    right: 10px;
-    bottom: 10px;
-    height: 36px;
-    width: 36px;
+    right: 15px;
+    bottom: 15px;
   }
   .goods__item .goods__price {
     margin-right: 0;
     font-size: 1.125rem;
     margin-bottom: 34px;
+  }
+  .goods__item:not(.goods__item_large):nth-of-type(even) {
+    background-color: #f2f2f2 !important;
+  }
+  .goods__item:not(.goods__item_large):nth-of-type(odd) {
+    background-color: #fcfffd !important;
+  }
+  .goods__item_large {
+    background-color: #f2f2f2 !important;
+  }
+  .goods__wrapper_cold::before {
+    display: none;
   }
 }
 @media screen and (max-width: 390px) {
