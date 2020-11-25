@@ -874,6 +874,15 @@
 		width: 100%;
 	}
 
+	.quiz__conditioner_3 .quiz__heading {
+		width: 100%;
+	}
+
+	.quiz__heading {
+		width: 100%;
+		line-height: 1.3;
+	}
+
 	.quiz__options_top .quiz__label:first-child {
 		margin-right: 20px;
 	}
@@ -884,6 +893,60 @@
 		font-size: 0.75rem;
 		line-height: 1.3;
 		padding-top: 2px;
+	}
+
+
+
+	.quiz__conditioner_3 {
+
+		& .quiz__buttons {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		& .main-button {
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+
+		& .quiz__checkbox {
+			width: 100%;
+
+		}
+
+		& .quiz__options_top {
+			flex-direction: column;
+		}
+
+		& .quiz__label, & .quiz__input_text {
+			width: 100%;
+		}
+
+		& .quiz__label {
+			margin-top: 25px;
+		}
+
+		& .quiz__options_top .quiz__label:first-of-type {
+			margin-top: 0;
+		}
+	}
+
+	.section__heading {
+		line-height: 1.2;
+	}
+
+	.quiz__cold_2, .quiz__conditioner_2 {
+		& .quiz__options_top {
+			flex-direction: column;
+
+			& .quiz__label, .quiz__input_text {
+				width: 100%;
+			}
+		}
+	}
+
+	.quiz__input_text {
+		padding: 10px;
 	}
 
 
@@ -901,6 +964,24 @@
 
 	.master__text::before {
 		bottom: 40px;
+	}
+
+	.quiz__page {
+		padding: 10px 10px 110px 10px;
+	}
+
+	input[type="checkbox"]:checked + label, input[type="checkbox"]:not(:checked) + label, input[type="radio"]:checked + label, input[type="radio"]:not(:checked) + label {
+
+		font-size: 0.6rem;
+		padding-top: 4px;
+	}
+
+	.quiz__buttons {
+		width: 100%;
+	}
+
+	.quiz__page .main-button {
+		width: 100%;
 	}
 
 
