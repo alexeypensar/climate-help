@@ -2202,6 +2202,14 @@ input[type="radio"]:checked ~ .quiz__image img {
     margin-top: 40px;
     margin-bottom: 40px;
   }
+  .sale {
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  .sale__image {
+    width: 260px;
+    right: 10px;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .container {
@@ -2334,6 +2342,25 @@ input[type="radio"]:checked ~ .quiz__image img {
   .delivery__text {
     margin-right: 0;
     width: 100%;
+  }
+  .sale {
+    height: auto;
+    padding: 20px;
+  }
+  .sale__info {
+    flex-direction: column;
+    z-index: 1;
+  }
+  .sale__image {
+    z-index: 0;
+    top: 10px;
+    opacity: 0.4;
+  }
+  .sale__period {
+    color: #f2f2f2;
+  }
+  .sale__button {
+    margin-top: 15px;
   }
 }
 @media screen and (max-width: 575.98px) {
