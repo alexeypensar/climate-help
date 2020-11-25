@@ -377,12 +377,26 @@
 		margin-bottom: 40px;
 	}
 
+	.quiz__wrapper {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
 	.quiz__page {
 		padding: 25px 30px;
 		height: 400px;
 	}
 
+	.quiz__options {
+		//flex-direction: column;
+	}
+
 	.quiz__radio {
+		width: 33%;
+		//min-width: 33%;
+	}
+
+	.quiz__hot_1 .quiz__radio {
 		width: 25%;
 	}
 
@@ -396,9 +410,21 @@
 			//object-size: contain;
 		}
 	}
+	.quiz__options {
+		width: 75%;
+	}
+
+	.quiz__label {
+		width: 100%;
+	}
+
+	.quiz__cold_1 .quiz__input_text {
+		width: 100%;
+	}
 
 	.quiz__progress {
-		width: 50px;
+		//width: 50px;
+		right: 5px;
 	}
 
 	.quiz__progress_25 {
@@ -417,6 +443,33 @@
 		height: calc(400px);
 	}
 
+
+	.quiz__conditioner_3 {
+
+		& .quiz__options_bottom {
+			& .quiz__label, .quiz__input_text {
+				width: 100%;
+			}
+		}
+
+		& .quiz__input_text {
+			width: 100%;
+		}
+
+		& .main-button {
+			width: 250px;
+		}
+
+		& .quiz__checkbox {
+			white-space: normal;
+			width: 45%;
+		}
+
+		& .quiz__heading {
+			white-space: normal;
+			width: 80%;
+		}
+	}
 
 
 
@@ -538,6 +591,53 @@
 		bottom: 46px;
 		left: -90px;
 	}
+
+	.quiz__subheading {
+		margin-bottom: 25px;
+	}
+
+	.quiz__page {
+		height: auto;
+		padding-bottom: 120px;
+	}
+
+	.quiz__heading {
+		margin-bottom: 20px;
+	}
+
+	.quiz__options {
+		width: 100%;
+	}
+
+	.quiz__image {
+		margin-bottom: 10px;
+	}
+
+	.quiz__buttons {
+		margin-top: 25px;
+
+	}
+
+	.quiz__progress {
+		height: 80px;
+		left: 0;
+		bottom: 5px;
+		&_25 {
+			width: 25%;
+		}
+		&_50 {
+			width: 50%;
+		}
+		&_75 {
+			width: 75%;
+		}
+		&_100 {
+			width: 100%;
+		}
+	}
+
+
+
 
 
 }
@@ -772,6 +872,18 @@
 
 	.master__image {
 		width: 100%;
+	}
+
+	.quiz__options_top .quiz__label:first-child {
+		margin-right: 20px;
+	}
+
+	input[type="checkbox"]:checked + label, input[type="checkbox"]:not(:checked) + label, input[type="radio"]:checked + label, input[type="radio"]:not(:checked) + label {
+		padding-left: 21px;
+		padding-right: 10px;
+		font-size: 0.75rem;
+		line-height: 1.3;
+		padding-top: 2px;
 	}
 
 
