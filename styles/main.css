@@ -2214,6 +2214,16 @@ input[type="radio"]:checked ~ .quiz__image img {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  .questions__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .questions {
+    flex-direction: column;
+  }
+  .questions .section__heading {
+    margin-bottom: 15px;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .container {
@@ -2386,6 +2396,9 @@ input[type="radio"]:checked ~ .quiz__image img {
   }
   .about-us__text:not(:last-child) {
     margin-bottom: 15px;
+  }
+  .questions__form {
+    width: 100%;
   }
 }
 @media screen and (max-width: 575.98px) {
@@ -2617,6 +2630,19 @@ input[type="radio"]:checked ~ .quiz__image img {
   }
   .delivery__city,
   .delivery__others {
+    width: 100%;
+  }
+  .questions .section__heading {
+    display: inline-block;
+    white-space: normal;
+  }
+  .questions .section__heading::after {
+    display: none;
+  }
+  .questions .quiz__input_text {
+    width: 100%;
+  }
+  .questions .main-button {
     width: 100%;
   }
 }

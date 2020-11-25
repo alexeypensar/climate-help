@@ -493,6 +493,21 @@
 		padding-bottom: 40px;
 	}
 
+	.questions__wrapper {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.questions {
+		//padding-top: 40px;
+		//padding-bottom: 40px;
+		flex-direction: column;
+
+		& .section__heading {
+			margin-bottom: 15px;
+		}
+	}
+
 
 
 
@@ -733,6 +748,12 @@
 	.about-us__text:not(:last-child) {
 		margin-bottom: 15px;
 	}
+
+	.questions__form {
+		width: 100%;
+	}
+
+
 
 
 
@@ -1063,6 +1084,27 @@
 
 	.delivery__city, .delivery__others {
 		width: 100%;
+	}
+
+	.questions .section__heading {
+		display: inline-block;
+		//width: 100%;
+		white-space: normal;
+
+		&::after {
+			display: none;
+		}
+	}
+
+
+	.questions {
+		& .quiz__input_text {
+			width: 100%;
+		}
+
+		& .main-button {
+			width: 100%;
+		}
 	}
 
 
