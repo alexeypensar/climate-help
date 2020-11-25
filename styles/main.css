@@ -2669,6 +2669,27 @@ input[type="radio"]:checked ~ .quiz__image img {
   .questions .main-button {
     width: 100%;
   }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__headings,
+  .footer__info {
+    width: 100%;
+  }
+  .footer__info {
+    flex-direction: column;
+  }
+  .footer_left,
+  .footer_right {
+    width: 100%;
+  }
+  .footer_right {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .footer__copyright {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 417px) {
   .master__text {
