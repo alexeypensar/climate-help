@@ -1481,6 +1481,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   line-height: 150%;
   border-radius: 4px;
   margin-bottom: 15px;
+  z-index: 2;
 }
 .sale__button:hover,
 .sale__button:focus {
@@ -1495,12 +1496,14 @@ input[type="radio"]:checked ~ .quiz__image img {
   line-height: 150%;
   color: #f2f2f2;
   margin-top: 20px;
+  z-index: 2;
 }
 .sale__image {
   position: absolute;
-  top: -65px;
-  right: -55px;
+  top: -110px;
+  right: 0;
   pointer-events: none;
+  z-index: 1;
 }
 .about-us__wrapper {
   background-color: #f2f2f2;
@@ -1906,6 +1909,14 @@ input[type="radio"]:checked ~ .quiz__image img {
   .contacts__link_phone {
     white-space: nowrap;
   }
+  .modal__card {
+    min-width: 500px;
+    padding: 20px 30px;
+  }
+  .modal__close {
+    top: 20px;
+    right: 30px;
+  }
 }
 @media screen and (max-width: 991.98px) {
   .container {
@@ -2212,6 +2223,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   .sale__image {
     width: 260px;
     right: 10px;
+    top: -70px;
   }
   .about-us__wrapper {
     padding-top: 40px;
@@ -2247,6 +2259,53 @@ input[type="radio"]:checked ~ .quiz__image img {
   .contacts__link_email {
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+  .modal__card {
+    min-width: auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 20px;
+  }
+  .modal__close {
+    top: 15px;
+    right: 20px;
+  }
+  .modal__content {
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  .modal__subheading,
+  .modal__info {
+    white-space: normal;
+    line-height: 1;
+    font-size: 0.85rem;
+  }
+  .modal__text {
+    line-height: 1.1;
+    white-space: normal;
+    font-size: 0.85rem;
+  }
+  .modal__name {
+    margin-right: 0;
+    font-size: 0.85rem;
+  }
+  .modal__price {
+    font-size: 0.85rem;
+  }
+  .modal__subheading {
+    flex-direction: column;
+  }
+  .modal__order {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .modal__heading {
+    margin-bottom: 15px;
+  }
+  .modal__subname {
+    margin-left: 0;
+    font-size: 0.85rem;
+    line-height: 1;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -2689,6 +2748,13 @@ input[type="radio"]:checked ~ .quiz__image img {
   }
   .footer__copyright {
     margin-bottom: 20px;
+  }
+  .modal__card {
+    padding: 10px;
+  }
+  .modal__close {
+    right: 10px;
+    top: 10px;
   }
 }
 @media screen and (max-width: 417px) {

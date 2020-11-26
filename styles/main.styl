@@ -1606,6 +1606,7 @@ input[type="radio"]:checked ~ .quiz__image {
 	line-height: 150%;
 	border-radius: 4px;
 	margin-bottom: 15px;
+	z-index: 2;
 	&:hover, &:focus {
 		border: 1px solid #FFFFFF;
 		background: $blue-gradient;
@@ -1622,13 +1623,15 @@ input[type="radio"]:checked ~ .quiz__image {
 	line-height: 150%;
 	color: $gray-color;
 	margin-top: 20px;
+	z-index: 2;
 }
 
 .sale__image {
 	position: absolute;
-	top: -65px;
-	right: -55px;
+	top: -110px;
+	right: 0;
 	pointer-events: none;
+	z-index: 1;
 }
 
 .about-us__wrapper {
