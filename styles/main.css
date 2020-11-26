@@ -2390,7 +2390,7 @@ input[type="radio"]:checked ~ .quiz__image img {
   }
   .quiz__page {
     height: auto;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
   }
   .quiz__heading {
     margin-bottom: 20px;
@@ -2405,7 +2405,7 @@ input[type="radio"]:checked ~ .quiz__image img {
     margin-top: 25px;
   }
   .quiz__progress {
-    height: 80px;
+    height: 60px;
     left: 0;
     bottom: 5px;
   }
@@ -2492,6 +2492,19 @@ input[type="radio"]:checked ~ .quiz__image img {
   .modal__close {
     right: 5px;
     top: 5px;
+  }
+  .quiz__progress {
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .quiz__percents {
+    text-align: right;
+    padding-right: 12px;
+    padding-top: 0;
+    line-height: 1;
   }
 }
 @media screen and (max-width: 575.98px) {
@@ -2708,6 +2721,10 @@ input[type="radio"]:checked ~ .quiz__image img {
   .quiz__cold_2 .quiz__options_top .quiz__input_text,
   .quiz__conditioner_2 .quiz__options_top .quiz__input_text {
     width: 100%;
+  }
+  .quiz__cold_2 .quiz__options_top .quiz__label,
+  .quiz__conditioner_2 .quiz__options_top .quiz__label {
+    margin-top: 15px;
   }
   .quiz__input_text {
     padding: 10px;

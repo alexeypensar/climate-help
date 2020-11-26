@@ -737,7 +737,7 @@
 
 	.quiz__page {
 		height: auto;
-		padding-bottom: 120px;
+		padding-bottom: 100px;
 	}
 
 	.quiz__heading {
@@ -758,7 +758,7 @@
 	}
 
 	.quiz__progress {
-		height: 80px;
+		height: 60px;
 		left: 0;
 		bottom: 5px;
 		&_25 {
@@ -866,6 +866,25 @@
 	.modal__close {
 		right: 5px;
 		top: 5px;
+	}
+
+	.quiz__progress {
+		vertical-align: middle;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.quiz__percents {
+		//height: 100%;
+		text-align: right;
+
+		//padding-top: 0;
+		padding-right: 12px;
+		padding-top: 0;
+		line-height: 1;
+		//padding-top: 17%;
 	}
 
 
@@ -1178,8 +1197,13 @@
 			& .quiz__label, .quiz__input_text {
 				width: 100%;
 			}
+			& .quiz__label {
+				margin-top: 15px;
+			}
 		}
 	}
+
+
 
 	.quiz__input_text {
 		padding: 10px;
