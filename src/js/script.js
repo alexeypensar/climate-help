@@ -339,6 +339,14 @@ embla.on("init", autoplayer.play);
 
 
 
+const emblaButtons = Array.from(document.getElementsByClassName('embla__button'));
+
+emblaButtons.forEach(function(el) {
+    el.addEventListener('click', function() {
+        el.blur();
+    })
+});
+
 
 // quiz labels styles changing
 

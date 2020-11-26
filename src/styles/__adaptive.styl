@@ -220,8 +220,8 @@
 		}
 
 		& .header__link_submenu {
-			color: #FFFFFF;
-			font-size: 1.3rem;
+			color: $gray-color;
+			font-size: 1.1rem;
 		}
 
 	}
@@ -310,6 +310,10 @@
 
 	.goods__wrapper_services {
 		background: $blue-gradient;
+
+		& .section__heading {
+			color: $gray-color;
+		}
 	}
 
 	.services__heading_container .section__heading {
@@ -626,6 +630,10 @@
 		padding-right: 10px;
 	}
 
+	.section__heading {
+		font-size: 2rem;
+	}
+
 	.header__row {
 		flex-wrap: wrap;
 	}
@@ -800,12 +808,14 @@
 	.sale {
 		height: auto;
 		padding: 20px;
+
 		//flex-direction: column;
 	}
 
 	.sale__info {
 		flex-direction: column;
 		z-index: 1;
+		align-items: flex-start;
 		//width: 80%;
 	}
 
@@ -823,6 +833,7 @@
 
 	.sale__button {
 		margin-top: 15px;
+
 	}
 
 	.sale__text {
@@ -831,6 +842,7 @@
 
 	.sale__heading {
 		line-height: 1.3;
+		width: 100%;
 	}
 
 	.about-us {
@@ -885,6 +897,11 @@
 		padding-top: 0;
 		line-height: 1;
 		//padding-top: 17%;
+	}
+
+	.brands .section__heading {
+		font-size: 1.85rem;
+		//margin-right: 20px;
 	}
 
 
@@ -1287,6 +1304,8 @@
 
 
 
+
+
 }
 
 @media screen and (max-width: 417px) {
@@ -1334,7 +1353,7 @@
 @media screen and (max-width: 390px) {
 	.goods {
 		.section__heading {
-			font-size: 2.225rem;
+			font-size: 2rem;
 		}
 	}
 
