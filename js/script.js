@@ -3,13 +3,26 @@
 
 
 const hamburger = document.getElementById('hamburger');
-
 const mobileMenu = document.getElementById('mobileMenu');
 
 
 hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('hamburger_active');
     mobileMenu.classList.toggle('header__mobile_active');
+});
+
+// hiding mobile menu after click on link
+
+const mobileMenuLinks = Array.from(document.getElementsByClassName('header__link_mobile'));
+
+console.log(mobileMenuLinks);
+console.log(mobileMenuLinks[0]);
+
+mobileMenuLinks.forEach(function(el) {
+    el.addEventListener('click', function() {
+        hamburger.classList.toggle('hamburger_active');
+        mobileMenu.classList.toggle('header__mobile_active');
+    });
 });
 
 
