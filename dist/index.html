@@ -1,0 +1,2208 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Климат Хэлп - Ваша скорая климатическая помощь</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/hystmodal.min.css">
+
+
+    <!--favicons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#06BEB6">
+    <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#06BEB6">
+
+
+</head>
+<body>
+
+
+<header class="header">
+    <nav class="header__nav">
+        <ul class="header__ul container">
+            <li class="header__li">
+                <a href="#" class="header__link header__link_white">КЛИМАТ ХЭЛП</a>
+            </li>
+
+            <li class="header__li_mobile">
+                <ul class="header__mobile" id="mobileMenu">
+                    <li class="header__li header__li_arrow">
+                        <a href="#conditioners" class="header__link header__link_mobile  header__link_arrow">
+                            <span>Оборудование</span>
+                            <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 0.5L6 5.5L11 0.5" stroke="#BDBDBD" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+
+                        <ul class="header__submenu">
+
+                            <li class="header__li_submenu"><a href="#conditioners" class="header__link_mobile header__link_submenu">Кондиционеры</a>
+                            </li>
+                            <li class="header__li_submenu"><a href="#cold" class="header__link_mobile header__link_submenu">Холодильное
+                                оборудование</a></li>
+                            <li class="header__li_submenu"><a href="#hot" class="header__link_mobile header__link_submenu">Тепловое
+                                оборудование</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__li">
+                        <a href="#services" class="header__link_mobile header__link">Услуги</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="#delivery" class="header__link_mobile header__link">Доставка</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="#aboutUs" class="header__link_mobile header__link">О нас</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="#contacts" class="header__link_mobile header__link">Контакты</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="#sale" class="header__link_mobile header__link header__link_red">Акции</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="tel:+79538880891" class="header__link_mobile header__link header__link_phone">8-953-888-08-91</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="#" class="header__link_mobile header__link header__link_blue" data-hystmodal="#modalCallback">Заказать
+                            звонок</a>
+                    </li>
+
+
+                </ul>
+            <li class="header__hamburger">
+                <button class="hamburger" id="hamburger"><span></span></button>
+            </li>
+<!--            </li>-->
+
+        </ul>
+    </nav>
+
+    <section class="header__info container">
+        <div class="header__row">
+            <h1 class="header__h1">Ваша СКОРАЯ<br>
+                <span class="header__h1_blue">климатическая помощь!</span>
+            </h1>
+
+            <article class="header__card header__card_first">
+                <img src="img/header-conditioner.png" alt="">
+                <div class="header__card_bottom">
+                    <h3>Кондиционеры</h3>
+                    <p>от 13 090 руб.</p>
+                </div>
+                <a href="#conditioners" class="button__arrow">
+                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                              fill="url(#paint0_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06BEB6" offset="0"/>
+                                <stop offset="1" stop-color="#48B1BF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </a>
+            </article>
+        </div>
+
+        <div class="header__row">
+            <article class="header__card header__card_second">
+                <div class="header__card_bottom">
+                    <h3>Тепловое оборудование</h3>
+                    <p>от 2 030 руб.</p>
+                </div>
+                <img src="img/header-heat.png" alt="">
+
+                <a href="#hot" class="button__arrow">
+                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                              fill="url(#paint0_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06BEB6" offset="0"/>
+                                <stop offset="1" stop-color="#48B1BF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </a>
+            </article>
+
+            <article class="header__text">
+                <h3>
+                    Продажа, ремонт, установка<br> и диагностика <strong>климатического, холодильного
+                    и отопительного</strong> оборудования.
+                </h3>
+
+                <a href="#" data-hystmodal="#modalCallback" class="main-button">Получить бесплатную консультацию</a>
+            </article>
+
+            <article class="header__card header__card_third">
+                <h3>Холодильное оборудование</h3>
+                <img src="img/header-cold.png" alt="">
+                <div class="header__card_bottom">
+
+                    <p>от 39 190 руб.</p>
+                </div>
+                <a href="#cold" class="button__arrow">
+                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                              fill="url(#paint0_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06BEB6" offset="0"/>
+                                <stop offset="1" stop-color="#48B1BF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </a>
+            </article>
+        </div>
+
+    </section>
+
+</header>
+
+
+<!--todo сделать, чтобы меню по клику на ссылку сворачивалось-->
+
+
+<div class="hystmodal" id="modalCallback" aria-hidden="true">
+    <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+            <!--            <button data-hystclose class="hystmodal__close">Close</button>-->
+
+            <button data-hystclose class="modal__close hystmodal__close" id="modalCallbackClose">
+                <span></span><span></span></button>
+
+
+            <form action="callback.php" method="post" class="modal__callback quiz__page quiz__conditioner_3"
+                  id="modalCallbackForm">
+                <h2 class="modal__heading">Оставьте свой телефон,<br> и мы Вам перезвоним!</h2>
+
+
+                <div class="quiz__options quiz__options_top">
+
+
+                    <label class="quiz__label" for="modalCallbackName">
+                        <input class="quiz__input_text" type="text" id="modalCallbackName" required>
+                        <span class="quiz__placeholder">Ваше имя</span>
+                    </label>
+
+
+                    <label class="quiz__label" for="modalCallbackPhone">
+                        <input class="quiz__input_text" type="tel" id="modalCallbackPhone" required>
+                        <span class="quiz__placeholder">Ваш телефон</span>
+                    </label>
+
+                </div>
+
+                <div class="quiz__options quiz__options_bottom">
+                    <label class="quiz__label" for="modalCallbackComment">
+                        <input class="quiz__input_text" type="text" id="modalCallbackComment">
+                        <span class="quiz__placeholder">Ваш комментарий (необязательно)</span>
+                    </label>
+                </div>
+
+
+                <div class="quiz__buttons">
+
+
+                    <button class="main-button" type="submit"><span>Отправить</span>
+
+                    </button>
+
+                    <input type="checkbox" id="modalCallbackCheckbox" checked required>
+                    <label for="modalCallbackCheckbox" class="quiz__checkbox">Согласен с <a href="policy.html"
+                                                                                            target="_blank">обработкой
+                        персональных данных</a></label>
+
+                </div>
+
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+
+<main>
+    <section class="advantages container">
+        <div class="left-side">
+            <h2 class="section__heading">Ваши выгоды<br>при работе<br>с нами</h2>
+        </div>
+        <div class="advantages__list right-side">
+            <article class="advantages__item">
+                <h3 class="advantages__heading">Качество</h3>
+                <p class="advantages__text">Мы работаем только
+                    с лучшими и надежными поставщиками оборудования, поэтому можем предложить качественный товар
+                    по интересным ценам.</p>
+            </article>
+            <article class="advantages__item">
+                <h3 class="advantages__heading">Опыт</h3>
+                <p class="advantages__text">Наши мастера сервисного обслуживания проходят тщательную проверку
+                    и имеют многолетний опыт работы в сфере климатического
+                    и холодильного оборудования.</p>
+            </article>
+            <article class="advantages__item">
+                <h3 class="advantages__heading">Гарантия</h3>
+                <p class="advantages__text">Все оборудование имеет гарантийный срок обслуживания.</p>
+            </article>
+            <article class="advantages__item">
+                <h3 class="advantages__heading">Индивидуальный подход</h3>
+                <p class="advantages__text">Гибкий график работы (работаем по договоренности
+                    в вечернее время и выходные дни).</p>
+            </article>
+        </div>
+
+
+    </section>
+
+    <section class="goods container" id="conditioners">
+        <div class="left-side">
+            <div class="left-top-side">
+                <h2 class="section__heading">Кондиционеры</h2>
+
+                <h3 class="goods__category-price">от 13 090 руб.</h3>
+                <div class="goods__info">
+                    <button class="main-button" data-hystmodal="#modalCallback">Оформить заявку</button>
+                    <a class="goods__link" href="prices/ClimateHelp__price__split.xlsx">Скачать прайс</a>
+                </div>
+            </div>
+
+            <article class="goods__item goods__item_large">
+                <article class="modal__card" id="modalConditioner1">
+                    <button class="modal__close" id="modalConditioner1CloseButton"><span></span><span></span></button>
+                    <h3 class="modal__heading">Рекомендуем!</h3>
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Royal Clima серия TRIUMPH</h4>
+                            <p class="modal__price">от 24 450 руб.
+                            </p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 2,30 охл./2,50 обогр.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Hisense серия SMART DC Inverter </h4>
+                            <p class="modal__price">от 27 290 руб.
+                            </p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 2,10 охл./2,15 обогр.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">FUNAI серия SAMURAI DC-Inverter </h4>
+                            <p class="modal__price">от 31 680 руб.
+                            </p>
+
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 2,60 охл./2,80 обогр.
+
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">LG серия PROCOOL Dual Inverter </h4>
+                            <p class="modal__price">от 39 270 руб.
+                            </p>
+
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 2,14 охл./2,50 обогр.
+
+
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Mitsubishi серия Classic Inverter HR </h4>
+                            <p class="modal__price">от 48 500 руб.
+                            </p>
+
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 2,50 охл./3,15 обогр.
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                    <button class="modal__order services__order" data-hystmodal="#modalCallback">Оформить заказ</button>
+                </article>
+                <div class="goods__image">
+                    <img src="img/categories/conditioners/inverter.png"
+                         alt="Инвертерная сплит-система">
+                </div>
+                <div class="goods__text">
+                    <h4 class="goods__heading">Инверторные<br>сплит-системы</h4>
+                    <p class="goods__price">от 24 450 руб.</p>
+                </div>
+                <button class="button__arrow" id="modalConditioner1Button">
+                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                              fill="url(#paint0_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06BEB6" offset="0"/>
+                                <stop offset="1" stop-color="#48B1BF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </button>
+
+            </article>
+
+        </div>
+        <div class="right-side goods__list">
+
+            <article class="goods__item">
+                <article class="modal__card" id="modalConditioner2">
+                    <button class="modal__close" id="modalConditioner2CloseButton"><span></span><span></span></button>
+                    <h3 class="modal__heading">Рекомендуем!</h3>
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Royal Clima серия Cassette</h4>
+                            <p class="modal__price">от 42 890 руб.
+                            </p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 3,60 охл./3,90 обогр.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Hisense серия Heavy Classic</h4>
+                            <p class="modal__price">от 47 560 руб.
+                            </p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 3,55 охл./3,81 обогр.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Royal Clima серия Cassette DC Inverter</h4>
+                            <p class="modal__price">от 53 660 руб.
+                            </p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 3,60 охл./3,90 обогр.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Hisense серия Heavy Classic</h4>
+                            <p class="modal__price">от 76 860 руб.
+
+                            </p>
+
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 5,0 охл./6,2 обогр.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <button class="modal__order services__order" data-hystmodal="#modalCallback">Оформить заказ</button>
+                </article>
+                <div class="goods__image"><img src="img/categories/conditioners/cassete.png" alt="Кассетные"></div>
+                <div class="goods__text">
+                    <h4 class="goods__heading">Кассетные</h4>
+                    <p class="goods__price">от 42 890 руб.</p>
+                </div>
+                <button class="button__arrow" id="modalConditioner2Button">
+                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                              fill="url(#paint0_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06BEB6" offset="0"/>
+                                <stop offset="1" stop-color="#48B1BF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </button>
+
+            </article>
+
+            <article class="goods__item">
+                <article class="modal__card" id="modalConditioner3">
+                    <button class="modal__close" id="modalConditioner3CloseButton"><span></span><span></span></button>
+                    <h3 class="modal__heading">Рекомендуем!</h3>
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Royal Clima (полупром классический) </h4>
+                            <p class="modal__price">от 47 480 руб.
+                            </p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 5,30 охл./5,80 обогр.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Hisense ( полупром. классический)</h4>
+                            <p class="modal__price">от 50 370 руб.
+                            </p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 5,0 охл./5,5обогр.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Royal Clima (полупром инвертор)</h4>
+                            <p class="modal__price">от 63 850руб.
+                            </p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 5,0 охл./5,6обогр.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Hisense ( полупром. инвертор)</h4>
+                            <p class="modal__price">от 76 850 руб.
+                            </p>
+
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 5, 2охл./6,2 обогр.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <button class="modal__order services__order" data-hystmodal="#modalCallback">Оформить заказ</button>
+                </article>
+                <div class="goods__image"><img src="img/categories/conditioners/floor.png" alt="Напольно-потолочные">
+                </div>
+                <div class="goods__text">
+                    <h4 class="goods__heading">Напольно-потолочные</h4>
+                    <p class="goods__price">от 47 480 руб.</p>
+                </div>
+                <button class="button__arrow" id="modalConditioner3Button">
+                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                              fill="url(#paint0_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06BEB6" offset="0"/>
+                                <stop offset="1" stop-color="#48B1BF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </button>
+
+            </article>
+
+            <article class="goods__item">
+                <div class="goods__image"><img src="img/categories/conditioners/multi.png" alt="Мульти сплит-системы">
+                </div>
+                <div class="goods__text">
+                    <h4 class="goods__heading">Мульти сплит-системы</h4>
+                    <a href="#" data-hystmodal="#modalCallback" class="goods__price">по запросу</a>
+                </div>
+
+
+            </article>
+
+            <article class="goods__item">
+                <article class="modal__card" id="modalConditioner4">
+                    <button class="modal__close" id="modalConditioner4CloseButton"><span></span><span></span></button>
+                    <h3 class="modal__heading">Рекомендуем!</h3>
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">XIGMA серия AIRJET</h4>
+                            <p class="modal__price">от 13 090 руб.
+                            </p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 2,20 охл./2,30 обогр.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Ecostar серия SPARK</h4>
+                            <p class="modal__price">от 14 330 руб.
+                            </p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 2,10 охл./2,15 обогр.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Royal Clima серия TRIUMPH
+                            </h4>
+                            <p class="modal__price">от 15 430 руб.
+                            </p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 2,35 охл./2,50 обогр.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Hisense серия Basic A
+                            </h4>
+                            <p class="modal__price">от 16 920 руб.
+                            </p>
+
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 2,10 охл./2,20 обогр.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">FUNAI серия SAMURAI
+
+                            </h4>
+                            <p class="modal__price">от 20 840 руб.
+                            </p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 2,05 охл./2,15 обогр.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Mitsubishi (только охлаждение)
+
+                            </h4>
+                            <p class="modal__price">от 41 540 руб.
+                            </p>
+
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 2,3 охл.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <button class="modal__order services__order" data-hystmodal="#modalCallback">Оформить заказ</button>
+                </article>
+                <div class="goods__image"><img src="img/categories/conditioners/inverter.png"
+                                               alt="ON/OFF сплит-системы"></div>
+                <div class="goods__text">
+                    <h4 class="goods__heading">ON/OFF сплит-системы</h4>
+                    <p class="goods__price">от 13 090 руб.</p>
+                </div>
+                <button class="button__arrow" id="modalConditioner4Button">
+                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                              fill="url(#paint0_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06BEB6" offset="0"/>
+                                <stop offset="1" stop-color="#48B1BF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </button>
+
+            </article>
+
+        </div>
+    </section>
+
+
+    <section class="goods__wrapper goods__wrapper_cold" id="cold">
+        <section class="goods goods__cold container">
+            <div class="left-side">
+                <div class="left-top-side">
+                    <h2 class="section__heading">Холодильное<br>оборудование</h2>
+
+                    <h3 class="goods__category-price">от 39 190 руб.</h3>
+                    <div class="goods__info">
+                        <button class="main-button" data-hystmodal="#modalCallback">Оформить заявку</button>
+                        <a class="goods__link" href="prices/ClimateHelp__price__cold.xlsx">Скачать прайс</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="right-side goods__list">
+                <article class="goods__item">
+                    <article class="modal__card" id="modalCold1">
+
+                        <button class="modal__close" id="modalCold1CloseButton"><span></span><span></span></button>
+                        <h3 class="modal__heading">Рекомендуем!</h3>
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">Belluna S115 серия ЭКОНОМ</h4>
+                                <p class="modal__price">от 53 420 руб.</p>
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -3…+5&#176;С (при необходимости до +15
+                                    &#176;С)</p>
+                                <p class="modal__text">Объем холодильной камеры 5м<sup>3</sup>(-3&#176;С) -
+                                    9,5м<sup>3</sup>(+5&#176;С)</p>
+                            </div>
+                        </div>
+
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">Belluna U102 серия УНИВЕРСАЛ</h4>
+                                <p class="modal__price">от 89 040 руб.</p>
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -5…+5&#176;С (при необходимости до +15
+                                    &#176;С)</p>
+                                <p class="modal__text">Объем холодильной камеры 8,3м<sup>3</sup>(-5&#176;С) - 23,1м<sup>3</sup>(+5&#176;С)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">Belluna iP-1 серия ИНВЕРТОР</h4>
+                                <p class="modal__price">от 144 140 руб.</p>
+
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -25...+15 (при необходимости до +25 &#176;С)
+                                </p>
+                                <p class="modal__text">Объем холодильной камеры 11м<sup>3</sup>(-25&#176;С) -
+                                    17м<sup>3</sup>(-18&#176;С) 28м<sup>3</sup>(-5&#176;С) - 48м<sup>3</sup>(+5&#176;С)
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">Belluna SH-100 (инвертор) шоковой заморозки</h4>
+                                <p class="modal__price">от 453 560 руб.</p>
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -25…-20&#176;С
+
+                                </p>
+                                <p class="modal__text">Объем холодильной камеры от 7,25 до 10м<sup>3</sup>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="modal__content">
+                            <p class="modal__name">Все модели подбираются индивидуально по запросу!</p>
+                        </div>
+
+
+                        <button class="modal__order services__order" data-hystmodal="#modalCallback">Оформить заказ
+                        </button>
+                    </article>
+                    <div class="goods__image"><img src="img/categories/cold/belluna.png"
+                                                   alt="Холодильные сплит-системы торговой марки Belluna"></div>
+                    <div class="goods__text">
+                        <h4 class="goods__heading">Холодильные сплит-системы торговой марки Belluna</h4>
+                        <p class="goods__price">от 53 420 руб.</p>
+                    </div>
+                    <button class="button__arrow" id="modalCold1Button">
+                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                  fill="url(#paint0_linear)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938"
+                                                y2="4.14079"
+                                                gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#06BEB6" offset="0"/>
+                                    <stop offset="1" stop-color="#48B1BF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </button>
+
+                </article>
+
+                <article class="goods__item">
+                    <article class="modal__card" id="modalCold2">
+                        <button class="modal__close" id="modalCold2CloseButton"><span></span><span></span></button>
+                        <h3 class="modal__heading">Рекомендуем!</h3>
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">POLAR серия MM</h4>
+                                <p class="modal__price">от 37 190 руб.</p>
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -5 … +10</p>
+                                <p class="modal__text">Объем холодильной камеры от 3,5 - 9,5 м<sup>3</sup></p>
+                            </div>
+                        </div>
+
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">POLAR серия MB</h4>
+                                <p class="modal__price">от 43 290 руб.</p>
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -20 … -15</p>
+                                <p class="modal__text">Объем холодильной камеры от 2 - 5,2 м<sup>3</sup>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">Ариада серия AMS</h4>
+                                <p class="modal__price">от 41 090 руб.</p>
+                                <p class="modal__subname">(ранцевый блок)</p>
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -5 … +5
+                                </p>
+                                <p class="modal__text">Объем холодильной камеры от 12 м
+                                    <sup>3</sup>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">Ариада серия ALS</h4>
+                                <p class="modal__price">от 44 090 руб.</p>
+                                <p class="modal__subname">(ранцевый блок)</p>
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -18 … -16
+
+                                </p>
+                                <p class="modal__text">Объем холодильной камеры от 7 м
+                                    <sup>3</sup>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">Север серия MGM</h4>
+                                <p class="modal__price">от 41 690 руб.</p>
+                                <p class="modal__subname">(ранцевый блок)</p>
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -5 … +10
+
+
+                                </p>
+                                <p class="modal__text">Объем холодильной камеры от 4-10 м<sup>3</sup>
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">Север серия BGM</h4>
+                                <p class="modal__price">от 55 690 руб.</p>
+                                <p class="modal__subname">(ранцевый блок)</p>
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -20 … -15
+
+
+                                </p>
+                                <p class="modal__text">Объем холодильной камеры от 3,9 - 8,2 м<sup>3</sup>
+
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <button class="modal__order services__order" data-hystmodal="#modalCallback">Оформить заказ
+                        </button>
+                    </article>
+
+
+                    <div class="goods__image"><img src="img/categories/cold/mono.png" alt="Моноблоки и ранцевые блоки">
+                    </div>
+                    <div class="goods__text">
+                        <h4 class="goods__heading">Моноблоки<br>и ранцевые блоки</h4>
+                        <p class="goods__price">от 39 190 руб.</p>
+                    </div>
+                    <button class="button__arrow modal__button" id="modalCold2Button">
+                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                  fill="url(#paint0_linear)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938"
+                                                y2="4.14079"
+                                                gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#06BEB6" offset="0"/>
+                                    <stop offset="1" stop-color="#48B1BF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </button>
+
+
+                </article>
+
+                <article class="goods__item">
+
+                    <article class="modal__card" id="modalCold3">
+
+                        <button class="modal__close" id="modalCold3CloseButton"><span></span><span></span></button>
+                        <h3 class="modal__heading">Рекомендуем!</h3>
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">POLAIR серия SM</h4>
+                                <p class="modal__price">от 45 190 руб.</p>
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -5 … +10</p>
+                                <p class="modal__text">Объем холодильной камеры от 3 - 10,5 м<sup>3</sup></p>
+                            </div>
+                        </div>
+
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">POLAIR серия SB</h4>
+                                <p class="modal__price">от 57 690 руб.</p>
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -20 ...-15</p>
+                                <p class="modal__text">Объем холодильной камеры от 2,9 - 6,9 м<sup>3</sup>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">Север серия MGS</h4>
+                                <p class="modal__price">от 50 390 руб.</p>
+
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -5 … +10
+                                </p>
+                                <p class="modal__text">Объем холодильной камеры от 2,9 - 8,8м<sup>3</sup>
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">Север серия BGS</h4>
+                                <p class="modal__price">от 73 790 руб.</p>
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -20... -15
+                                </p>
+                                <p class="modal__text">Объем холодильной камеры от 6,1 – 13 м<sup>3</sup>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">Ариада серия KMS</h4>
+                                <p class="modal__price">от 50 290 руб.</p>
+
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -5...+5
+                                </p>
+                                <p class="modal__text">Объем холодильной камеры от 2.3 - 8.6 м<sup>3</sup>
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal__content">
+                            <div class="modal__subheading">
+                                <h4 class="modal__name">Ариада серия KLS</h4>
+                                <p class="modal__price">от 58 690 руб.</p>
+                            </div>
+                            <div class="modal__info">
+                                <p class="modal__text">Рабочий диапазон -18 ... -16
+                                </p>
+                                <p class="modal__text">Объем холодильной камеры от 2 - 7 м<sup>3</sup>
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="modal__order services__order" data-hystmodal="#modalCallback">Оформить заказ
+                        </button>
+                    </article>
+
+                    <div class="goods__image"><img src="img/categories/cold/split.png"
+                                                   alt="Холодильные сплит-системы"></div>
+                    <div class="goods__text">
+                        <h4 class="goods__heading">Холодильные сплит-системы</h4>
+                        <p class="goods__price">от 45 190 руб.</p>
+                    </div>
+                    <button class="button__arrow" id="modalCold3Button">
+                        <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                  fill="url(#paint0_linear)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938"
+                                                y2="4.14079"
+                                                gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#06BEB6" offset="0"/>
+                                    <stop offset="1" stop-color="#48B1BF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </button>
+
+                </article>
+
+                <article class="goods__item">
+                    <div class="goods__image"><img src="img/categories/cold/outside.png" alt="Выносной холод"></div>
+                    <div class="goods__text">
+                        <h4 class="goods__heading">Выносной холод</h4>
+                        <a href="#" data-hystmodal="#modalCallback" class="goods__price">по запросу</a>
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+    </section>
+
+    <section class="goods container" id="hot">
+        <div class="left-side">
+            <div class="left-top-side">
+                <h2 class="section__heading">Тепловое<br>оборудование</h2>
+
+                <h3 class="goods__category-price">от 2 030 руб.</h3>
+                <div class="goods__info">
+                    <button class="main-button" data-hystmodal="#modalCallback">Оформить заявку</button>
+                    <a class="goods__link" href="prices/ClimateHelp__price__hot.xlsx">Скачать прайс</a>
+
+                </div>
+            </div>
+
+            <article class="goods__item goods__item_large">
+
+                <article class="modal__card" id="modalHot1">
+
+                    <button class="modal__close" id="modalHot1CloseButton"><span></span><span></span></button>
+                    <h3 class="modal__heading">Рекомендуем!</h3>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">ZILON серия Привратник</h4>
+                            <p class="modal__price">от 5 280 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 3,0/1,5 кВт</p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">ZILON серия МАСТЕР</h4>
+                            <p class="modal__price">от 17 820 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 6/4/0 кВт</p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">ZILON серия ГОЛЬФСТРИМ</h4>
+                            <p class="modal__price">от 24 590 руб.</p>
+
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 3,0/1,5 кВт
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">ZILON серия ЗАСЛОН</h4>
+                            <p class="modal__price">от 36 520 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 18/9/0 кВт
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal__content">
+                        <p class="modal__name">В продаже также имеются интерьерные дизайнерские тепловые завесы!</p>
+                    </div>
+
+
+                    <button class="modal__order services__order" data-hystmodal="#modalCallback">Оформить заказ</button>
+                </article>
+
+
+                <div class="goods__image"><img src="img/categories/heat/veil.png" alt="Тепловые завесы"></div>
+                <div class="goods__text">
+                    <h4 class="goods__heading">Тепловые завесы</h4>
+                    <p class="goods__price">от 5 280 руб.</p>
+                </div>
+                <button class="button__arrow" id="modalHot1Button">
+                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                              fill="url(#paint0_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06BEB6" offset="0"/>
+                                <stop offset="1" stop-color="#48B1BF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </button>
+
+            </article>
+
+        </div>
+        <div class="right-side goods__list">
+
+            <article class="goods__item">
+
+                <article class="modal__card" id="modalHot2">
+
+                    <button class="modal__close" id="modalHot2CloseButton"><span></span><span></span></button>
+                    <h3 class="modal__heading">Рекомендуем!</h3>
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Royal Clima серия Sorento Econo</h4>
+                            <p class="modal__price">от 2 080 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 1000 Вт</p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Royal Clima серия Milano Plus Econo</h4>
+                            <p class="modal__price">от 2 130 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 1000 Вт</p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">ZILON серия Атлет 2.0</h4>
+                            <p class="modal__price">от 2 200 руб.</p>
+
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 1000 Вт
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">ZILON серия Комфорт 3.0</h4>
+                            <p class="modal__price">от 2 850 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 1000 Вт
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal__content">
+                        <p class="modal__name">Кронштейн для настенной установки - в комплекте!</p>
+                    </div>
+
+
+                    <button class="modal__order services__order" data-hystmodal="#modalCallback">Оформить заказ</button>
+                </article>
+
+                <div class="goods__image"><img src="img/categories/heat/convector.png" alt="Конвекторы"></div>
+                <div class="goods__text">
+                    <h4 class="goods__heading">Конвекторы</h4>
+                    <p class="goods__price">от 2 080 руб.</p>
+                </div>
+                <button class="button__arrow" id="modalHot2Button">
+                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                              fill="url(#paint0_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06BEB6" offset="0"/>
+                                <stop offset="1" stop-color="#48B1BF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </button>
+
+            </article>
+
+            <article class="goods__item">
+
+
+                <article class="modal__card" id="modalHot3">
+
+                    <button class="modal__close" id="modalHot3CloseButton"><span></span><span></span></button>
+                    <h3 class="modal__heading">Рекомендуем!</h3>
+
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Royal Clima серия RAGGIO 2.0</h4>
+                            <p class="modal__price">от 2 030 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 800 Вт</p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">ZILON серия ГЕЛИОС</h4>
+                            <p class="modal__price">от 2 080 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 600 Вт</p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">ZILON серия ГЕЛИОС</h4>
+                            <p class="modal__price">от 2 820 руб.</p>
+
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 1000 Вт
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Royal Clima серия RAGGIO 2.0</h4>
+                            <p class="modal__price">от 2 320 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 1000 Вт
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal__content">
+                        <p class="modal__name">Есть возможность отдельно приобрести кронштейн и термостат!</p>
+                    </div>
+
+
+                    <button class="modal__order services__order" data-hystmodal="#modalCallback">Оформить заказ</button>
+                </article>
+
+                <div class="goods__image"><img src="img/categories/heat/infra.png" alt="Инфракрасные обогреватели">
+                </div>
+                <div class="goods__text">
+                    <h4 class="goods__heading">Инфракрасные обогреватели</h4>
+                    <p class="goods__price">от 2 030 руб.</p>
+                </div>
+                <button class="button__arrow" id="modalHot3Button">
+                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                              fill="url(#paint0_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06BEB6" offset="0"/>
+                                <stop offset="1" stop-color="#48B1BF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </button>
+
+            </article>
+
+            <article class="goods__item">
+
+
+                <article class="modal__card" id="modalHot4">
+
+                    <button class="modal__close" id="modalHot4CloseButton"><span></span><span></span></button>
+                    <h3 class="modal__heading">Рекомендуем!</h3>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">ZILON серия МИНИ</h4>
+                            <p class="modal__price">от 2 400 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 2,0/1,0 кВт</p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">ZILON серия ПРОФИ</h4>
+                            <p class="modal__price">от 3 570 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 3,0/1,5 кВт</p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">ZILON серия СУХОВЕЙ</h4>
+                            <p class="modal__price">от 6 140 руб.</p>
+
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 0/4/6 кВт
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">ZILON серия БОГАТЫРЬ</h4>
+                            <p class="modal__price">от 7 370 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность 0/6/9 кВт
+                            </p>
+                        </div>
+                    </div>
+
+                    <button class="modal__order services__order" data-hystmodal="#modalCallback">Оформить заказ</button>
+                </article>
+
+                <div class="goods__image"><img src="img/categories/heat/cannon.png" alt="Тепловые пушки"></div>
+                <div class="goods__text">
+                    <h4 class="goods__heading">Тепловые пушки</h4>
+                    <p class="goods__price">от 2 400 руб.</p>
+                </div>
+                <button class="button__arrow" id="modalHot4Button">
+                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                              fill="url(#paint0_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06BEB6" offset="0"/>
+                                <stop offset="1" stop-color="#48B1BF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </button>
+
+            </article>
+
+            <article class="goods__item">
+
+                <article class="modal__card" id="modalHot5">
+
+                    <button class="modal__close" id="modalHot5CloseButton"><span></span><span></span></button>
+                    <h3 class="modal__heading">Рекомендуем!</h3>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Royal Clima серия Ferrara</h4>
+                            <p class="modal__price">от 2 200 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 1,0/0,6/0,4 кВт</p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Royal Clima серия Catania</h4>
+                            <p class="modal__price">от 2 260 руб.</p>
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 1,5/0,9/0,6 кВт</p>
+                        </div>
+                    </div>
+
+                    <div class="modal__content">
+                        <div class="modal__subheading">
+                            <h4 class="modal__name">Royal Clima серия Bergamo</h4>
+                            <p class="modal__price">от 2 450 руб.</p>
+
+                        </div>
+                        <div class="modal__info">
+                            <p class="modal__text">Мощность от 2,0/1,2/0,8 кВт
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                    <button class="modal__order services__order" data-hystmodal="#modalCallback">Оформить заказ</button>
+                </article>
+
+                <div class="goods__image"><img src="img/categories/heat/oil.png" alt="Масляные радиаторы"></div>
+                <div class="goods__text">
+                    <h4 class="goods__heading">Масляные радиаторы</h4>
+                    <p class="goods__price">от 2 200 руб.</p>
+                </div>
+                <button class="button__arrow" id="modalHot5Button">
+                    <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                              fill="url(#paint0_linear)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#06BEB6" offset="0"/>
+                                <stop offset="1" stop-color="#48B1BF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </button>
+
+            </article>
+
+        </div>
+    </section>
+
+    <section class="goods__wrapper_services" id="services">
+
+        <div class="services__heading_container container">
+            <h2 class="section__heading">Наши услуги</h2>
+        </div>
+        <section class="goods services__container container">
+
+
+            <!--            <div class="left-top-side">-->
+            <div class="left-side">
+
+
+                <div class="services">
+                    <article class="services__item">
+                        <h3 class="services__heading">Установка</h3>
+                        <img src="img/services-1.png" alt="Установка">
+                        <div><p class="services__price">от 7 500 руб.</p>
+                            <button class="services__order" data-hystmodal="#modalCallback">Заказать услугу</button>
+                        </div>
+                    </article>
+                    <article class="services__item">
+                        <div><h3 class="services__heading">Заправка оборудования</h3>
+                            <h4 class="services__subheading">в том числе<br>и автомобильного</h4></div>
+                        <img src="img/services-2.png" alt="Заправка оборудования">
+                        <div><p class="services__price">от 1 000 руб.</p>
+                            <button class="services__order" data-hystmodal="#modalCallback">Заказать услугу</button>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+            <!--            </div>-->
+            <div class="right-side services__right">
+
+                <div class="services__info">
+                    <p class="services__text">Климат Хэлп – это не только продажа промышленного и бытового оборудования.<br>Мы
+                        предлагаем:
+                    </p>
+                </div>
+
+                <div class="services">
+                    <article class="services__item">
+                        <h3 class="services__heading">Качественный демонтаж</h3>
+                        <img src="img/services-3.png" alt="Демонтаж">
+                        <div><p class="services__price">от 2 500 руб.</p>
+                            <button class="services__order" data-hystmodal="#modalCallback">Заказать услугу</button>
+                        </div>
+                    </article>
+                    <article class="services__item">
+                        <h3 class="services__heading">Диагностика<br>и сервисное обслуживание</h3>
+                        <img src="img/services-4.png" alt="Диагностика и сервисное обслуживание">
+                        <div><p class="services__price">от 1 500 руб.</p>
+                            <button class="services__order" data-hystmodal="#modalCallback">Заказать услугу</button>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <section class="master container">
+        <article class="master__text">
+            <h2 class="master__heading">Выезд мастера сервисного<br>обслуживания на замер</h2>
+            <h3 class="master__subheading">Бесплатно</h3>
+            <button class="main-button" data-hystmodal="#modalCallback">Вызвать замерщика</button>
+        </article>
+        <div class="master__image">
+            <img src="img/master.jpg" alt="Кондиционер">
+        </div>
+    </section>
+
+
+    <section class="brands container">
+        <h2 class="section__heading">Бренды, с которыми мы работаем</h2>
+
+        <div class="brands__buttons">
+            <button class="embla__button embla__button--prev" id="emblaButtonPrev">
+
+                <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                          fill="#FFFFFF"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                        gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFFFFF" offset="0"/>
+                            <stop offset="1" stop-color="#FFFFFF"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+
+            </button>
+
+            <button class="embla__button embla__button--next" id="emblaButtonNext">
+
+                <svg width="18" height="8" viewBox="0 0 18 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                          fill="#FFFFFF"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938" y2="4.14079"
+                                        gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFFFFF" offset="0"/>
+                            <stop offset="1" stop-color="#FFFFFF"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+
+            </button>
+        </div>
+
+
+        <article class="embla" id="embla">
+
+
+            <div class="brands__list embla__container">
+                <div class="brands__item embla__slide">
+                    <img src="img/brands/1.png" alt="">
+                </div>
+                <div class="brands__item embla__slide">
+                    <img src="img/brands/2.png" alt="">
+                </div>
+                <div class="brands__item embla__slide">
+                    <img src="img/brands/3.png" alt="">
+                </div>
+                <div class="brands__item embla__slide">
+                    <img src="img/brands/4.png" alt="">
+                </div>
+                <div class="brands__item embla__slide">
+                    <img src="img/brands/5.png" alt="">
+                </div>
+                <div class="brands__item embla__slide">
+                    <img src="img/brands/6.png" alt="">
+                </div>
+                <div class="brands__item embla__slide">
+                    <img src="img/brands/7.png" alt="">
+                </div>
+                <div class="brands__item embla__slide">
+                    <img src="img/brands/8.png" alt="">
+                </div>
+                <div class="brands__item embla__slide">
+                    <img src="img/brands/9.png" alt="">
+                </div>
+                <div class="brands__item embla__slide">
+                    <img src="img/brands/10.png" alt="">
+                </div>
+                <div class="brands__item embla__slide">
+                    <img src="img/brands/11.png" alt="">
+                </div>
+                <div class="brands__item embla__slide">
+                    <img src="img/brands/12.png" alt="">
+                </div>
+                <div class="brands__item embla__slide">
+                    <img src="img/brands/13.png" alt="">
+                </div>
+
+
+            </div>
+        </article>
+
+
+    </section>
+
+    <section class="quiz__wrapper">
+
+        <section class="quiz container">
+
+            <h2 class="section__heading">Нужна помощь с выбором?</h2>
+            <h3 class="quiz__subheading">Ответьте на пару вопросов, и мы свяжемся с Вами с уже готовым решением!</h3>
+
+            <!--            квиз начало-->
+
+            <form class="quiz__list">
+                <div class="quiz__page" id="quizStart">
+                    <h4 class="quiz__heading" id="quiz0Heading">Какое оборудование вас интересует?</h4>
+
+
+                    <div class="quiz__options">
+                        <div class="quiz__radio">
+                            <input type="radio" id="quizStartConditioner" name="quizStartRadioButtons" checked>
+                            <label for="quizStartConditioner">Кондиционер</label>
+                            <div class="quiz__image">
+                                <img src="img/quiz/conditioner.png" alt="Кондиционер">
+                            </div>
+
+                        </div>
+
+                        <div class="quiz__radio">
+                            <input type="radio" id="quizStartCold" name="quizStartRadioButtons">
+                            <label for="quizStartCold">Холодильная установка для камеры</label>
+                            <div class="quiz__image">
+                                <img src="img/quiz/mono.png" alt="Холодильная установка">
+                            </div>
+
+                        </div>
+
+                        <div class="quiz__radio">
+                            <input type="radio" id="quizStartHot" name="quizStartRadioButtons">
+                            <label for="quizStartHot">Отопительное оборудование</label>
+                            <div class="quiz__image">
+                                <img src="img/quiz/convector.png" alt="Отопительное оборудование">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="quiz__buttons">
+                        <button type="button" class="quiz__button_next" id="quizStartNextButton">
+                            <span>Следующий вопрос</span>
+                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                      fill="url(#paint0_linear)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938"
+                                                    y2="4.14079" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#06BEB6" offset="0"/>
+                                        <stop offset="1" stop-color="#48B1BF"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="quiz__progress quiz__progress_25">
+                        <span class="quiz__percents">25%</span>
+                    </div>
+                </div>
+
+                <!--                квиз кондиционеры шаг 1-->
+
+                <div class="quiz__page quiz__conditioner_1" id="quizConditioner1">
+                    <h4 class="quiz__heading">Кондиционер нужен:</h4>
+
+
+                    <div class="quiz__options">
+                        <div class="quiz__radio">
+                            <input type="radio" id="quizConditioner1Home" name="quizConditionerRadioButtons" checked>
+                            <label for="quizConditioner1Home">Для дома</label>
+                            <div class="quiz__image">
+                                <img src="img/quiz/conditioner-home.jpg" alt="Кондиционер для дома">
+                            </div>
+
+                        </div>
+
+                        <div class="quiz__radio">
+                            <input type="radio" id="quizConditioner1Business" name="quizConditionerRadioButtons">
+                            <label for="quizConditioner1Business">Для бизнеса</label>
+                            <div class="quiz__image">
+                                <img src="img/quiz/conditioner-business.jpg" alt="Кондиционер для бизнеса">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="quiz__buttons">
+
+                        <button type="button" class="quiz__button_prev" id="quizConditioner1PrevButton">
+                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM18 4.5H1V3.5H18V4.5Z"
+                                      fill="#828282"/>
+                            </svg>
+
+                        </button>
+
+                        <button type="button" class="quiz__button_next" id="quizConditioner1NextButton"><span>Следующий вопрос</span>
+                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                      fill="url(#paint0_linear)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938"
+                                                    y2="4.14079" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#06BEB6" offset="0"/>
+                                        <stop offset="1" stop-color="#48B1BF"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="quiz__progress quiz__progress_50">
+                        <span class="quiz__percents">50%</span>
+                    </div>
+                </div>
+
+                <!--                квиз кондиционеры шаг 2-->
+
+                <div class="quiz__page quiz__conditioner_2" id="quizConditioner2">
+                    <h4 class="quiz__heading">Укажите площадь помещения и высоту потолков</h4>
+
+
+                    <div class="quiz__options quiz__options_top">
+
+
+                        <label class="quiz__label" for="quizConditioner2Area">
+                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizConditioner2Area">
+                            <span class="quiz__placeholder">Площадь, м<sup>2</sup></span>
+                        </label>
+
+
+                        <label class="quiz__label" for="quizConditioner2Height">
+                            <input class="quiz__input_text" type="number" min="1" step="0.1"
+                                   id="quizConditioner2Height">
+                            <span class="quiz__placeholder">Высота потолков, м</span>
+                        </label>
+
+                    </div>
+
+
+                    <div class="quiz__buttons">
+
+                        <button type="button" class="quiz__button_prev" id="quizConditioner2PrevButton">
+                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM18 4.5H1V3.5H18V4.5Z"
+                                      fill="#828282"/>
+                            </svg>
+
+                        </button>
+
+                        <button type="button" class="quiz__button_next" id="quizConditioner2NextButton"><span>Следующий вопрос</span>
+                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                      fill="url(#paint0_linear)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938"
+                                                    y2="4.14079" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#06BEB6" offset="0"/>
+                                        <stop offset="1" stop-color="#48B1BF"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="quiz__progress quiz__progress_75">
+                        <span class="quiz__percents">75%</span>
+                    </div>
+                </div>
+
+
+                <!--                квиз - холодильные установки шаг 1-->
+
+
+                <div class="quiz__page quiz__cold_1" id="quizCold1">
+                    <h4 class="quiz__heading">Что охлаждаем?</h4>
+
+
+                    <div class="quiz__options quiz__options_top">
+                        <label class="quiz__label" for="quizCold1WhatFreeze">
+                            <input class="quiz__input_text" type="text" id="quizCold1WhatFreeze">
+                            <span class="quiz__placeholder">Например, мясо, напитки, фрукты</span>
+                        </label>
+                    </div>
+
+
+                    <div class="quiz__buttons">
+
+                        <button type="button" class="quiz__button_prev" id="quizCold1PrevButton">
+                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM18 4.5H1V3.5H18V4.5Z"
+                                      fill="#828282"/>
+                            </svg>
+
+                        </button>
+
+                        <button type="button" class="quiz__button_next" id="quizCold1NextButton">
+                            <span>Следующий вопрос</span>
+                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                      fill="url(#paint0_linear)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938"
+                                                    y2="4.14079" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#06BEB6" offset="0"/>
+                                        <stop offset="1" stop-color="#48B1BF"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="quiz__progress quiz__progress_50">
+                        <span class="quiz__percents">50%</span>
+                    </div>
+                </div>
+
+                <!--                квиз холодильные установки шаг 2-->
+
+
+                <div class="quiz__page quiz__cold_2" id="quizCold2">
+                    <h4 class="quiz__heading">Укажите площадь холодильной камеры и высоту потолков</h4>
+
+
+                    <div class="quiz__options quiz__options_top">
+
+
+                        <label class="quiz__label" for="quizCold2Area">
+                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizCold2Area">
+                            <span class="quiz__placeholder">Площадь, м<sup>2</sup></span>
+                        </label>
+
+
+                        <label class="quiz__label" for="quizCold2Height">
+                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizCold2Height">
+                            <span class="quiz__placeholder">Высота потолков, м</span>
+                        </label>
+
+                    </div>
+
+
+                    <div class="quiz__buttons">
+
+                        <button type="button" class="quiz__button_prev" id="quizCold2PrevButton">
+                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM18 4.5H1V3.5H18V4.5Z"
+                                      fill="#828282"/>
+                            </svg>
+
+                        </button>
+
+                        <button type="button" class="quiz__button_next" id="quizCold2NextButton">
+                            <span>Следующий вопрос</span>
+                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                      fill="url(#paint0_linear)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938"
+                                                    y2="4.14079" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#06BEB6" offset="0"/>
+                                        <stop offset="1" stop-color="#48B1BF"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="quiz__progress quiz__progress_75">
+                        <span class="quiz__percents">75%</span>
+                    </div>
+                </div>
+
+
+                <!--                квиз тепло шаг 1 -->
+
+                <div class="quiz__page quiz__hot_1" id="quizHot">
+                    <h4 class="quiz__heading">Выберите тип оборудования:</h4>
+
+
+                    <div class="quiz__options">
+                        <div class="quiz__radio">
+                            <input type="radio" id="quizHotConvector" name="quizHot" checked>
+                            <label for="quizHotConvector">Конвектор</label>
+                            <div class="quiz__image">
+                                <img src="img/quiz/hot-convector.png" alt="Конвектор">
+                            </div>
+
+                        </div>
+
+                        <div class="quiz__radio">
+                            <input type="radio" id="quizColdGun" name="quizHot">
+                            <label for="quizColdGun">Тепловая пушка</label>
+                            <div class="quiz__image">
+                                <img src="img/quiz/hot-gun.png" alt="Тепловая пушка">
+                            </div>
+
+                        </div>
+
+                        <div class="quiz__radio">
+                            <input type="radio" id="quizColdWall" name="quizHot">
+                            <label for="quizColdWall">Тепловая завеса</label>
+                            <div class="quiz__image">
+                                <img src="img/quiz/hot-wall.png" alt="Тепловая завеса">
+                            </div>
+
+                        </div>
+
+                        <div class="quiz__radio">
+                            <input type="radio" id="quizColdInfra" name="quizHot">
+                            <label for="quizColdInfra">Инфракрасный обогреватель</label>
+                            <div class="quiz__image">
+                                <img src="img/quiz/hot-infra.png" alt="Инфракрасный обогреватель">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="quiz__buttons">
+                        <button type="button" class="quiz__button_prev" id="quizHotPrevButton">
+                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.646446 4.35355C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464466C4.02369 0.269204 4.34027 0.269204 4.53553 0.464466C4.7308 0.659728 4.7308 0.976311 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53553C4.34027 7.7308 4.02369 7.7308 3.82843 7.53553L0.646446 4.35355ZM18 4.5H1V3.5H18V4.5Z"
+                                      fill="#828282"/>
+                            </svg>
+
+                        </button>
+                        <button type="button" class="quiz__button_next" id="quizHotNextButton">
+                            <span>Следующий вопрос</span>
+                            <svg width="18" height="8" viewBox="0 0 18 8" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.3536 4.35355C17.5488 4.15829 17.5488 3.84171 17.3536 3.64645L14.1716 0.464466C13.9763 0.269204 13.6597 0.269204 13.4645 0.464466C13.2692 0.659728 13.2692 0.976311 13.4645 1.17157L16.2929 4L13.4645 6.82843C13.2692 7.02369 13.2692 7.34027 13.4645 7.53553C13.6597 7.7308 13.9763 7.7308 14.1716 7.53553L17.3536 4.35355ZM0 4.5H17V3.5H0V4.5Z"
+                                      fill="url(#paint0_linear)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear" x1="-4.09394e-08" y1="4.46753" x2="16.9938"
+                                                    y2="4.14079" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#06BEB6" offset="0"/>
+                                        <stop offset="1" stop-color="#48B1BF"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="quiz__progress quiz__progress_50">
+                        <span class="quiz__percents">50%</span>
+                    </div>
+                </div>
+
+
+                <!--                квиз конец, отправка формы-->
+
+                <div class="quiz__page quiz__conditioner_3" id="quizFinish">
+                    <h4 class="quiz__heading">Введите свои данные, по которым мы сможем с Вами связаться!</h4>
+
+
+                    <div class="quiz__options quiz__options_top">
+
+
+                        <label class="quiz__label" for="quizFinishName">
+                            <input class="quiz__input_text" type="text" id="quizFinishName" required>
+                            <span class="quiz__placeholder">Ваше имя</span>
+                        </label>
+
+
+                        <label class="quiz__label" for="quizFinishPhone">
+                            <input class="quiz__input_text" type="tel" id="quizFinishPhone" required>
+                            <span class="quiz__placeholder">Ваш телефон</span>
+                        </label>
+
+                    </div>
+
+                    <div class="quiz__options quiz__options_bottom">
+                        <label class="quiz__label" for="quizFinishComment">
+                            <input class="quiz__input_text" type="text" id="quizFinishComment">
+                            <span class="quiz__placeholder">Ваш комментарий (необязательно)</span>
+                        </label>
+                    </div>
+
+
+                    <div class="quiz__buttons">
+
+
+                        <button class="main-button" type="submit"><span>Отправить</span>
+
+                        </button>
+
+                        <input type="checkbox" id="quizPolicyCheckbox" checked required>
+                        <label for="quizPolicyCheckbox" class="quiz__checkbox">Согласен с <a href="policy.html"
+                                                                                             target="_blank">обработкой
+                            персональных данных</a></label>
+
+                    </div>
+
+                    <div class="quiz__progress quiz__progress_100">
+                        <span class="quiz__percents">100%</span>
+                    </div>
+                </div>
+
+
+            </form>
+
+        </section>
+    </section>
+
+    <section class="delivery container" id="delivery">
+        <h2 class="section__heading">Доставка</h2>
+
+        <div class="delivery__list">
+            <article class="delivery__city">
+                <h3 class="delivery__heading">По Новосибирску</h3>
+                <p class="delivery__text">Вся доставка по Новосибирску осуществляется БЕСПЛАТНО!</p>
+            </article>
+            <article class="delivery__others">
+                <h3 class="delivery__heading">В другие города</h3>
+                <p class="delivery__text">Доставка в другие города осуществляется силами транспортной компании по
+                    желанию заказчика.</p>
+            </article>
+        </div>
+
+    </section>
+
+
+    <section class="sale container" id="sale">
+        <h3 class="sale__period">ДО КОНЦА ДЕКАБРЯ</h3>
+
+        <div class="sale__info">
+            <h4 class="sale__heading">При покупке холодильных сплит-систем у нас специальные цены на монтаж!</h4>
+            <button class="sale__button" data-hystmodal="#modalCallback">Воспользоваться акцией!</button>
+        </div>
+
+        <p class="sale__text">*Подробности уточняйте у менеджеров</p>
+
+        <img class="sale__image" src="img/sale.png" alt="разводной ключ">
+    </section>
+
+
+    <section class="about-us__wrapper" id="aboutUs">
+        <section class="about-us container">
+            <h2 class="section__heading">О нашей<br>компании</h2>
+
+            <div class="about-us__info">
+                <p class="about-us__text"><strong>Климат Хэлп</strong> – это совершенно новый подход к работе на рынке
+                    климатического, холодильного и отопительного оборудования. </p>
+                <p class="about-us__text">Мы предлагаем <strong>индивидуальные условия</strong> для каждого клиента,
+                    исходя из Ваших личных потребностей. </p>
+                <p class="about-us__text">Доверие заказчиков и деловых партнеров – это заслуга профессиональной работы
+                    наших менеджеров по продажам
+                    и мастеров сервисного обслуживания, а надежность и гарантия качества – это подтверждение нашего
+                    многолетнего опыта в создании <strong>Вашего комфортного и идеального микроклимата.</strong></p>
+            </div>
+
+        </section>
+    </section>
+    <section class="questions__wrapper" id="questions">
+        <section class="questions container">
+            <h2 class="section__heading">Есть вопросы?<br>Свяжитесь с нами!</h2>
+            <form action="questions.php" class="questions__form">
+                <label class="quiz__label" for="questionsName">
+                    <input class="quiz__input_text" type="text" id="questionsName">
+                    <span class="quiz__placeholder">Ваше имя</span>
+                </label>
+                <label class="quiz__label" for="questionsPhone">
+                    <input class="quiz__input_text" type="tel" id="questionsPhone">
+                    <span class="quiz__placeholder">Ваш телефон</span>
+                </label>
+
+                <label class="quiz__label" for="questionsComment">
+                    <input class="quiz__input_text" type="text" id="questionsComment">
+                    <span class="quiz__placeholder">Ваш комментарий</span>
+                </label>
+                <button class="main-button" type="submit">Отправить</button>
+
+                <input type="checkbox" id="questionsCheckbox" checked>
+                <label for="questionsCheckbox" class="quiz__checkbox">Согласен с <a href="policy.html" target="_blank">обработкой
+                    персональных данных</a></label>
+
+            </form>
+        </section>
+    </section>
+
+    <section class="contacts__wrapper" id="contacts">
+        <section class="contacts container">
+
+            <div class="contacts_left"><h2 class="section__heading">Контакты</h2></div>
+
+            <div class="contacts__column">
+                <a class="contacts__link_phone" href="tel:+73833816389">8 (383) 381-63-89</a>
+                <a class="contacts__link_phone" href="tel:+79538880891">8-953-888-08-91</a>
+
+                <a href="mailto:climate_help@b-torg.ru" class="contacts__link_email"><span>climate_help@b-torg.ru</span>
+                </a>
+
+            </div>
+            <div class="contacts__column">
+                <a href="https://www.instagram.com/climate_help/" target="_blank" class="contacts__link_insta">
+                    <img src="img/icons/contacts-instagram.svg" alt="инстаграм"><span>@climate_help</span>
+                </a>
+
+                <p class="contacts__time">ПН-ПТ с 9:00 до 20:00<br>
+                    СБ-ВС с 10:00 до 15:00, прием заявок и вызов специалиста.
+                </p>
+
+
+                <!--                <address class="contacts__address">г.Новосибирск<br>-->
+                <!--                    ул.Немировича-Данченко,<br>-->
+                <!--                    д.14/1, кв.31-->
+                <!--                </address>-->
+
+            </div>
+
+        </section>
+    </section>
+
+    <footer class="footer__wrapper">
+
+        <div class="footer container">
+
+            <div class="footer__headings">
+                <a href="#" class="section__heading">
+                    Климат Хэлп
+                </a>
+                <h3 class="footer__subheading">Продажа, ремонт, установка и диагностика климатического, холодильного и
+                    отопительного оборудования</h3>
+            </div>
+
+
+            <div class="footer__info">
+
+                <div class="footer_left">
+                    <h4 class="footer__name">ООО "Б-ТОРГ"</h4>
+
+                    <p class="footer__inn">ИНН: 5404098520 / КПП: 540401001</p>
+
+                    <p class="footer__copyright">&copy; 2020. Б-Торг. Все права защищены</p>
+                </div>
+                <div class="footer_right">
+                    <address class="footer__address">Юридический адрес: 630052, г. Новосибирск,<br>
+                        ул. Немировича-Данченко, д. 14/1, кв. 31
+                    </address>
+                    <a href="policy.html" target="_blank" class="footer__link_policy">Политика конфиденциальности</a>
+
+
+                    <!--                    <p class="pensar__link">Дизайн и разработка сайта - <a href="https://pensar.ru" class="pensar">pensar.</a></p>-->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</main>
+
+<script src="https://unpkg.com/embla-carousel@latest/embla-carousel.umd.js"></script>
+<script src="js/script.js"></script>
+
+<script src="js/hystmodal.min.js"></script>
+<script>
+    const callbackModal = new HystModal({
+        linkAttributeName: "data-hystmodal",
+        catchFocus: false,
+        backscroll: false
+
+    });
+
+</script>
+</body>
+</html>

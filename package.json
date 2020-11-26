@@ -1,0 +1,30 @@
+{
+  "name": "climate-help",
+  "version": "1.0.0",
+  "description": "climate-help landing page",
+  "main": "js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify-es": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexeysreda/climate-help.git"
+  },
+  "author": "alexey@pensar.ru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexeysreda/climate-help/issues"
+  },
+  "homepage": "https://github.com/alexeysreda/climate-help#readme"
+}
