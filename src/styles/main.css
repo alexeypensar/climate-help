@@ -2770,6 +2770,16 @@ input[type="radio"]:checked ~ .quiz__image img {
   .quiz__conditioner_3 .quiz__options_top .quiz__label:first-of-type {
     margin-top: 0;
   }
+  .quiz .section__heading,
+  .goods__cold .section__heading {
+    font-size: 1.65rem;
+    white-space: normal;
+    left: -5px;
+  }
+  .quiz .section__heading::after,
+  .goods__cold .section__heading::after {
+    right: -23px;
+  }
   .section__heading {
     line-height: 1.2;
   }
