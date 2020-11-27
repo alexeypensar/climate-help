@@ -565,7 +565,6 @@ button:hover {
 }
 .header__h1_blue {
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
-  -webkit-mask-image: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
 }
@@ -607,7 +606,6 @@ button:hover {
   line-height: 1;
   font-weight: 500;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
-  -webkit-mask-image: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
 }
@@ -782,7 +780,6 @@ button:hover {
   font-size: 1rem;
   line-height: 150%;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
-  -webkit-mask-image: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
 }
@@ -871,7 +868,6 @@ button:hover {
   font-weight: 600;
   font-size: 2rem;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
-  -webkit-mask-image: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
   line-height: 150%;
@@ -883,7 +879,6 @@ button:hover {
   font-size: 1rem;
   line-height: 150%;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
-  -webkit-mask-image: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
   position: relative;
@@ -965,7 +960,6 @@ button:hover {
   font-weight: 600;
   font-size: 1.3125rem;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
-  -webkit-mask-image: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
   margin-right: 50px;
@@ -1079,7 +1073,6 @@ a.goods__price:focus::after {
   font-weight: 600;
   font-size: 1.3125rem;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
-  -webkit-mask-image: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
 }
@@ -1089,14 +1082,13 @@ a.goods__price:focus::after {
   outline: none;
   font-weight: 500;
   font-size: 1rem;
-  padding: 0;
-  margin-bottom: 10px;
+  padding: 0 0 3px 0;
   margin-top: 10px;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
-  -webkit-mask-image: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
   position: relative;
+  display: block;
 }
 .services__order::after {
   content: '';
@@ -1154,7 +1146,6 @@ a.goods__price:focus::after {
   font-size: 3.25rem;
   margin-bottom: 10px;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
-  -webkit-mask-image: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
   padding-left: 73px;
@@ -1243,7 +1234,6 @@ a.goods__price:focus::after {
   font-size: 1.3125rem;
   line-height: 150%;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
-  -webkit-mask-image: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
   margin-bottom: 40px;
@@ -1367,7 +1357,6 @@ input[type="radio"]:checked ~ .quiz__image img {
 }
 .quiz__button_next span {
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
-  -webkit-mask-image: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
 }
@@ -1860,7 +1849,6 @@ input[type="radio"]:checked ~ .quiz__image img {
 .pensar:hover,
 .pensar:focus {
   background: linear-gradient(to right, #ff416c 0%, #ff4b2b 100%);
-  -webkit-mask-image: linear-gradient(to right, #ff416c 0%, #ff4b2b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
 }
@@ -1892,7 +1880,6 @@ input[type="radio"]:checked ~ .quiz__image img {
   font-size: 1.5rem;
   line-height: 140%;
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
-  -webkit-mask-image: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
   text-align: center;
