@@ -567,6 +567,7 @@ button:hover {
   background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
+  display: block;
 }
 .header__card {
   position: relative;
