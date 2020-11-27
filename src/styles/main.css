@@ -1085,9 +1085,6 @@ a.goods__price:focus::after {
   font-size: 1rem;
   padding: 0 0 3px 0;
   margin-top: 10px;
-  background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255,255,255,0);
   position: relative;
   display: block;
 }
@@ -1104,6 +1101,11 @@ a.goods__price:focus::after {
 .services__order:focus::after {
   width: 100%;
   transition: all 0.4s ease;
+}
+.services__order_span {
+  background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255,255,255,0);
 }
 .services__text {
   font-weight: 500;
