@@ -267,7 +267,13 @@ var autoplay = function autoplay(embla, interval) {
 
 var autoplayer = autoplay(embla, 3000);
 embla.on("pointerDown", autoplayer.stop);
-embla.on("init", autoplayer.play); // quiz labels styles changing
+embla.on("init", autoplayer.play);
+var emblaButtons = Array.from(document.getElementsByClassName('embla__button'));
+emblaButtons.forEach(function (el) {
+  el.addEventListener('click', function () {
+    el.blur();
+  });
+}); // quiz labels styles changing
 
 var quizTextInputs = document.getElementsByClassName('quiz__input_text');
 quizTextInputs = Array.prototype.slice.call(quizTextInputs);

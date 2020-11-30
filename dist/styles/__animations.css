@@ -74,3 +74,31 @@
     transform: rotate(180deg);
   }
 }
+@-webkit-keyframes master {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(12px);
+    transform: translateX(12px);
+  }
+  50% {
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+  }
+}
+@keyframes master {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(12px);
+    transform: translateX(12px);
+  }
+  50% {
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+  }
+}

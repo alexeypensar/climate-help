@@ -201,8 +201,8 @@
     z-index: -1;
   }
   .header__mobile .header__link_submenu {
-    color: #fff;
-    font-size: 1.3rem;
+    color: $gray-color;
+    font-size: 1.1rem;
   }
   .header__link_arrow svg {
     display: none;
@@ -275,6 +275,9 @@
   }
   .goods__wrapper_services {
     background: $blue-gradient;
+  }
+  .goods__wrapper_services .section__heading {
+    color: $gray-color;
   }
   .services__heading_container .section__heading {
     top: 40px;
@@ -517,6 +520,9 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  .section__heading {
+    font-size: 2rem;
+  }
   .header__row {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -676,6 +682,9 @@
     -ms-flex-direction: column;
     flex-direction: column;
     z-index: 1;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
   .sale__image {
     z-index: 0;
@@ -694,6 +703,7 @@
   }
   .sale__heading {
     line-height: 1.3;
+    width: 100%;
   }
   .about-us {
     -webkit-box-orient: vertical;
@@ -746,6 +756,9 @@
     padding-right: 12px;
     padding-top: 0;
     line-height: 1;
+  }
+  .brands .section__heading {
+    font-size: 1.85rem;
   }
 }
 @media screen and (max-width: 575.98px) {
@@ -971,6 +984,16 @@
   .quiz__conditioner_3 .quiz__options_top .quiz__label:first-of-type {
     margin-top: 0;
   }
+  .quiz .section__heading,
+  .goods__cold .section__heading {
+    font-size: 1.65rem;
+    white-space: normal;
+    left: -5px;
+  }
+  .quiz .section__heading::after,
+  .goods__cold .section__heading::after {
+    right: -23px;
+  }
   .section__heading {
     line-height: 1.2;
   }
@@ -1090,7 +1113,7 @@
 }
 @media screen and (max-width: 390px) {
   .goods .section__heading {
-    font-size: 2.225rem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 339.98px) {
