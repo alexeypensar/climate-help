@@ -171,14 +171,13 @@
 <div class="hystmodal" id="modalCallback" aria-hidden="true">
     <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <!--            <button data-hystclose class="hystmodal__close">Close</button>-->
 
             <button data-hystclose class="modal__close hystmodal__close" id="modalCallbackClose">
                 <span></span><span></span></button>
 
 
-            <form action="callback.php" method="post" class="modal__callback quiz__page quiz__conditioner_3"
-                  id="modalCallbackForm">
+            <form method="post" class="modal__callback quiz__page quiz__conditioner_3"
+                  id="modalCallbackForm" onsubmit="send(event, 'mail/send.php')">
                 <h2 class="modal__heading">Оставьте свой телефон,<br> и мы Вам перезвоним!</h2>
 
 
@@ -186,13 +185,13 @@
 
 
                     <label class="quiz__label" for="modalCallbackName">
-                        <input class="quiz__input_text" type="text" id="modalCallbackName" required>
+                        <input class="quiz__input_text" type="text" id="modalCallbackName" name="name" required>
                         <span class="quiz__placeholder">Ваше имя</span>
                     </label>
 
 
                     <label class="quiz__label" for="modalCallbackPhone">
-                        <input class="quiz__input_text" type="tel" id="modalCallbackPhone" required>
+                        <input class="quiz__input_text" type="tel" id="modalCallbackPhone" name="phone" required>
                         <span class="quiz__placeholder">Ваш телефон</span>
                     </label>
 
@@ -200,7 +199,7 @@
 
                 <div class="quiz__options quiz__options_bottom">
                     <label class="quiz__label" for="modalCallbackComment">
-                        <input class="quiz__input_text" type="text" id="modalCallbackComment">
+                        <input class="quiz__input_text" type="text" id="modalCallbackComment" name="comment">
                         <span class="quiz__placeholder">Ваш комментарий (необязательно)</span>
                     </label>
                 </div>
@@ -2056,6 +2055,35 @@
 
     });
 
+</script>
+
+<script>
+    // Отправка данных на сервер
+    function send(event, php){
+        console.log("Отправка запроса");
+        event.preventDefault ? event.preventDefault() : event.returnValue = false;
+        var req = new XMLHttpRequest();
+        req.open('POST', php, true);
+        req.onload = function() {
+            if (req.status >= 200 && req.status < 400) {
+                json = JSON.parse(this.response); // Ебанный internet explorer 11
+                console.log(json);
+
+                // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+                if (json.result == "success") {
+                    // Если сообщение отправлено
+                    alert("Сообщение отправлено");
+                } else {
+                    // Если произошла ошибка
+                    alert("Ошибка. Сообщение не отправлено");
+                }
+                // Если не удалось связаться с php файлом
+            } else {alert("Ошибка сервера. Номер: "+req.status);}};
+
+// Если не удалось отправить запрос. Стоит блок на хостинге
+        req.onerror = function() {alert("Ошибка отправки запроса");};
+        req.send(new FormData(event.target));
+    }
 </script>
 </body>
 </html>
