@@ -2094,4 +2094,48 @@ input[type="radio"]:checked ~ .quiz__image {
 	}
 }
 
+.hystmodal__success {
+	& .modal-success_top {
+		height: 106px;
+		background: $dark-gradient;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	& .header__link {
+		font-weight: 700;
+		font-size: 1.625rem;
+		margin-right: 0 !important;
+		text-align: center !important;
+		display: inline-block !important;
+		width: auto;
+	}
+
+	& .modal-success_bottom {
+		padding: 70px 50px 80px 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	& .modal-success__heading {
+		font-weight: 800;
+		font-size: 2.625rem;
+		line-height: 150%;
+		margin-bottom: 30px;
+		{$text-gradient};
+		text-align: center;
+	}
+
+	& .modal-success__text {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 150%;
+		text-align: center;
+
+	}
+}
+
 @import '__adaptive.styl';

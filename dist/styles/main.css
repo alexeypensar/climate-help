@@ -2366,6 +2366,61 @@ input[type="radio"]:checked ~ .quiz__image img {
   font-size: 0.75rem;
   line-height: 150%;
 }
+.hystmodal__success .modal-success_top {
+  height: 106px;
+  background: -webkit-gradient(linear, left top, right top, from(#257571), to(#145e68));
+  background: linear-gradient(to right, #257571 0%, #145e68 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.hystmodal__success .header__link {
+  font-weight: 700;
+  font-size: 1.625rem;
+  margin-right: 0 !important;
+  text-align: center !important;
+  display: inline-block !important;
+  width: auto;
+}
+.hystmodal__success .modal-success_bottom {
+  padding: 70px 50px 80px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.hystmodal__success .modal-success__heading {
+  font-weight: 800;
+  font-size: 2.625rem;
+  line-height: 150%;
+  margin-bottom: 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#06beb6), to(#48b1bf));
+  background: linear-gradient(to right, #06beb6 0%, #48b1bf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255,255,255,0);
+  text-align: center;
+}
+.hystmodal__success .modal-success__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+}
 @media screen and (max-width: 1199.98px) {
   .container {
     max-width: 992px;
