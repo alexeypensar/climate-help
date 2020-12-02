@@ -1539,14 +1539,14 @@
 
             <!--            квиз начало-->
 
-            <form class="quiz__list">
+            <form class="quiz__list" method="post" onsubmit="send(event, 'mail/quiz.php')">
                 <div class="quiz__page" id="quizStart">
                     <h4 class="quiz__heading" id="quiz0Heading">Какое оборудование вас интересует?</h4>
 
 
                     <div class="quiz__options">
                         <div class="quiz__radio">
-                            <input type="radio" id="quizStartConditioner" name="quizStartRadioButtons" checked>
+                            <input type="radio" id="quizStartConditioner" name="quizStartRadioButtons" value="conditioner" checked>
                             <label for="quizStartConditioner">Кондиционер</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/conditioner.png" alt="Кондиционер">
@@ -1555,7 +1555,7 @@
                         </div>
 
                         <div class="quiz__radio">
-                            <input type="radio" id="quizStartCold" name="quizStartRadioButtons">
+                            <input type="radio" id="quizStartCold" name="quizStartRadioButtons" value="cold">
                             <label for="quizStartCold">Холодильная установка для камеры</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/mono.png" alt="Холодильная установка">
@@ -1564,7 +1564,7 @@
                         </div>
 
                         <div class="quiz__radio">
-                            <input type="radio" id="quizStartHot" name="quizStartRadioButtons">
+                            <input type="radio" id="quizStartHot" name="quizStartRadioButtons" value="hot">
                             <label for="quizStartHot">Отопительное оборудование</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/convector.png" alt="Отопительное оборудование">
@@ -1598,7 +1598,7 @@
 
                     <div class="quiz__options">
                         <div class="quiz__radio">
-                            <input type="radio" id="quizConditioner1Home" name="quizConditionerRadioButtons" checked>
+                            <input type="radio" id="quizConditioner1Home" name="quizConditionerRadioButtons" value="home" checked>
                             <label for="quizConditioner1Home">Для дома</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/conditioner-home.jpg" alt="Кондиционер для дома">
@@ -1607,7 +1607,7 @@
                         </div>
 
                         <div class="quiz__radio">
-                            <input type="radio" id="quizConditioner1Business" name="quizConditionerRadioButtons">
+                            <input type="radio" id="quizConditioner1Business" name="quizConditionerRadioButtons" value="business">
                             <label for="quizConditioner1Business">Для бизнеса</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/conditioner-business.jpg" alt="Кондиционер для бизнеса">
@@ -1654,14 +1654,14 @@
 
 
                         <label class="quiz__label" for="quizConditioner2Area">
-                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizConditioner2Area">
+                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizConditioner2Area" name="quizConditioner2Area">
                             <span class="quiz__placeholder">Площадь, м<sup>2</sup></span>
                         </label>
 
 
                         <label class="quiz__label" for="quizConditioner2Height">
                             <input class="quiz__input_text" type="number" min="1" step="0.1"
-                                   id="quizConditioner2Height">
+                                   id="quizConditioner2Height" name="quizConditioner2Height">
                             <span class="quiz__placeholder">Высота потолков, м</span>
                         </label>
 
@@ -1704,7 +1704,7 @@
 
                     <div class="quiz__options quiz__options_top">
                         <label class="quiz__label" for="quizCold1WhatFreeze">
-                            <input class="quiz__input_text" type="text" id="quizCold1WhatFreeze">
+                            <input class="quiz__input_text" type="text" id="quizCold1WhatFreeze" name="quizCold1WhatFreeze">
                             <span class="quiz__placeholder">Например, мясо, напитки, фрукты</span>
                         </label>
                     </div>
@@ -1748,13 +1748,13 @@
 
 
                         <label class="quiz__label" for="quizCold2Area">
-                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizCold2Area">
+                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizCold2Area" name="quizCold2Area">
                             <span class="quiz__placeholder">Площадь, м<sup>2</sup></span>
                         </label>
 
 
                         <label class="quiz__label" for="quizCold2Height">
-                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizCold2Height">
+                            <input class="quiz__input_text" type="number" min="1" step="0.1" id="quizCold2Height" name="quizCold2Height">
                             <span class="quiz__placeholder">Высота потолков, м</span>
                         </label>
 
@@ -1797,7 +1797,7 @@
 
                     <div class="quiz__options">
                         <div class="quiz__radio">
-                            <input type="radio" id="quizHotConvector" name="quizHot" checked>
+                            <input type="radio" id="quizHotConvector" name="quizHot" value="convector" checked>
                             <label for="quizHotConvector">Конвектор</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/hot-convector.png" alt="Конвектор">
@@ -1806,7 +1806,7 @@
                         </div>
 
                         <div class="quiz__radio">
-                            <input type="radio" id="quizColdGun" name="quizHot">
+                            <input type="radio" id="quizColdGun" name="quizHot" value="gun">
                             <label for="quizColdGun">Тепловая пушка</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/hot-gun.png" alt="Тепловая пушка">
@@ -1815,7 +1815,7 @@
                         </div>
 
                         <div class="quiz__radio">
-                            <input type="radio" id="quizColdWall" name="quizHot">
+                            <input type="radio" id="quizColdWall" name="quizHot" value="wall">
                             <label for="quizColdWall">Тепловая завеса</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/hot-wall.png" alt="Тепловая завеса">
@@ -1824,7 +1824,7 @@
                         </div>
 
                         <div class="quiz__radio">
-                            <input type="radio" id="quizColdInfra" name="quizHot">
+                            <input type="radio" id="quizColdInfra" name="quizHot" value="infra">
                             <label for="quizColdInfra">Инфракрасный обогреватель</label>
                             <div class="quiz__image">
                                 <img src="img/quiz/hot-infra.png" alt="Инфракрасный обогреватель">
@@ -1871,13 +1871,13 @@
 
 
                         <label class="quiz__label" for="quizFinishName">
-                            <input class="quiz__input_text" type="text" id="quizFinishName" required>
+                            <input class="quiz__input_text" type="text" name="quizName" id="quizFinishName" required>
                             <span class="quiz__placeholder">Ваше имя</span>
                         </label>
 
 
                         <label class="quiz__label" for="quizFinishPhone">
-                            <input class="quiz__input_text" type="tel" id="quizFinishPhone" required>
+                            <input class="quiz__input_text" type="tel" name="quizPhone" id="quizFinishPhone" required>
                             <span class="quiz__placeholder">Ваш телефон</span>
                         </label>
 
@@ -1885,7 +1885,7 @@
 
                     <div class="quiz__options quiz__options_bottom">
                         <label class="quiz__label" for="quizFinishComment">
-                            <input class="quiz__input_text" type="text" id="quizFinishComment">
+                            <input class="quiz__input_text" type="text" name="quizComment" id="quizFinishComment">
                             <span class="quiz__placeholder">Ваш комментарий (необязательно)</span>
                         </label>
                     </div>
