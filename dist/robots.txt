@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /mail/
+Sitemap: https://climate-help.ru/sitemap.xml
