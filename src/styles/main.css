@@ -883,6 +883,7 @@ button:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
   position: relative;
+  text-decoration: none;
 }
 .goods__link::after {
   content: '';
@@ -967,6 +968,7 @@ button:hover {
 }
 a.goods__price {
   position: relative;
+  text-decoration: none;
 }
 a.goods__price::after {
   content: '';
