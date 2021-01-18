@@ -14,6 +14,7 @@
     pointer-events: none;
     z-index: 98;
     opacity: 0;
+    -webkit-transition: opacity .15s ease;
     transition: opacity .15s ease;
     background-color: #000
 }
@@ -34,8 +35,15 @@
     -webkit-overflow-scrolling: touch;
     opacity: 1;
     pointer-events: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     z-index: 99;
     visibility: hidden
@@ -51,32 +59,53 @@
 }
 
 .hystmodal__wrap {
+    -ms-flex-negative: 0;
     flex-shrink: 0;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
     flex-grow: 0;
     width: 100%;
     min-height: 100%;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center
 }
 
 .hystmodal__window {
     margin: 50px 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
     flex-grow: 0;
     background: #fff;
     width: 600px;
     max-width: 100%;
     overflow: visible;
+    -webkit-transition: opacity .2s ease 0s, -webkit-transform .2s ease 0s;
+    transition: opacity .2s ease 0s, -webkit-transform .2s ease 0s;
     transition: transform .2s ease 0s, opacity .2s ease 0s;
+    transition: transform .2s ease 0s, opacity .2s ease 0s, -webkit-transform .2s ease 0s;
+    -webkit-transform: scale(.9);
     transform: scale(.9);
     opacity: 0
 }
 
 .hystmodal--active .hystmodal__window {
+    -webkit-transform: scale(1);
     transform: scale(1);
     opacity: 1
 }

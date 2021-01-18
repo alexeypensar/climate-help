@@ -1,4 +1,90 @@
-@-moz-keyframes roundArrow{0%,100%{transform:translateX(0)}25%{transform:translateX(5px)}50%{transform:translateX(-2px)}}@-webkit-keyframes roundArrow{0%,100%{transform:translateX(0)}25%{transform:translateX(5px)}50%{transform:translateX(-2px)}}@-o-keyframes roundArrow{0%,100%{transform:translateX(0)}25%{transform:translateX(5px)}50%{transform:translateX(-2px)}}@keyframes roundArrow{0%,100%{transform:translateX(0)}25%{transform:translateX(5px)}50%{transform:translateX(-2px)}}@-moz-keyframes roundArrowReverse{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}50%{transform:translateX(2px)}}@-webkit-keyframes roundArrowReverse{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}50%{transform:translateX(2px)}}@-o-keyframes roundArrowReverse{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}50%{transform:translateX(2px)}}@keyframes roundArrowReverse{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}50%{transform:translateX(2px)}}@-moz-keyframes close{0%{transform:rotate(0)}100%{transform:rotate(180deg)}}@-webkit-keyframes close{0%{transform:rotate(0)}100%{transform:rotate(180deg)}}@-o-keyframes close{0%{transform:rotate(0)}100%{transform:rotate(180deg)}}@keyframes close{0%{transform:rotate(0)}100%{transform:rotate(180deg)}}@-moz-keyframes master{0%,100%{transform:translateX(0)}25%{transform:translateX(12px)}50%{transform:translateX(-7px)}}@-webkit-keyframes master{0%,100%{transform:translateX(0)}25%{transform:translateX(12px)}50%{transform:translateX(-7px)}}@-o-keyframes master{0%,100%{transform:translateX(0)}25%{transform:translateX(12px)}50%{transform:translateX(-7px)}}@keyframes master{0%,100%{transform:translateX(0)}25%{transform:translateX(12px)}50%{transform:translateX(-7px)}}anslateX(-7px);
+@-webkit-keyframes roundArrow {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+}
+@keyframes roundArrow {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  50% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+}
+@-webkit-keyframes roundArrowReverse {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+}
+@keyframes roundArrowReverse {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+}
+@-webkit-keyframes close {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes close {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes master {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(12px);
+    transform: translateX(12px);
+  }
+  50% {
+    -webkit-transform: translateX(-7px);
     transform: translateX(-7px);
   }
 }
